@@ -8,6 +8,7 @@ from database_op import database_connect
 DOMAIN = 'http://www.hearthpwn.com'
 
 DUST_COST_MATCHER = re.compile('.*Crafting Cost: (\d+).*', re.DOTALL)
+DECK_ID_MATCHER = re.compile('/decks/(\d+)-.*')
 CARD_COUNT_MATCHER = re.compile(u'.*\xd7 (\d+).*', re.DOTALL)
 
 def parse_deck (deck):
@@ -19,8 +20,8 @@ def parse_deck (deck):
     rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
   deck.cards = []
   for row in rows:
-    num = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
-    deck.cards.extend([row.find_class('col-name')[0].xpath('b/a')[0].text_content()] * num)
+    count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
+    deck.cards.extend([row.find_class('col-name')[0].xpath('b/a')[0].text_content()] * count)
 
 def parse_page (pagenum):
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
@@ -29,6 +30,7 @@ def parse_page (pagenum):
   for row in rows:
     deck = Deck()
     deck.url = row.find_class('col-name')[0].xpath('div/span/a')[0].attrib['href']
+    deck.id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
     deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
     deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
     deck.type = row.find_class('col-deck-type')[0].text_content()
