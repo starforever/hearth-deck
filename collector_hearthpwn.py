@@ -3,6 +3,7 @@ import re
 import lxml.html
 from model import Deck
 from database_op import database_connect
+from cardid import get_card_id
 
 # REST_INTERVAL = 3
 DOMAIN = 'http://www.hearthpwn.com'
@@ -20,8 +21,9 @@ def parse_deck (deck):
     rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
   deck.cards = []
   for row in rows:
+    name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
     count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
-    deck.cards.extend([row.find_class('col-name')[0].xpath('b/a')[0].text_content()] * count)
+    deck.cards.append((get_card_id(name), count))
 
 def parse_page (pagenum):
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
