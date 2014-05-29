@@ -1,8 +1,9 @@
 import datetime
 import re
 import lxml.html
+from util import parse_arg
 from model import Deck
-from database_op import database_connect
+from database_op import database_connect, database_close, deck_create, deck_insert, deck_select
 from cardid import get_card_id
 
 # REST_INTERVAL = 3
@@ -32,7 +33,8 @@ def parse_page (pagenum):
   for row in rows:
     deck = Deck()
     deck.url = row.find_class('col-name')[0].xpath('div/span/a')[0].attrib['href']
-    deck.id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
+    deck.source = 'HearthPwn'
+    deck.source_id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
     deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
     deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
     deck.type = row.find_class('col-deck-type')[0].text_content()
@@ -42,11 +44,18 @@ def parse_page (pagenum):
     deck.num_comment = int(row.find_class('col-comments')[0].text_content())
     deck.time_update = datetime.datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
     parse_deck(deck)
-    print deck
+    deck_insert(deck)
     break
 
+def print_decks ():
+  for row in deck_select():
+    deck = Deck.from_database(row)
+    print deck
+
 if __name__ == '__main__':
-  # database_name = parse_arg((str), 1)
-  # database_connect(database_name)
+  (database_name,) = parse_arg((str,), 1)
+  database_connect(database_name)
+  deck_create()
   parse_page(1)
-  # database_close()
+  print_decks()
+  database_close()
