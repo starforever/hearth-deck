@@ -21,7 +21,8 @@ def get_page_root (url):
       root = lxml.html.parse(url).getroot()
       break
     except IOError as e:
-      print 'Failed to load %s, retry after %d seconds.' % (e.filename, REST_INTERVAL)
+      print e
+      print 'Retry after %d seconds.' % REST_INTERVAL
       time.sleep(REST_INTERVAL)
   return root
 
