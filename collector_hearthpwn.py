@@ -33,8 +33,7 @@ def parse_page (pagenum):
   for row in rows:
     deck = Deck()
     deck.url = row.find_class('col-name')[0].xpath('div/span/a')[0].attrib['href']
-    deck.source = 'HearthPwn'
-    deck.source_id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
+    deck.id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
     deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
     deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
     deck.type = row.find_class('col-deck-type')[0].text_content()

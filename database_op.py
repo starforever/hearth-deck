@@ -13,8 +13,6 @@ def database_close ():
 def deck_create ():
   CONN.execute("""CREATE TABLE IF NOT EXISTS decks (
     id INTEGER PRIMARY KEY,
-    source TEXT,
-    source_id INTEGER,
     name TEXT,
     author TEXT,
     url TEXT,
@@ -30,7 +28,7 @@ def deck_create ():
   CONN.commit()
 
 def deck_insert (deck):
-  CONN.execute("""INSERT INTO decks (source, source_id, name, author, url, type, class, dust_cost, rating, num_view, num_comment, time_update, cards) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.source, deck.source_id, deck.name, deck.author, deck.url, deck.type, deck.hclass, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1))))
+  CONN.execute("""INSERT INTO decks (id, name, author, url, type, class, dust_cost, rating, num_view, num_comment, time_update, cards) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hclass, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1))))
   CONN.commit()
 
 def deck_select ():

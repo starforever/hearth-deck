@@ -8,8 +8,7 @@ class Deck ():
   @classmethod
   def from_database (cls, row):
     deck = Deck()
-    deck.source = row['source']
-    deck.source_id = row['source_id']
+    deck.id = row['id']
     deck.name = row['name']
     deck.author = row['author']
     deck.url = row['url']
@@ -26,7 +25,7 @@ class Deck ():
   def __str__ (self):
     ss = StringIO()
     ss.write('%s (by %s)\n' % (self.name.encode('utf-8'), self.author.encode('utf-8')))
-    ss.write('URL: %s (%s-%d)\n' % (self.url, self.source, self.source_id))
+    ss.write('URL: %s (%d)\n' % (self.url, self.id))
     ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hclass, self.dust_cost))
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
