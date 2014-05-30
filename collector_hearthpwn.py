@@ -59,12 +59,14 @@ def process_deck (deck):
     deck_insert(deck)
 
 def parse_page (pagenum):
+  print 'Parsing page %d' % pagenum
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
   root = lxml.html.parse(url).getroot()
   rows = root.get_element_by_id('decks').xpath('tbody/tr')
   rownum = load_key('CURRENT_ROW', 0)
   while rownum < len(rows):
     deck = parse_row(rows[rownum])
+    print 'Parsed deck (%d) %s' % (deck.id, deck.name)
     process_deck(deck)
     rownum += 1
     save_key('CURRENT_ROW', rownum)
@@ -78,6 +80,7 @@ def parse ():
   while parse_page(pagenum):
     pagenum += 1
     save_key('CURRENT_PAGE', pagenum)
+    save_key('CURRENT_ROW', 0)
   deck_remove_unscanned(SCAN_COUNT)
   SCAN_COUNT += 1
   save_key('SCAN_COUNT', SCAN_COUNT)
