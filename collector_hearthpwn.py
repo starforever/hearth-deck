@@ -8,7 +8,7 @@ from database_op import database_connect, database_close, deck_create, deck_inse
 from card_id import get_id as get_card_id
 from key_store import save as save_key, load as load_key
 
-REST_INTERVAL = 10
+REST_INTERVAL = 3
 DOMAIN = 'http://www.hearthpwn.com'
 
 DUST_COST_MATCHER = re.compile('.*Crafting Cost: (\d+).*', re.DOTALL)
