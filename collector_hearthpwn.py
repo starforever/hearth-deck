@@ -3,8 +3,9 @@ import re
 import lxml.html
 from util import parse_arg
 from model import Deck
-from database_op import database_connect, database_close, deck_create, deck_insert, deck_select
+from database_op import database_connect, database_close, deck_create, deck_insert, deck_select_by_id, deck_remove_unscanned
 from card_id import get_id as get_card_id
+from key_store import save as save_key, load as load_key
 
 # REST_INTERVAL = 3
 DOMAIN = 'http://www.hearthpwn.com'
@@ -26,35 +27,66 @@ def parse_deck (deck):
     count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
     deck.cards.append((get_card_id(name), count))
 
+def parse_row (row):
+  deck = Deck()
+  deck.url = row.find_class('col-name')[0].xpath('div/span/a')[0].attrib['href']
+  deck.id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
+  deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
+  deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
+  deck.type = row.find_class('col-deck-type')[0].text_content()
+  deck.hclass = row.find_class('col-class')[0].text_content()
+  deck.rating = int(row.find_class('col-ratings')[0].xpath('div')[0].text_content())
+  deck.num_view = int(row.find_class('col-views')[0].text_content())
+  deck.num_comment = int(row.find_class('col-comments')[0].text_content())
+  deck.time_update = datetime.datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
+  deck.scan_count = SCAN_COUNT
+  return deck
+
+def is_valid_deck (deck):
+  total = 0
+  for card in deck.cards:
+    total += card[1]
+  return total == 30
+
+def process_deck (deck):
+  old_deck = Deck.from_database(deck_select_by_id(deck.id))
+  if old_deck and deck.time_update == old_deck.time_update:
+    deck.dust_cost = old_deck.dust_cost
+    deck.cards = old_deck.cards
+  else:
+    parse_deck(deck)
+  if is_valid_deck(deck):
+    deck_insert(deck)
+
 def parse_page (pagenum):
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
   root = lxml.html.parse(url).getroot()
   rows = root.get_element_by_id('decks').xpath('tbody/tr')
-  for row in rows:
-    deck = Deck()
-    deck.url = row.find_class('col-name')[0].xpath('div/span/a')[0].attrib['href']
-    deck.id = int(DECK_ID_MATCHER.match(deck.url).groups()[0])
-    deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
-    deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
-    deck.type = row.find_class('col-deck-type')[0].text_content()
-    deck.hclass = row.find_class('col-class')[0].text_content()
-    deck.rating = int(row.find_class('col-ratings')[0].xpath('div')[0].text_content())
-    deck.num_view = int(row.find_class('col-views')[0].text_content())
-    deck.num_comment = int(row.find_class('col-comments')[0].text_content())
-    deck.time_update = datetime.datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
-    parse_deck(deck)
-    deck_insert(deck)
-    break
+  rownum = load_key('CURRENT_ROW', 0)
+  while rownum < len(rows):
+    deck = parse_row(rows[rownum])
+    process_deck(deck)
+    rownum += 1
+    save_key('CURRENT_ROW', rownum)
+  has_next = 'Next' in [e.text_content() for e in root.find_class('paging-list')[0].xpath('li/a')]
+  return has_next
 
-def print_decks ():
-  for row in deck_select():
-    deck = Deck.from_database(row)
-    print deck
+def parse ():
+  global SCAN_COUNT
+  SCAN_COUNT = load_key('SCAN_COUNT', 1)
+  pagenum = load_key('CURRENT_PAGE', 1)
+  while parse_page(pagenum):
+    pagenum += 1
+    save_key('CURRENT_PAGE', pagenum)
+  deck_remove_unscanned(SCAN_COUNT)
+  SCAN_COUNT += 1
+  save_key('SCAN_COUNT', SCAN_COUNT)
+  save_key('CURRENT_PAGE', 1)
+  save_key('CURRENT_ROW', 0)
 
 if __name__ == '__main__':
   (database_name,) = parse_arg((str,), 1)
   database_connect(database_name)
   deck_create()
-  parse_page(1)
-  print_decks()
+  parse()
   database_close()

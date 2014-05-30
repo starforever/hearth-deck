@@ -23,13 +23,18 @@ def deck_create ():
     num_view INTEGER,
     num_comment INTEGER,
     time_update TEXT,
-    cards BLOB
+    cards BLOB,
+    scan_count INTEGER
   )""")
   CONN.commit()
 
 def deck_insert (deck):
-  CONN.execute("""INSERT INTO decks (id, name, author, url, type, class, dust_cost, rating, num_view, num_comment, time_update, cards) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hclass, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1))))
+  CONN.execute("""INSERT OR REPLACE INTO decks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hclass, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1)), deck.scan_count))
   CONN.commit()
 
-def deck_select ():
-  return CONN.execute("""SELECT * FROM decks""")
+def deck_select_by_id (id):
+  return CONN.execute("""SELECT * FROM decks WHERE id = ?""", (id,)).fetchone()
+
+def deck_remove_unscanned (scan_count):
+  CONN.execute("""DELETE FROM decks WHERE scan_count < ?""", (scan_count,))
+  CONN.commit()

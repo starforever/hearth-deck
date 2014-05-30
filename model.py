@@ -7,6 +7,8 @@ class Deck ():
 
   @classmethod
   def from_database (cls, row):
+    if not row:
+      return None
     deck = Deck()
     deck.id = row['id']
     deck.name = row['name']
@@ -20,6 +22,7 @@ class Deck ():
     deck.num_comment = row['num_comment']
     deck.time_update = datetime.strptime(row['time_update'], '%Y-%m-%d %H:%M:%S.000')
     deck.cards = pickle_loads(str(row['cards']))
+    deck.scan_count = row['scan_count']
     return deck
 
   def __str__ (self):
@@ -30,5 +33,6 @@ class Deck ():
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
     ss.write('Cards:\n%s' % '\n'.join(['%s x %d' % (get_card_name(c[0]), c[1]) for c in self.cards]))
+    ss.write('Scan count: %d\n' % self.scan_count)
     ss.write('\n')
     return ss.getvalue()

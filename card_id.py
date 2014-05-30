@@ -1,7 +1,6 @@
 def init (filename):
   global CARD_ID
   global CARD_NAME
-  print 'Loading card id mapping from %s' % filename
   CARD_ID = {}
   CARD_NAME = []
   cid = 0
