@@ -1,3 +1,4 @@
+import time
 import datetime
 import re
 import lxml.html
@@ -7,16 +8,26 @@ from database_op import database_connect, database_close, deck_create, deck_inse
 from card_id import get_id as get_card_id
 from key_store import save as save_key, load as load_key
 
-# REST_INTERVAL = 3
+REST_INTERVAL = 10
 DOMAIN = 'http://www.hearthpwn.com'
 
 DUST_COST_MATCHER = re.compile('.*Crafting Cost: (\d+).*', re.DOTALL)
 DECK_ID_MATCHER = re.compile('/decks/(\d+)-.*')
 CARD_COUNT_MATCHER = re.compile(u'.*\xd7 (\d+).*', re.DOTALL)
 
+def get_page_root (url):
+  while True:
+    try:
+      root = lxml.html.parse(url).getroot()
+      break
+    except IOError as e:
+      print 'Failed to load %s, retry after %d seconds.' % (e.filename, REST_INTERVAL)
+      time.sleep(REST_INTERVAL)
+  return root
+
 def parse_deck (deck):
   url = DOMAIN + deck.url
-  info = lxml.html.parse(url).getroot().find_class('infobox')[0]
+  info = get_page_root(url).find_class('infobox')[0]
   deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-dust-cost')[0].text_content()).groups()[0])
   rows = []
   for sec in info.find_class('t-deck-details-card-list'):
@@ -59,14 +70,14 @@ def process_deck (deck):
     deck_insert(deck)
 
 def parse_page (pagenum):
-  print 'Parsing page %d' % pagenum
+  print 'Parsing page %d...' % pagenum
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
-  root = lxml.html.parse(url).getroot()
+  root = get_page_root(url)
   rows = root.get_element_by_id('decks').xpath('tbody/tr')
   rownum = load_key('CURRENT_ROW', 0)
   while rownum < len(rows):
     deck = parse_row(rows[rownum])
-    print 'Parsed deck (%d) %s' % (deck.id, deck.name)
+    print '[%d] %s' % (deck.id, deck.name)
     process_deck(deck)
     rownum += 1
     save_key('CURRENT_ROW', rownum)
