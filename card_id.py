@@ -1,4 +1,4 @@
-def load (filename):
+def init (filename):
   global CARD_ID
   global CARD_NAME
   print 'Loading card id mapping from %s' % filename
@@ -20,10 +20,10 @@ def load (filename):
     cid += 1
   fin.close()
 
-def get_card_id (name):
+def get_id (name):
   return CARD_ID[name]
 
-def get_card_name (id):
+def get_name (id):
   return CARD_NAME[id]
 
-load('cardid.txt')
+init('cardid.txt')

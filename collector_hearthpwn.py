@@ -4,7 +4,7 @@ import lxml.html
 from util import parse_arg
 from model import Deck
 from database_op import database_connect, database_close, deck_create, deck_insert, deck_select
-from card_id import get_card_id
+from card_id import get_id as get_card_id
 
 # REST_INTERVAL = 3
 DOMAIN = 'http://www.hearthpwn.com'

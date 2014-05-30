@@ -1,7 +1,7 @@
 from datetime import datetime
 from cStringIO import StringIO
 from cPickle import loads as pickle_loads
-from card_id import get_card_name
+from card_id import get_name as get_card_name
 
 class Deck ():
 
