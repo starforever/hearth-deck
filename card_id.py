@@ -7,7 +7,7 @@ def init (filename):
   fin = open(filename, 'r')
   while True:
     line = fin.readline()
-    if not line:
+    if line is None:
       break
     line = line[:-1]
     names = line.split(';')

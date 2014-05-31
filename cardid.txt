@@ -380,3 +380,4 @@ Doomhammer;毁灭之锤
 Fiery War Axe;炽炎战斧
 Arcanite Reaper;奥金斧
 Gorehowl;血吼
+Adrenaline Rush

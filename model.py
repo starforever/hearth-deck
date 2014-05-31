@@ -7,7 +7,7 @@ class Deck ():
 
   @classmethod
   def from_database (cls, row):
-    if not row:
+    if row is None:
       return None
     deck = Deck()
     deck.id = row['id']
