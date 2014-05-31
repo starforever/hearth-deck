@@ -67,8 +67,7 @@ def process_deck (deck):
     deck.cards = old_deck.cards
   else:
     parse_deck(deck)
-  if is_valid_deck(deck):
-    deck_insert(deck)
+  deck_insert(deck)
 
 def parse_page (pagenum):
   print 'Parsing page %d... (%s)' % (pagenum, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
