@@ -1,5 +1,5 @@
 import time
-import datetime
+from datetime import datetime
 import re
 import lxml.html
 from util import parse_arg
@@ -50,7 +50,7 @@ def parse_row (row):
   deck.rating = int(row.find_class('col-ratings')[0].xpath('div')[0].text_content())
   deck.num_view = int(row.find_class('col-views')[0].text_content())
   deck.num_comment = int(row.find_class('col-comments')[0].text_content())
-  deck.time_update = datetime.datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
+  deck.time_update = datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
   deck.scan_count = SCAN_COUNT
   return deck
 
@@ -71,7 +71,7 @@ def process_deck (deck):
     deck_insert(deck)
 
 def parse_page (pagenum):
-  print 'Parsing page %d...' % pagenum
+  print 'Parsing page %d... (%s)' % (pagenum, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
   root = get_page_root(url)
   rows = root.get_element_by_id('decks').xpath('tbody/tr')
