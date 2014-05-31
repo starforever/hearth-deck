@@ -63,7 +63,7 @@ def process_deck (deck):
   else:
     parse_deck(deck)
     status = 'Update' if old_deck is not None else 'New'
-  if deck.is_valid():
+  if not deck.is_valid():
     status += ', Invalid'
   deck_insert(deck)
   return status
