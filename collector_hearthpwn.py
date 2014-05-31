@@ -70,14 +70,14 @@ def process_deck (deck):
   deck_insert(deck)
 
 def parse_page (pagenum):
-  print 'Parsing page %d... (%s)' % (pagenum, datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+  print '(%s) Parsing page %d...' % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pagenum)
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
   root = get_page_root(url)
   rows = root.get_element_by_id('decks').xpath('tbody/tr')
   rownum = load_key('CURRENT_ROW', 0)
   while rownum < len(rows):
     deck = parse_row(rows[rownum])
-    print '[%d] %s' % (deck.id, deck.name)
+    print '  [%d] %s' % (deck.id, deck.name)
     process_deck(deck)
     rownum += 1
     save_key('CURRENT_ROW', rownum)
