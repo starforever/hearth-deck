@@ -16,10 +16,10 @@ DECK_ID_MATCHER = re.compile('/decks/(\d+).*')
 CARD_COUNT_MATCHER = re.compile(u'.*\xd7 (\d+).*', re.DOTALL)
 
 def get_page_root (url):
-  while True:
+  root = None
+  while root is None:
     try:
       root = lxml.html.parse(url).getroot()
-      break
     except IOError as e:
       print e
       print 'Retry after %d seconds.' % REST_INTERVAL
@@ -62,7 +62,7 @@ def is_valid_deck (deck):
 
 def process_deck (deck):
   old_deck = Deck.from_database(deck_select_by_id(deck.id))
-  if old_deck and deck.time_update == old_deck.time_update:
+  if old_deck is not None and deck.time_update == old_deck.time_update:
     deck.dust_cost = old_deck.dust_cost
     deck.cards = old_deck.cards
     status = 'Pass'
