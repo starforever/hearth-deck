@@ -65,9 +65,14 @@ def process_deck (deck):
   if old_deck and deck.time_update == old_deck.time_update:
     deck.dust_cost = old_deck.dust_cost
     deck.cards = old_deck.cards
+    status = 'Pass'
   else:
     parse_deck(deck)
+    status = 'Update' if old_deck else 'New'
+  if not is_valid_deck(deck):
+    status += ', Invalid'
   deck_insert(deck)
+  return status
 
 def parse_page (pagenum):
   print '(%s) Parsing page %d...' % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pagenum)
@@ -77,10 +82,10 @@ def parse_page (pagenum):
   rownum = load_key('CURRENT_ROW', 0)
   while rownum < len(rows):
     deck = parse_row(rows[rownum])
-    print '  [%d] %s' % (deck.id, deck.name)
-    process_deck(deck)
+    status = process_deck(deck)
     rownum += 1
     save_key('CURRENT_ROW', rownum)
+    print '  [%d] (%s) %s' % (deck.id, status, deck.name)
   has_next = 'Next' in [e.text_content() for e in root.find_class('paging-list')[0].xpath('li/a')]
   return has_next
 
