@@ -25,6 +25,12 @@ class Deck ():
     deck.scan_count = row['scan_count']
     return deck
 
+  def is_valid (self):
+    total = 0
+    for card in self.cards:
+      total += card[1]
+    return total == 30
+
   def __str__ (self):
     ss = StringIO()
     ss.write('%s (by %s)\n' % (self.name.encode('utf-8'), self.author.encode('utf-8')))
@@ -32,7 +38,7 @@ class Deck ():
     ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hclass, self.dust_cost))
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
-    ss.write('Cards:\n%s' % '\n'.join(['%s x %d' % (get_card_name(c[0]), c[1]) for c in self.cards]))
+    ss.write('Cards:\n%s\n' % '\n'.join(['%s x %d' % (get_card_name(c[0]), c[1]) for c in self.cards]))
     ss.write('Scan count: %d\n' % self.scan_count)
     ss.write('\n')
     return ss.getvalue()

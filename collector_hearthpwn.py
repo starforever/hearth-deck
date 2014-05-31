@@ -4,7 +4,7 @@ import re
 import lxml.html
 from util import parse_arg
 from model import Deck
-from database_op import database_connect, database_close, deck_create, deck_insert, deck_select_by_id, deck_remove_unscanned
+from database_op import database_connect, database_close, deck_create, deck_insert, deck_find_by_id, deck_remove_unscanned
 from card_id import get_id as get_card_id
 from key_store import save as save_key, load as load_key
 
@@ -54,14 +54,8 @@ def parse_row (row):
   deck.scan_count = SCAN_COUNT
   return deck
 
-def is_valid_deck (deck):
-  total = 0
-  for card in deck.cards:
-    total += card[1]
-  return total == 30
-
 def process_deck (deck):
-  old_deck = Deck.from_database(deck_select_by_id(deck.id))
+  old_deck = Deck.from_database(deck_find_by_id(deck.id))
   if old_deck is not None and deck.time_update == old_deck.time_update:
     deck.dust_cost = old_deck.dust_cost
     deck.cards = old_deck.cards
@@ -69,7 +63,7 @@ def process_deck (deck):
   else:
     parse_deck(deck)
     status = 'Update' if old_deck is not None else 'New'
-  if not is_valid_deck(deck):
+  if deck.is_valid():
     status += ', Invalid'
   deck_insert(deck)
   return status
