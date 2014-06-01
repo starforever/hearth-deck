@@ -1,6 +1,6 @@
 import re
 from util import parse_arg
-from model import Deck
+from deck import Deck
 from database_op import database_connect, database_close, deck_select_by_class
 from card_info import card_by_name, card_by_id
 

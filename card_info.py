@@ -1,5 +1,5 @@
 from csv import DictReader
-from model import Card
+from card import Card
 
 def load (filename):
   global CARD_BY_NAME

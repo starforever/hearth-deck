@@ -3,7 +3,7 @@ from datetime import datetime
 import re
 import lxml.html
 from util import parse_arg
-from model import Deck
+from deck import Deck
 from database_op import database_connect, database_close, deck_create, deck_insert, deck_find_by_id, deck_remove_unscanned
 from card_info import card_by_name
 from key_store import save as save_key, load as load_key
