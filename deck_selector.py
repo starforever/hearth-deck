@@ -1,3 +1,4 @@
+from cStringIO import StringIO
 import re
 from util import parse_arg
 from deck import Deck
@@ -27,9 +28,10 @@ def card_forge_cost (card):
     return 100
   elif card.rarity == 'Common':
     return 40
+  elif card.rarity == 'Basic':
+    return 1000000 # Basic cards cannot be forged
   else:
-    print 'Warning: potential incorrect rarity for card: %s' % card.name
-    return 0
+    raise Exception('Incorrect rarity for card: %s' % card.name)
 
 def deck_forge_cost (deck):
   cost = 0
@@ -41,7 +43,28 @@ def deck_forge_cost (deck):
   return cost
 
 def show_deck (deck):
-  print deck
+  print '%s (by %s)' % (deck.name.encode('utf-8'), deck.author.encode('utf-8'))
+  print 'Rating: %d, Type: %s' % (deck.rating, deck.type)
+  card_hand = []
+  card_craft = []
+  for (id, count) in deck.cards:
+    card = card_by_id(id)
+    available = COLLECTION[id] if id in COLLECTION else 0
+    if available > 0:
+      card_hand.append((card, min(count, available)))
+    if count > available:
+      card_craft.append((card, count - available))
+  print 'Cards already in your hand:'
+  print '\n'.join(['  %s x %d' % (card.name, count) for (card, count) in card_hand])
+  if card_craft:
+    print 'Cards need crafting:'
+    total = 0
+    for (card, count) in card_craft:
+      cost = card_forge_cost(card) * count
+      total += cost
+      print '  %s x %d ($%d)' % (card.name, count, cost)
+    print '  Total: $%d' % total
+  print
 
 if __name__ == '__main__':
   (database_name, collection_name, hero_class, dust_amount) = parse_arg((str, str, str, int), 3)
@@ -53,6 +76,6 @@ if __name__ == '__main__':
     deck = Deck.from_database(row)
     if deck.is_valid() and deck_forge_cost(deck) <= dust_amount:
       show_deck(deck)
-      raw_input('Press any key to continue.')
-      print '\n'
+      if raw_input('Press Enter to continue. Input (X) and enter to exit.\n').upper() == 'X':
+        break
   database_close()

@@ -41,7 +41,7 @@ class Deck ():
     ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hero_class, self.dust_cost))
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
-    ss.write('Cards:\n%s\n' % '\n'.join(['%s x %d' % (card_by_id(c[0]).name, c[1]) for c in self.cards]))
+    ss.write('Cards:\n%s\n' % '\n'.join(['  %s x %d' % (card_by_id(c[0]).name, c[1]) for c in self.cards]))
     ss.write('Scan count: %d\n' % self.scan_count)
     ss.write('\n')
     return ss.getvalue()
