@@ -19,6 +19,20 @@ class Card ():
     card.power = row['power']
     return card
 
+  def forge_cost (self):
+    if self.rarity == 'Legendary':
+      return 1600
+    elif self.rarity == 'Epic':
+      return 400
+    elif self.rarity == 'Rare':
+      return 100
+    elif self.rarity == 'Common':
+      return 40
+    elif self.rarity == 'Basic':
+      return 1000000 # Basic cards cannot be forged
+    else:
+      raise Exception('Incorrect rarity for card: %s' % self.name)
+
   def __str__ (self):
     ss = StringIO()
     ss.write('%s (%d)\n' % (self.name, self.id))
