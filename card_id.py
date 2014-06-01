@@ -5,10 +5,7 @@ def init (filename):
   CARD_NAME = []
   cid = 0
   fin = open(filename, 'r')
-  while True:
-    line = fin.readline()
-    if line == '':
-      break
+  for line in fin:
     line = line[:-1]
     names = line.split(';')
     CARD_NAME.append(names[0])

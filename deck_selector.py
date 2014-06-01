@@ -10,10 +10,7 @@ def load_card_collection (filename):
   global COLLECTION
   COLLECTION = {}
   fin = open(filename, 'r')
-  while True:
-    line = fin.readline()
-    if line == '':
-      break
+  for line in fin:
     line = line[:-1]
     groups = CARD_MATCHER.match(line).groups()
     name = groups[0]
