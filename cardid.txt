@@ -381,3 +381,93 @@ Fiery War Axe;炽炎战斧
 Arcanite Reaper;奥金斧
 Gorehowl;血吼
 Adrenaline Rush
+Legacy of the Emperor
+Metamorphosis
+Huffer
+Leokk
+Misha
+Devilsaur
+Transcendence
+The Coin
+Flame Burst
+Ashbringer
+Mukla's Big Brother
+Healing Totem
+Emboldener 3000
+Stomp
+Demigod's Favor
+Leader of the Pack
+Shan'do's Lesson
+Summon a Panther
+Battle Axe
+Repair Bot
+Searing Totem
+Stoneclaw Totem
+Chicken
+Murloc Scout
+Sheep
+Snake
+Violet Apprentice
+Barrel
+Frog
+Shadow of Nothing
+Squire
+Treant
+Damaged Golem
+Defender
+Defias Bandit
+Flame of Azzinoth
+Mechanical Dragonling
+Riverpaw Gnoll
+Crazy Monkey
+Boar
+Crazed Hunter
+Gnoll
+Hound
+Imp
+Murloc
+Naga Myrmidon
+Pandaren Scout
+Silver Hand Recruit
+Squirrel
+Whelp
+Worthless Imp
+Homing Chicken
+Poultryizer
+Wrath of Air Totem
+Finkle Einhorn
+Panther
+Spirit Wolf
+Hyena
+Shado-Pan Monk
+Hidden Gnome
+Laughing Sister
+Emerald Drake
+Baine Bloodhoof
+Brewmaster
+Massive Gnoll
+Infernal
+Ancient Secrets
+Ancient Teachings
+Bear Form
+Cat Form
+Dispel
+Dream
+Excess Mana
+Nightmare
+Rooted
+Uproot
+Bananas
+Ysera Awakens
+I Am Murloc
+Power of the Horde
+Rogues Do It…
+Barrel Toss
+Hogger SMASH!
+Will of Mukla
+Heavy Axe
+Wicked Knife
+Blood Fury
+Warglaive of Azzinoth
+Dual Warglaives
+Skeleton
