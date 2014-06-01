@@ -29,7 +29,7 @@ def deck_create ():
   CONN.commit()
 
 def deck_insert (deck):
-  CONN.execute("""INSERT OR REPLACE INTO decks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hclass, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1)), deck.scan_count))
+  CONN.execute("""INSERT OR REPLACE INTO decks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hero_class, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1)), deck.scan_count))
   CONN.commit()
 
 def deck_find_by_id (id):

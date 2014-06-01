@@ -15,7 +15,7 @@ class Deck ():
     deck.author = row['author']
     deck.url = row['url']
     deck.type = row['type']
-    deck.hclass = row['class']
+    deck.hero_class = row['class']
     deck.dust_cost = row['dust_cost']
     deck.rating = row['rating']
     deck.num_view = row['num_view']
@@ -35,10 +35,47 @@ class Deck ():
     ss = StringIO()
     ss.write('%s (by %s)\n' % (self.name.encode('utf-8'), self.author.encode('utf-8')))
     ss.write('URL: %s (%d)\n' % (self.url, self.id))
-    ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hclass, self.dust_cost))
+    ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hero_class, self.dust_cost))
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
     ss.write('Cards:\n%s\n' % '\n'.join(['%s x %d' % (get_card_name(c[0]), c[1]) for c in self.cards]))
     ss.write('Scan count: %d\n' % self.scan_count)
+    ss.write('\n')
+    return ss.getvalue()
+
+class Card ():
+
+  @classmethod
+  def from_csv (cls, row):
+    card = Card()
+    card.id = int(row['id'])
+    card.name = row['name']
+    card.type = row['type']
+    card.hero_class = row['class']
+    card.race = row['race']
+    card.rarity = row['rarity']
+    card.cost = int(row['cost'])
+    if card.type in ['Minion', 'Weapon']:
+      card.attack = int(row['attack'])
+      card.health = int(row['health'])
+    else:
+      card.attack = 0
+      card.health = 0
+    card.power = row['power']
+    return card
+
+  def __str__ (self):
+    ss = StringIO()
+    ss.write('%s (%d)\n' % (self.name, self.id))
+    ss.write('Type: %s, Class: %s, Rarity: %s' % (self.type, self.hero_class, self.rarity))
+    if self.race:
+      ss.write(', Race: %s' % self.race)
+    ss.write('\n')
+    ss.write('Cost: %d' % self.cost)
+    if self.type in ['Minion', 'Weapon']:
+      ss.write(', Attack: %d, %s: %d' % (self.attack, 'Health' if self.type == 'Minion' else 'Durability', self.health))
+    ss.write('\n')
+    if self.power:
+      ss.write('%s\n' % self.power)
     ss.write('\n')
     return ss.getvalue()

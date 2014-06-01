@@ -46,7 +46,7 @@ def parse_row (row):
   deck.name = row.find_class('col-name')[0].xpath('div/span/a')[0].text_content()
   deck.author = row.find_class('col-name')[0].xpath('div/small/a')[0].text_content()
   deck.type = row.find_class('col-deck-type')[0].text_content()
-  deck.hclass = row.find_class('col-class')[0].text_content()
+  deck.hero_class = row.find_class('col-class')[0].text_content()
   deck.rating = int(row.find_class('col-ratings')[0].xpath('div')[0].text_content())
   deck.num_view = int(row.find_class('col-views')[0].text_content())
   deck.num_comment = int(row.find_class('col-comments')[0].text_content())
