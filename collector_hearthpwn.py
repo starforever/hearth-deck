@@ -92,6 +92,7 @@ def parse ():
     save_key('CURRENT_PAGE', pagenum)
     save_key('CURRENT_ROW', 0)
   deck_remove_unscanned(SCAN_COUNT)
+  print 'Scan pass %d finished!' % SCAN_COUNT
   SCAN_COUNT += 1
   save_key('SCAN_COUNT', SCAN_COUNT)
   save_key('CURRENT_PAGE', 1)
