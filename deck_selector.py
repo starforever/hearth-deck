@@ -2,7 +2,7 @@ import re
 from util import parse_arg
 from model import Deck
 from database_op import database_connect, database_close, deck_select_by_class
-from card_id import get_id as get_card_id, get_name as get_card_name
+from card_info import card_by_name, card_by_id
 
 CARD_MATCHER = re.compile('(.+?)(?: x (\d+))?\Z')
 
@@ -15,19 +15,33 @@ def load_card_collection (filename):
     groups = CARD_MATCHER.match(line).groups()
     name = groups[0]
     count = int(groups[1]) if groups[1] is not None else 1
-    COLLECTION[get_card_id(name)] = count
+    COLLECTION[card_by_name(name).id] = count
   fin.close()
 
-def card_forge_cost (card_id):
-  return 100000
+def card_forge_cost (card):
+  if card.rarity == 'Legendary':
+    return 1600
+  elif card.rarity == 'Epic':
+    return 400
+  elif card.rarity == 'Rare':
+    return 100
+  elif card.rarity == 'Common':
+    return 40
+  else:
+    print 'Warning: potential incorrect rarity for card: %s' % card.name
+    return 0
 
 def deck_forge_cost (deck):
   cost = 0
-  for (card_id, count) in deck.cards:
-    available = COLLECTION[card_id] if card_id in COLLECTION else 0
+  for (id, count) in deck.cards:
+    card = card_by_id(id)
+    available = COLLECTION[id] if id in COLLECTION else 0
     if count > available:
-      cost += card_forge_cost(card_id) * (count - available)
+      cost += card_forge_cost(card) * (count - available)
   return cost
+
+def show_deck (deck):
+  print deck
 
 if __name__ == '__main__':
   (database_name, collection_name, hero_class, dust_amount) = parse_arg((str, str, str, int), 3)
@@ -38,7 +52,7 @@ if __name__ == '__main__':
   for row in deck_select_by_class(hero_class):
     deck = Deck.from_database(row)
     if deck.is_valid() and deck_forge_cost(deck) <= dust_amount:
-      print deck
+      show_deck(deck)
       raw_input('Press any key to continue.')
       print '\n'
   database_close()

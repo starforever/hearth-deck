@@ -1,7 +1,7 @@
 from datetime import datetime
 from cStringIO import StringIO
 from cPickle import loads as pickle_loads
-from card_id import get_name as get_card_name
+from card_info import card_by_id
 
 class Deck ():
 
@@ -27,8 +27,11 @@ class Deck ():
 
   def is_valid (self):
     total = 0
-    for card in self.cards:
-      total += card[1]
+    for (id, count) in self.cards:
+      total += count
+      card = card_by_id(id)
+      if card.hero_class in ['Special', 'Tutorial', 'Discard']:
+        return False
     return total == 30
 
   def __str__ (self):
@@ -38,7 +41,7 @@ class Deck ():
     ss.write('Type: %s, Class: %s, Cost: %d\n' % (self.type, self.hero_class, self.dust_cost))
     ss.write('Rating: %d, Views: %d, Comments: %d\n' % (self.rating, self.num_view, self.num_comment))
     ss.write('Updated: %s\n' % self.time_update)
-    ss.write('Cards:\n%s\n' % '\n'.join(['%s x %d' % (get_card_name(c[0]), c[1]) for c in self.cards]))
+    ss.write('Cards:\n%s\n' % '\n'.join(['%s x %d' % (card_by_id(c[0]).name, c[1]) for c in self.cards]))
     ss.write('Scan count: %d\n' % self.scan_count)
     ss.write('\n')
     return ss.getvalue()

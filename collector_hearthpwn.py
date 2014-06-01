@@ -5,7 +5,7 @@ import lxml.html
 from util import parse_arg
 from model import Deck
 from database_op import database_connect, database_close, deck_create, deck_insert, deck_find_by_id, deck_remove_unscanned
-from card_id import get_id as get_card_id
+from card_info import card_by_name
 from key_store import save as save_key, load as load_key
 
 REST_INTERVAL = 3
@@ -37,7 +37,7 @@ def parse_deck (deck):
   for row in rows:
     name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
     count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
-    deck.cards.append((get_card_id(name), count))
+    deck.cards.append((card_by_name(name).id, count))
 
 def parse_row (row):
   deck = Deck()
