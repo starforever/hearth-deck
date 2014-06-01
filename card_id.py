@@ -25,4 +25,4 @@ def get_id (name):
 def get_name (id):
   return CARD_NAME[id]
 
-init('cardid.txt')
+init('card_id.txt')
