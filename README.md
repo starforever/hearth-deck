@@ -18,3 +18,10 @@ In the future I may consider adding support to collect decks from more websites.
 
 I hope HearthDeck can save you time to find a good deck to play and enrich your gaming experience.
 Good luck and have fun!
+
+Dependence
+--------
+
+The following Python packages are required to run HearthDeck:
+lxml
+termcolor
