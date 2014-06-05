@@ -2,6 +2,9 @@ from termcolor import colored
 
 class Card ():
 
+  FORGE_COST = {'Legendary': 1600, 'Epic': 400, 'Rare': 100, 'Common': 40, 'Basic': 1000000}
+  COLOR = {'Legendary': 'yellow', 'Epic': 'magenta', 'Rare': 'blue', 'Common': 'green', 'Basic': 'white'}
+
   @classmethod
   def from_csv (cls, row):
     card = Card()
@@ -22,33 +25,15 @@ class Card ():
     return card
 
   def forge_cost (self):
-    if self.rarity == 'Legendary':
-      return 1600
-    elif self.rarity == 'Epic':
-      return 400
-    elif self.rarity == 'Rare':
-      return 100
-    elif self.rarity == 'Common':
-      return 40
-    elif self.rarity == 'Basic':
-      return 1000000 # Basic cards cannot be forged
-    else:
+    if self.rarity not in Card.FORGE_COST:
       raise Exception('Incorrect rarity for card: %s' % self.name)
+    else:
+      return Card.FORGE_COST[self.rarity]
 
   def colored_name (self):
-    if self.rarity == 'Legendary':
-      color = 'yellow'
-    elif self.rarity == 'Epic':
-      color = 'magenta'
-    elif self.rarity == 'Rare':
-      color = 'blue'
-    elif self.rarity == 'Common':
-      color = 'green'
-    elif self.rarity == 'Basic':
-      color = 'white'
-    else:
+    if self.rarity not in Card.COLOR:
       raise Exception('Incorrect rarity for card: %s' % self.name)
-    return colored(self.name, color, attrs=['bold'])
+    return colored(self.name, Card.COLOR[self.rarity], attrs=['bold'])
 
   def __str__ (self):
     ss = StringIO()
