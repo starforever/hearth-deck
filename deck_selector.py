@@ -37,11 +37,11 @@ def show_deck (deck, cost_total, card_hand, card_craft):
   print '%s (by %s)' % (deck.name, deck.author)
   print 'Rating: %d, Type: %s' % (deck.rating, deck.type)
   print 'Cards already in your hand:'
-  print '\n'.join(['  %s x %d' % (card.name, count) for (card, count) in card_hand])
+  print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_hand])
   if card_craft:
     print 'Cards need crafting:'
-    print '\n'.join(['  %s x %d ($%d)' % (card.name, count, card.forge_cost() * count) for (card, count) in card_craft])
-    print '  Total: $%d' % cost_total
+    print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_craft])
+    print '  Total Arcane Dust: %d' % cost_total
   print
 
 if __name__ == '__main__':

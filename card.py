@@ -1,3 +1,5 @@
+from termcolor import colored
+
 class Card ():
 
   @classmethod
@@ -32,6 +34,21 @@ class Card ():
       return 1000000 # Basic cards cannot be forged
     else:
       raise Exception('Incorrect rarity for card: %s' % self.name)
+
+  def colored_name (self):
+    if self.rarity == 'Legendary':
+      color = 'yellow'
+    elif self.rarity == 'Epic':
+      color = 'magenta'
+    elif self.rarity == 'Rare':
+      color = 'blue'
+    elif self.rarity == 'Common':
+      color = 'green'
+    elif self.rarity == 'Basic':
+      color = 'white'
+    else:
+      raise Exception('Incorrect rarity for card: %s' % self.name)
+    return colored(self.name, color, attrs=['bold'])
 
   def __str__ (self):
     ss = StringIO()
