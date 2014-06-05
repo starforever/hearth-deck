@@ -54,7 +54,7 @@ if __name__ == '__main__':
     deck = Deck.from_database(row)
     if deck.is_valid():
       (cost_total, card_hand, card_craft) = find_craft_card(deck)
-      if cost_total <= dust_amount:
+      if cost_total <= dust_amount or dust_amount == -1:
         show_deck(deck, cost_total, card_hand, card_craft)
         if raw_input('Press Enter to continue. Input (X) and enter to exit.\n').upper() == 'X':
           break
