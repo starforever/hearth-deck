@@ -369,7 +369,7 @@ id	name	type	class	race	rarity	cost	attack	health	power
 367	Shield Block	Ability	Warrior		Basic	3			Gain 5 Armor. Draw a card.
 368	Mortal Strike	Ability	Warrior		Rare	4			"Deal 4 damage. If you have 12 or less Health, deal 6 instead."
 369	Brawl	Ability	Warrior		Epic	5			Destroy all minions except one. (chosen randomly)
-370	Eaglehorn Bow	Weapon	Hunter		Rare	3	3	2	"Whenever a Secret is revealed, gain +1 Durability."
+370	Eaglehorn Bow	Weapon	Hunter		Rare	3	3	2	"Whenever a friendly Secret is revealed, gain +1 Durability."
 371	Gladiator's Longbow	Weapon	Hunter		Epic	7	5	2	Your hero is Immune while attacking.
 372	Light's Justice	Weapon	Paladin		Basic	1	1	4	
 373	Sword of Justice	Weapon	Paladin		Epic	3	1	5	"Whenever you summon a minion, give it +1/+1 and this loses 1 Durability."
