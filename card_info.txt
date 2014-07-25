@@ -1,482 +1,566 @@
-id	name	type	class	race	rarity	cost	attack	health	power
-0	Wisp	Minion	Neutral		Common	0	1	1	
-1	Flame Imp	Minion	Warlock	Demon	Common	1	3	2	Battlecry: Deal 3 damage to your hero.
-2	Dust Devil	Minion	Shaman		Common	1	3	1	Windfury. Overload: (2)
-3	Mana Wyrm	Minion	Mage		Common	1	1	3	"Whenever you cast a spell, gain +1 Attack."
-4	Northshire Cleric	Minion	Priest		Basic	1	1	3	"Whenever a minion is healed, draw a card."
-5	Voidwalker	Minion	Warlock	Demon	Basic	1	1	3	Taunt
-6	Abusive Sergeant	Minion	Neutral		Common	1	2	1	Battlecry: Give a minion +2 Attack this turn.
-7	Leper Gnome	Minion	Neutral		Common	1	2	1	Deathrattle: Deal 2 damage to the enemy hero.
-8	Murloc Raider	Minion	Neutral	Murloc	Basic	1	2	1	
-9	Southsea Deckhand	Minion	Neutral	Pirate	Common	1	2	1	Has Charge while you have a weapon equipped.
-10	Voodoo Doctor	Minion	Neutral		Basic	1	2	1	Battlecry: Restore 2 Health.
-11	Worgen Infiltrator	Minion	Neutral		Common	1	2	1	Stealth
-12	Young Priestess	Minion	Neutral		Rare	1	2	1	"At the end of your turn, give another random friendly minion +1 Health."
-13	Bloodsail Corsair	Minion	Neutral	Pirate	Rare	1	1	2	Battlecry: Remove 1 Durability from your opponent's weapon.
-14	Goldshire Footman	Minion	Neutral		Basic	1	1	2	Taunt
-15	Hungry Crab	Minion	Neutral	Beast	Epic	1	1	2	Battlecry: Destroy a Murloc and gain +2/+2.
-16	Lightwarden	Minion	Neutral		Rare	1	1	2	"Whenever a character is healed, gain +2 Attack."
-17	Murloc Tidecaller	Minion	Neutral	Murloc	Rare	1	1	2	"Whenever a Murloc is summoned, gain +1 Attack."
-18	Secretkeeper	Minion	Neutral		Rare	1	1	2	"Whenever a Secret is played, gain +1/+1."
-19	Angry Chicken	Minion	Neutral	Beast	Rare	1	1	1	Enrage: +5 Attack.
-20	Argent Squire	Minion	Neutral		Common	1	1	1	Divine Shield
-21	Elven Archer	Minion	Neutral		Basic	1	1	1	Battlecry: Deal 1 damage.
-22	Grimscale Oracle	Minion	Neutral	Murloc	Basic	1	1	1	ALL other Murlocs have +1 Attack.
-23	Stonetusk Boar	Minion	Neutral	Beast	Basic	1	1	1	Charge
-24	Timber Wolf	Minion	Hunter	Beast	Basic	1	1	1	Your other Beasts have +1 Attack.
-25	Young Dragonhawk	Minion	Neutral	Beast	Common	1	1	1	Windfury
-26	Blood Imp	Minion	Warlock	Demon	Common	1	0	1	"Stealth. At the end of your turn, give another random friendly minion +1 Health."
-27	Shieldbearer	Minion	Neutral		Common	1	0	4	Taunt
-28	Ancient Watcher	Minion	Neutral		Rare	2	4	5	Can't Attack.
-29	Millhouse Manastorm	Minion	Neutral		Legendary	2	4	4	Battlecry: Enemy spells cost (0) next turn.
-30	Succubus	Minion	Warlock	Demon	Basic	2	4	3	Battlecry: Discard a random card.
-31	Acidic Swamp Ooze	Minion	Neutral		Basic	2	3	2	Battlecry: Destroy your opponent's weapon.
-32	Bloodfen Raptor	Minion	Neutral	Beast	Basic	2	3	2	
-33	Faerie Dragon	Minion	Neutral	Dragon	Common	2	3	2	Can't be targeted by Spells or Hero Powers.
-34	Knife Juggler	Minion	Neutral		Rare	2	3	2	"After you summon a minion, deal 1 damage to a random enemy."
-35	Mad Bomber	Minion	Neutral		Common	2	3	2	Battlecry: Deal 3 damage randomly split between all other characters.
-36	Sorcerer's Apprentice	Minion	Mage		Common	2	3	2	Your spells cost (1) less.
-37	Wild Pyromancer	Minion	Neutral		Rare	2	3	2	"After you cast a spell, deal 1 damage to ALL minions."
-38	Youthful Brewmaster	Minion	Neutral		Common	2	3	2	Battlecry: Return a friendly minion from the battlefield to your hand.
-39	Amani Berserker	Minion	Neutral		Common	2	2	3	Enrage: +3 Attack
-40	Bloodsail Raider	Minion	Neutral	Pirate	Common	2	2	3	Battlecry: Gain Attack equal to the Attack of your weapon.
-41	River Crocolisk	Minion	Neutral	Beast	Basic	2	2	3	
-42	Sunfury Protector	Minion	Neutral		Rare	2	2	3	Battlecry: Give adjacent minions Taunt.
-43	Argent Protector	Minion	Paladin		Common	2	2	2	Battlecry: Give a friendly minion Divine Shield.
-44	Crazed Alchemist	Minion	Neutral		Rare	2	2	2	Battlecry: Swap the Attack and Health of a minion.
-45	Cruel Taskmaster	Minion	Warrior		Common	2	2	2	Battlecry: Deal 1 damage to a minion and give it +2 Attack.
-46	Defias Ringleader	Minion	Rogue		Common	2	2	2	Combo: Summon a 2/1 Defias Bandit.
-47	Dire Wolf Alpha	Minion	Neutral	Beast	Common	2	2	2	Adjacent minions have +1 Attack.
-48	Frostwolf Grunt	Minion	Neutral		Basic	2	2	2	Taunt
-49	Kobold Geomancer	Minion	Neutral		Basic	2	2	2	Spell Damage +1
-50	Mana Wraith	Minion	Neutral		Rare	2	2	2	ALL minions cost (1) more.
-51	Pint-Sized Summoner	Minion	Neutral		Rare	2	2	2	The first minion you play each turn costs (1) less.
-52	Scavenging Hyena	Minion	Hunter	Beast	Common	2	2	2	"Whenever a friendly Beast dies, gain +2/+1."
-53	Armorsmith	Minion	Warrior		Rare	2	1	4	"Whenever a friendly minion takes damage, gain 1 Armor."
-54	Mana Addict	Minion	Neutral		Rare	2	1	3	"Whenever you cast a spell, gain +2 Attack this turn."
-55	Master Swordsmith	Minion	Neutral		Rare	2	1	3	"At the end of your turn, give another random friendly minion +1 Attack."
-56	Bluegill Warrior	Minion	Neutral	Murloc	Basic	2	2	1	Charge
-57	Ironbeak Owl	Minion	Neutral	Beast	Common	2	2	1	Battlecry: Silence a minion.
-58	Loot Hoarder	Minion	Neutral		Common	2	2	1	Deathrattle: Draw a card.
-59	Murloc Tidehunter	Minion	Neutral	Murloc	Basic	2	2	1	Battlecry: Summon a 1/1 Murloc Scout.
-60	Starving Buzzard	Minion	Hunter	Beast	Basic	2	2	1	"Whenever you summon a Beast, draw a card."
-61	Bloodmage Thalnos	Minion	Neutral		Legendary	2	1	1	Spell Damage +1. Deathrattle: Draw a card.
-62	Captain's Parrot	Minion	Neutral	Beast	Epic	2	1	1	Battlecry: Put a random Pirate from your deck into your hand.
-63	Novice Engineer	Minion	Neutral		Basic	2	1	1	Battlecry: Draw a card.
-64	Patient Assassin	Minion	Rogue		Epic	2	1	1	Stealth. Destroy any minion damaged by this minion.
-65	Doomsayer	Minion	Neutral		Epic	2	0	7	"At the start of your turn, destroy ALL minions."
-66	Flametongue Totem	Minion	Shaman	Totem	Basic	2	0	3	Adjacent minions have +2 Attack.
-67	Lightwell	Minion	Priest		Rare	2	0	5	"At the start of your turn, restore 3 Health to a damaged friendly character."
-68	Lorewalker Cho	Minion	Neutral		Legendary	2	0	4	"Whenever a player casts a spell, put a copy into the other player's hand."
-69	Nat Pagle	Minion	Neutral		Legendary	2	0	4	"At the start of your turn, you have a 50% chance to draw an extra card."
-70	Injured Blademaster	Minion	Neutral		Rare	3	4	7	Battlecry: Deal 4 damage to HIMSELF.
-71	King Mukla	Minion	Neutral	Beast	Legendary	3	5	5	Battlecry: Give your opponent 2 Bananas.
-72	Felguard	Minion	Warlock	Demon	Rare	3	3	5	Taunt. Battlecry: Destroy one of your Mana Crystals.
-73	Kirin Tor Mage	Minion	Mage		Rare	3	4	3	Battlecry: The next Secret you play this turn costs (0).
-74	Aldor Peacekeeper	Minion	Paladin		Rare	3	3	3	Battlecry: Change an enemy minion's Attack to 1.
-75	Blood Knight	Minion	Neutral		Epic	3	3	3	Battlecry: All minions lose Divine Shield. Gain +3/+3 for each Shield lost.
-76	Earthen Ring Farseer	Minion	Neutral		Common	3	3	3	Battlecry: Restore 3 Health.
-77	Ironfur Grizzly	Minion	Neutral	Beast	Basic	3	3	3	Taunt
-78	Mind Control Tech	Minion	Neutral		Rare	3	3	3	"Battlecry: If your opponent has 4 or more minions, take control of one at random."
-79	Murloc Warleader	Minion	Neutral	Murloc	Epic	3	3	3	ALL other Murlocs have +2/+1.
-80	Raging Worgen	Minion	Neutral		Common	3	3	3	Enrage: Windfury and +1 Attack
-81	SI:7 Agent	Minion	Rogue		Rare	3	3	3	Combo: Deal 2 damage.
-82	Southsea Captain	Minion	Neutral	Pirate	Epic	3	3	3	Your other Pirates have +1/+1.
-83	Tinkmaster Overspark	Minion	Neutral		Legendary	3	3	3	Battlecry: Transform another random minion into a 5/5 Devilsaur or a 1/1 Squirrel.
-84	Void Terror	Minion	Warlock	Demon	Rare	3	3	3	Battlecry: Destroy the minions on either side of this minion and gain their Attack and Health.
-85	Arcane Golem	Minion	Neutral		Rare	3	4	2	Charge. Battlecry: Give your opponent a Mana Crystal.
-86	Big Game Hunter	Minion	Neutral		Epic	3	4	2	Battlecry: Destroy a minion with an Attack of 7 or more.
-87	Jungle Panther	Minion	Neutral	Beast	Common	3	4	2	Stealth
-88	Frothing Berserker	Minion	Warrior		Rare	3	2	4	"Whenever a minion takes damage, gain +1 Attack."
-89	Unbound Elemental	Minion	Shaman		Common	3	2	4	"Whenever you play a card with Overload, gain +1/+1."
-90	Shattered Sun Cleric	Minion	Neutral		Basic	3	3	2	Battlecry: Give a friendly minion +1/+1.
-91	Coldlight Seer	Minion	Neutral	Murloc	Rare	3	2	3	Battlecry: Give ALL other Murlocs +2 Health.
-92	Emperor Cobra	Minion	Neutral	Beast	Rare	3	2	3	Destroy any minion damaged by this minion.
-93	Flesheating Ghoul	Minion	Neutral		Common	3	2	3	"Whenever a minion dies, gain +1 Attack."
-94	Harvest Golem	Minion	Neutral		Common	3	2	3	Deathrattle: Summon a 2/1 Damaged Golem.
-95	Razorfen Hunter	Minion	Neutral		Basic	3	2	3	Battlecry: Summon a 1/1 Boar.
-96	Tauren Warrior	Minion	Neutral		Common	3	2	3	Taunt. Enrage: +3 Attack
-97	Thrallmar Farseer	Minion	Neutral		Common	3	2	3	Windfury
-98	Warsong Commander	Minion	Warrior		Basic	3	2	3	"Whenever you summon a minion with 3 or less Attack, give it Charge."
-99	Magma Rager	Minion	Neutral		Basic	3	5	1	
-100	Imp Master	Minion	Neutral		Rare	3	1	5	"At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp."
-101	Coldlight Oracle	Minion	Neutral	Murloc	Rare	3	2	2	Battlecry: Each player draws 2 cards.
-102	Edwin VanCleef	Minion	Rogue		Legendary	3	2	2	Combo: Gain +2/+2 for each card played earlier this turn.
-103	Ironforge Rifleman	Minion	Neutral		Basic	3	2	2	Battlecry: Deal 1 damage.
-104	Questing Adventurer	Minion	Neutral		Rare	3	2	2	"Whenever you play a card, gain +1/+1."
-105	Raid Leader	Minion	Neutral		Basic	3	2	2	Your other minions have +1 Attack.
-106	Dalaran Mage	Minion	Neutral		Basic	3	1	4	Spell Damage +1
-107	Demolisher	Minion	Neutral		Rare	3	1	4	"At the start of your turn, deal 2 damage to a random enemy."
-108	Silverback Patriarch	Minion	Neutral	Beast	Basic	3	1	4	Taunt
-109	Scarlet Crusader	Minion	Neutral		Common	3	3	1	Divine Shield
-110	Wolfrider	Minion	Neutral		Basic	3	3	1	Charge
-111	Acolyte of Pain	Minion	Neutral		Common	3	1	3	"Whenever this minion takes damage, draw a card."
-112	Alarm-o-Bot	Minion	Neutral		Rare	3	0	3	"At the start of your turn, swap this minion with a random one in your hand."
-113	Mana Tide Totem	Minion	Shaman	Totem	Rare	3	0	3	"At the end of your turn, draw a card."
-114	Pit Lord	Minion	Warlock	Demon	Epic	4	5	6	Battlecry: Deal 5 damage to your hero.
-115	Ancient Brewmaster	Minion	Neutral		Common	4	5	4	Battlecry: Return a friendly minion from the battlefield to your hand.
-116	Chillwind Yeti	Minion	Neutral		Basic	4	4	5	
-117	Water Elemental	Minion	Mage		Basic	4	3	6	Freeze any character damaged by this minion.
-118	Dark Iron Dwarf	Minion	Neutral		Common	4	4	4	Battlecry: Give a minion +2 Attack this turn.
-119	Master of Disguise	Minion	Rogue		Rare	4	4	4	Battlecry: Give a friendly minion Stealth.
-120	Ogre Magi	Minion	Neutral		Basic	4	4	4	Spell Damage +1
-121	Auchenai Soulpriest	Minion	Priest		Rare	4	3	5	Your cards and powers that restore Health now deal damage instead.
-122	Sen'jin Shieldmasta	Minion	Neutral		Basic	4	3	5	Taunt
-123	Violet Teacher	Minion	Neutral		Rare	4	3	5	"Whenever you cast a spell, summon a 1/1 Violet Apprentice."
-124	Oasis Snapjaw	Minion	Neutral	Beast	Basic	4	2	7	
-125	Leeroy Jenkins	Minion	Neutral		Legendary	4	6	2	Charge. Battlecry: Summon two 1/1 Whelps for your opponent.
-126	Houndmaster	Minion	Hunter		Basic	4	4	3	Battlecry: Give a friendly Beast +2/+2 and Taunt.
-127	Kor'kron Elite	Minion	Warrior		Basic	4	4	3	Charge
-128	Spellbreaker	Minion	Neutral		Common	4	4	3	Battlecry: Silence a minion.
-129	Ancient Mage	Minion	Neutral		Rare	4	2	5	Battlecry: Give adjacent minions Spell Damage +1.
-130	Stormwind Knight	Minion	Neutral		Basic	4	2	5	Charge
-131	Arathi Weaponsmith	Minion	Warrior		Common	4	3	3	Battlecry: Equip a 2/2 weapon.
-132	Dread Corsair	Minion	Neutral	Pirate	Common	4	3	3	Taunt. Costs (1) less per Attack of your weapon.
-133	Ethereal Arcanist	Minion	Mage		Rare	4	3	3	"If you control a Secret at the end of your turn, gain +2/+2."
-134	Silvermoon Guardian	Minion	Neutral		Common	4	3	3	Divine Shield
-135	Windspeaker	Minion	Shaman		Basic	4	3	3	Battlecry: Give a friendly minion Windfury.
-136	Cult Master	Minion	Neutral		Common	4	4	2	"Whenever one of your other minions dies, draw a card."
-137	Dragonling Mechanic	Minion	Neutral		Basic	4	2	4	Battlecry: Summon a 2/1 Mechanical Dragonling.
-138	Gnomish Inventor	Minion	Neutral		Basic	4	2	4	Battlecry: Draw a card.
-139	Keeper of the Grove	Minion	Druid		Rare	4	2	4	Choose One - Deal 2 damage; or Silence a minion.
-140	Old Murk-Eye	Minion	Neutral	Murloc	Legendary	4	2	4	Charge. Has +1 Attack for each other Murloc on the battlefield.
-141	Mogu'shan Warden	Minion	Neutral		Common	4	1	7	Taunt
-142	Defender of Argus	Minion	Neutral		Rare	4	2	3	Battlecry: Give adjacent minions +1/+1 and Taunt.
-143	Twilight Drake	Minion	Neutral	Dragon	Rare	4	4	1	Battlecry: Gain +1 Health for each card in your hand.
-144	Lightspawn	Minion	Priest		Common	4	0	5	This minion's Attack is always equal to its Health.
-145	Summoning Portal	Minion	Warlock		Common	4	0	4	"Your minions cost (2) less, but not less than (1)."
-146	Earth Elemental	Minion	Shaman		Epic	5	7	8	Taunt. Overload: (3)
-147	Venture Co. Mercenary	Minion	Neutral		Common	5	7	6	Your minions cost (3) more.
-148	Doomguard	Minion	Warlock	Demon	Rare	5	5	7	Charge. Battlecry: Discard two random cards.
-149	Elite Tauren Chieftain	Minion	Neutral		Legendary	5	5	5	Battlecry: Give both players the power to ROCK! (with a Power Chord card)
-150	Stranglethorn Tiger	Minion	Neutral	Beast	Common	5	5	5	Stealth
-151	Spiteful Smith	Minion	Neutral		Common	5	4	6	Enrage: Your weapon has +2 Attack.
-152	Booty Bay Bodyguard	Minion	Neutral		Basic	5	5	4	Taunt
-153	Captain Greenskin	Minion	Neutral	Pirate	Legendary	5	5	4	Battlecry: Give your weapon +1/+1.
-154	Harrison Jones	Minion	Neutral		Legendary	5	5	4	Battlecry: Destroy your opponent's weapon and draw cards equal to its Durability.
-155	Darkscale Healer	Minion	Neutral		Basic	5	4	5	Battlecry: Restore 2 Health to all friendly characters.
-156	Fen Creeper	Minion	Neutral		Common	5	3	6	Taunt
-157	Abomination	Minion	Neutral		Rare	5	4	4	Taunt. Deathrattle: Deal 2 damage to ALL characters.
-158	Azure Drake	Minion	Neutral	Dragon	Rare	5	4	4	Spell Damage +1. Battlecry: Draw a card.
-159	Druid of the Claw	Minion	Druid		Common	5	4	4	Choose One - Charge; or +2 Health and Taunt.
-160	Frostwolf Warlord	Minion	Neutral		Basic	5	4	4	Battlecry: Gain +1/+1 for each other friendly minion on the battlefield.
-161	Gadgetzan Auctioneer	Minion	Neutral		Rare	5	4	4	"Whenever you cast a spell, draw a card."
-162	Nightblade	Minion	Neutral		Basic	5	4	4	Battlecry: Deal 3 damage to the enemy hero.
-163	Silver Hand Knight	Minion	Neutral		Common	5	4	4	Battlecry: Summon a 2/2 Squire.
-164	Stampeding Kodo	Minion	Neutral	Beast	Rare	5	3	5	Battlecry: Destroy a random enemy minion with 2 or less Attack.
-165	Gurubashi Berserker	Minion	Neutral		Basic	5	2	7	"Whenever this minion takes damage, gain +3 Attack."
-166	Tundra Rhino	Minion	Hunter	Beast	Basic	5	2	5	Your Beasts have Charge.
-167	Faceless Manipulator	Minion	Neutral		Epic	5	3	3	Battlecry: Choose a minion and become a copy of it.
-168	Stormpike Commando	Minion	Neutral		Basic	5	4	2	Battlecry: Deal 2 damage.
-169	The Beast	Minion	Neutral	Beast	Legendary	6	9	7	Deathrattle: Summon a 3/3 Finkle Einhorn for your opponent.
-170	Boulderfist Ogre	Minion	Neutral		Basic	6	6	7	
-171	Dread Infernal	Minion	Warlock	Demon	Basic	6	6	6	Battlecry: Deal 1 damage to ALL other characters.
-172	Gelbin Mekkatorque	Minion	Neutral		Legendary	6	6	6	Battlecry: Summon an AWESOME invention.
-173	Temple Enforcer	Minion	Priest		Common	6	6	6	Battlecry: Give a friendly minion +3 Health.
-174	Illidan Stormrage	Minion	Neutral	Demon	Legendary	6	7	5	"Whenever you play a card, summon a 2/1 Flame of Azzinoth."
-175	Fire Elemental	Minion	Shaman		Basic	6	6	5	Battlecry: Deal 3 damage.
-176	Lord of the Arena	Minion	Neutral		Basic	6	6	5	Taunt
-177	Savannah Highmane	Minion	Hunter	Beast	Rare	6	6	5	Deathrattle: Summon two 2/2 Hyenas.
-178	Archmage	Minion	Neutral		Basic	6	4	7	Spell Damage +1
-179	Frost Elemental	Minion	Neutral		Common	6	5	5	Battlecry: Freeze a character.
-180	Sylvanas Windrunner	Minion	Neutral		Legendary	6	5	5	Deathrattle: Take control of a random enemy minion.
-181	Priestess of Elune	Minion	Neutral		Common	6	5	4	Battlecry: Restore 4 Health to your hero.
-182	Cabal Shadow Priest	Minion	Priest		Epic	6	4	5	Battlecry: Take control of an enemy minion that has 2 or less Attack.
-183	Cairne Bloodhoof	Minion	Neutral		Legendary	6	4	5	Deathrattle: Summon a 4/5 Baine Bloodhoof.
-184	Sunwalker	Minion	Neutral		Rare	6	4	5	Taunt. Divine Shield
-185	The Black Knight	Minion	Neutral		Legendary	6	4	5	Battlecry: Destroy an enemy minion with Taunt.
-186	Windfury Harpy	Minion	Neutral		Common	6	4	5	Windfury
-187	Hogger	Minion	Neutral		Legendary	6	4	4	"At the end of your turn, summon a 2/2 Gnoll with Taunt."
-188	Kidnapper	Minion	Rogue		Epic	6	5	3	Combo: Return a minion to its owner's hand.
-189	Reckless Rocketeer	Minion	Neutral		Basic	6	5	2	Charge
-190	Argent Commander	Minion	Neutral		Rare	6	4	2	"Charge, Divine Shield"
-191	Prophet Velen	Minion	Priest		Legendary	7	7	7	Double the damage and healing of your spells and Hero Power.
-192	War Golem	Minion	Neutral		Basic	7	7	7	
-193	Core Hound	Minion	Neutral	Beast	Basic	7	9	5	
-194	Stormwind Champion	Minion	Neutral		Basic	7	6	6	Your other minions have +1/+1.
-195	Baron Geddon	Minion	Neutral		Legendary	7	7	5	"At the end of your turn, deal 2 damage to ALL other characters."
-196	Ravenholdt Assassin	Minion	Neutral		Rare	7	7	5	Stealth
-197	Archmage Antonidas	Minion	Mage		Legendary	7	5	7	"Whenever you cast a spell, put a 'Fireball' spell into your hand."
-198	Guardian of Kings	Minion	Paladin		Basic	7	5	6	Battlecry: Restore 6 Health to your hero.
-199	Ancient of Lore	Minion	Druid		Epic	7	5	5	Choose One - Draw 2 cards; or Restore 5 Health.
-200	Ancient of War	Minion	Druid		Epic	7	5	5	Choose One - +5 Attack; or +5 Health and Taunt.
-201	Ironbark Protector	Minion	Druid		Basic	8	8	8	Taunt
-202	Ragnaros the Firelord	Minion	Neutral		Legendary	8	8	8	"Can't Attack. At the end of your turn, deal 8 damage to a random enemy."
-203	Gruul	Minion	Neutral		Legendary	8	7	7	"At the end of each turn, gain +1/+1."
-204	Tirion Fordring	Minion	Paladin		Legendary	8	6	6	Divine Shield. Taunt. Deathrattle: Equip a 5/3 Ashbringer.
-205	Grommash Hellscream	Minion	Warrior		Legendary	8	4	9	Charge. Enrage: +6 Attack
-206	Al'Akir the Windlord	Minion	Shaman		Legendary	8	3	5	"Windfury, Charge, Divine Shield, Taunt"
-207	Alexstrasza	Minion	Neutral	Dragon	Legendary	9	8	8	Battlecry: Set a hero's remaining Health to 15.
-208	King Krush	Minion	Hunter	Beast	Legendary	9	8	8	Charge
-209	Nozdormu	Minion	Neutral	Dragon	Legendary	9	8	8	Players only have 15 seconds to take their turns.
-210	Onyxia	Minion	Neutral	Dragon	Legendary	9	8	8	Battlecry: Summon 1/1 Whelps until your side of the battlefield is full.
-211	Malygos	Minion	Neutral	Dragon	Legendary	9	4	12	Spell Damage +5
-212	Ysera	Minion	Neutral	Dragon	Legendary	9	4	12	"At the end of your turn, draw a Dream Card."
-213	Lord Jaraxxus	Minion	Warlock	Demon	Legendary	9	3	15	Battlecry: Destroy your hero and replace him with Lord Jaraxxus.
-214	Cenarius	Minion	Druid		Legendary	9	5	8	Choose One - Give your other minions +2/+2; or Summon two 2/2 Treants with Taunt.
-215	Deathwing	Minion	Neutral	Dragon	Legendary	10	12	12	Battlecry: Destroy all other minions and discard your hand.
-216	Sea Giant	Minion	Neutral		Epic	10	8	8	Costs (1) less for each other minion on the battlefield.
-217	Mountain Giant	Minion	Neutral		Epic	12	8	8	Costs (1) less for each other card in your hand.
-218	Molten Giant	Minion	Neutral		Epic	20	8	8	Costs (1) less for each damage your hero has taken.
-219	Innervate	Ability	Druid		Basic	0			Gain 2 Mana Crystals this turn only.
-220	Moonfire	Ability	Druid		Basic	0			Deal 1 damage.
-221	Claw	Ability	Druid		Basic	1			Give your hero +2 Attack this turn and 2 Armor.
-222	Naturalize	Ability	Druid		Common	1			Destroy a minion. Your opponent draws 2 cards.
-223	Savagery	Ability	Druid		Rare	1			Deal damage equal to your hero's Attack to a minion.
-224	Mark of the Wild	Ability	Druid		Basic	2			Give a minion Taunt and +2/+2.
-225	Power of the Wild	Ability	Druid		Common	2			Choose One - Give your minions +1/+1; or Summon a 3/2 Panther.
-226	Wild Growth	Ability	Druid		Basic	2			Gain an empty Mana Crystal.
-227	Wrath	Ability	Druid		Common	2			Choose One - Deal 3 damage to a minion; or 1 damage and draw a card.
-228	Healing Touch	Ability	Druid		Basic	3			Restore 8 Health.
-229	Mark of Nature	Ability	Druid		Common	3			Choose One - Give a minion +4 Attack; or +4 Health and Taunt.
-230	Savage Roar	Ability	Druid		Basic	3			Give your characters +2 Attack this turn.
-231	Bite	Ability	Druid		Rare	4			Give your hero +4 Attack this turn and 4 Armor.
-232	Soul of the Forest	Ability	Druid		Common	4			"Give your minions ""Deathrattle: Summon a 2/2 Treant."""
-233	Swipe	Ability	Druid		Basic	4			Deal 4 damage to an enemy and 1 damage to all other enemies.
-234	Nourish	Ability	Druid		Rare	5			Choose One: Gain 2 Mana Crystals; or Draw 3 cards.
-235	Starfall	Ability	Druid		Rare	5			Choose One: Deal 5 damage to a minion; or 2 damage to all enemy minions.
-236	Force of Nature	Ability	Druid		Epic	6			Summon three 2/2 Treants with Charge that die at the end of the turn.
-237	Starfire	Ability	Druid		Basic	6			Deal 5 damage. Draw a card.
-238	Hunter's Mark	Ability	Hunter		Basic	0			Change a minion's Health to 1.
-239	Arcane Shot	Ability	Hunter		Basic	1			Deal 2 damage.
-240	Bestial Wrath	Ability	Hunter		Epic	1			Give a Beast +2 Attack and Immune this turn.
-241	Flare	Ability	Hunter		Rare	1			All minions lose Stealth. Destroy all enemy Secrets. Draw a card.
-242	Tracking	Ability	Hunter		Basic	1			Look at the top three cards of your deck. Draw one and discard the others.
-243	Explosive Trap	Ability	Hunter		Common	2			"Secret: When your hero is attacked, deal 2 damage to all enemies."
-244	Freezing Trap	Ability	Hunter		Common	2			"Secret: When an enemy minion attacks, return it to its owner's hand and it costs (2) more."
-245	Misdirection	Ability	Hunter		Rare	2			"Secret: When a character attacks your hero, instead he attacks another random character."
-246	Snake Trap	Ability	Hunter		Epic	2			"Secret: When one of your minions is attacked, summon three 1/1 Snakes."
-247	Snipe	Ability	Hunter		Common	2			"Secret: When your opponent plays a minion, deal 4 damage to it."
-248	Animal Companion	Ability	Hunter		Basic	3			Summon a random Beast Companion.
-249	Deadly Shot	Ability	Hunter		Common	3			Destroy a random enemy minion.
-250	Kill Command	Ability	Hunter		Basic	3			"Deal 3 damage. If you have a Beast, deal 5 damage instead."
-251	Unleash the Hounds	Ability	Hunter		Common	3			"For each enemy minion, summon a 1/1 Hound with Charge."
-252	Multi-Shot	Ability	Hunter		Basic	4			Deal 3 damage to two random enemy minions.
-253	Explosive Shot	Ability	Hunter		Rare	5			Deal 5 damage to a minion and 2 damage to adjacent ones.
-254	Arcane Missiles	Ability	Mage		Basic	1			Deal 3 damage randomly split among enemy characters.
-255	Ice Lance	Ability	Mage		Common	1			"Freeze a character. If it was already Frozen, deal 4 damage instead."
-256	Mirror Image	Ability	Mage		Basic	1			Summon two 0/2 minions with Taunt.
-257	Arcane Explosion	Ability	Mage		Basic	2			Deal 1 damage to all enemy minions.
-258	Frostbolt	Ability	Mage		Basic	2			Deal 3 damage to a character and Freeze it.
-259	Arcane Intellect	Ability	Mage		Basic	3			Draw 2 cards.
-260	Counterspell	Ability	Mage		Rare	3			"Secret: When your opponent casts a spell, Counter it."
-261	Frost Nova	Ability	Mage		Basic	3			Freeze all enemy minions.
-262	Ice Barrier	Ability	Mage		Common	3			"Secret: As soon as your hero is attacked, gain 8 Armor."
-263	Ice Block	Ability	Mage		Epic	3			"Secret: When your hero takes fatal damage, prevent it and become Immune this turn."
-264	Mirror Entity	Ability	Mage		Common	3			"Secret: When your opponent plays a minion, summon a copy of it."
-265	Spellbender	Ability	Mage		Epic	3			"Secret: When an enemy casts a spell on a minion, summon a 1/3 as the new target."
-266	Vaporize	Ability	Mage		Rare	3			"Secret: When a minion attacks your hero, destroy it."
-267	Cone of Cold	Ability	Mage		Common	4			"Freeze a minion and the minions next to it, and deal 1 damage to them."
-268	Fireball	Ability	Mage		Basic	4			Deal 6 damage.
-269	Polymorph	Ability	Mage		Basic	4			Transform a minion into a 1/1 Sheep.
-270	Blizzard	Ability	Mage		Rare	6			Deal 2 damage to all enemy minions and Freeze them.
-271	Flamestrike	Ability	Mage		Basic	7			Deal 4 damage to all enemy minions.
-272	Pyroblast	Ability	Mage		Epic	10			Deal 10 damage.
-273	Blessing of Might	Ability	Paladin		Basic	1			Give a minion +3 Attack.
-274	Blessing of Wisdom	Ability	Paladin		Common	1			"Choose a minion. Whenever it attacks, draw a card."
-275	Eye for an Eye	Ability	Paladin		Common	1			"Secret: When your hero takes damage, deal that much damage to the enemy hero."
-276	Hand of Protection	Ability	Paladin		Basic	1			Give a minion Divine Shield.
-277	Humility	Ability	Paladin		Basic	1			Change a minion's Attack to 1.
-278	Noble Sacrifice	Ability	Paladin		Common	1			"Secret: When an enemy attacks, summon a 2/1 Defender as the new target."
-279	Redemption	Ability	Paladin		Common	1			"Secret: When one of your minions dies, return it to life with 1 Health."
-280	Repentance	Ability	Paladin		Common	1			"Secret: When your opponent plays a minion, reduce its Health to 1."
-281	Equality	Ability	Paladin		Rare	2			Change the Health of ALL minions to 1.
-282	Holy Light	Ability	Paladin		Basic	2			Restore 6 Health.
-283	Divine Favor	Ability	Paladin		Rare	3			Draw cards until you have as many in hand as your opponent.
-284	Blessing of Kings	Ability	Paladin		Basic	4			Give a minion +4/+4.
-285	Consecration	Ability	Paladin		Basic	4			Deal 2 damage to all enemies.
-286	Hammer of Wrath	Ability	Paladin		Basic	4			Deal 3 damage. Draw a card.
-287	Blessed Champion	Ability	Paladin		Rare	5			Double a minion's Attack.
-288	Holy Wrath	Ability	Paladin		Rare	5			Draw a card and deal damage equal to its cost.
-289	Avenging Wrath	Ability	Paladin		Epic	6			Deal 8 damage randomly split among enemy characters.
-290	Lay on Hands	Ability	Paladin		Epic	8			Restore 8 Health. Draw 3 cards.
-291	Circle of Healing	Ability	Priest		Common	0			Restore 4 Health to ALL minions.
-292	Silence	Ability	Priest		Common	0			Silence a minion.
-293	Holy Smite	Ability	Priest		Basic	1			Deal 2 damage.
-294	Inner Fire	Ability	Priest		Common	1			Change a minion's Attack to be equal to its Health.
-295	Mind Vision	Ability	Priest		Basic	1			Put a copy of a random card in your opponent's hand into your hand.
-296	Power Word: Shield	Ability	Priest		Basic	1			Give a minion +2 Health. Draw a card.
-297	Divine Spirit	Ability	Priest		Basic	2			Double a minion's Health.
-298	Mind Blast	Ability	Priest		Basic	2			Deal 5 damage to the enemy hero.
-299	Shadow Word: Pain	Ability	Priest		Basic	2			Destroy a minion with 3 or less Attack.
-300	Shadow Word: Death	Ability	Priest		Basic	3			Destroy a minion with an Attack of 5 or more.
-301	Shadowform	Ability	Priest		Epic	3			Your Hero Power becomes 'Deal 2 damage'. If already in Shadowform: 3 damage.
-302	Thoughtsteal	Ability	Priest		Common	3			Copy 2 cards from your opponent's deck and put them into your hand.
-303	Mass Dispel	Ability	Priest		Rare	4			Silence all enemy minions. Draw a card.
-304	Mindgames	Ability	Priest		Epic	4			Put a copy of a random minion from your opponent's deck into the battlefield.
-305	Shadow Madness	Ability	Priest		Rare	4			Gain control of an enemy minion with 3 or less Attack until end of turn.
-306	Holy Nova	Ability	Priest		Basic	5			Deal 2 damage to all enemies. Restore 2 Health to all friendly characters.
-307	Holy Fire	Ability	Priest		Rare	6			Deal 5 damage. Restore 5 Health to your hero.
-308	Mind Control	Ability	Priest		Basic	10			Take control of an enemy minion.
-309	Backstab	Ability	Rogue		Basic	0			Deal 2 damage to an undamaged minion.
-310	Preparation	Ability	Rogue		Epic	0			The next spell you cast this turn costs (3) less.
-311	Shadowstep	Ability	Rogue		Common	0			Return a friendly minion to your hand. It costs (2) less.
-312	Cold Blood	Ability	Rogue		Common	1			Give a minion +2 Attack. Combo: +4 Attack instead.
-313	Conceal	Ability	Rogue		Common	1			Give your minions Stealth until your next turn.
-314	Deadly Poison	Ability	Rogue		Basic	1			Give your weapon +2 Attack.
-315	Sinister Strike	Ability	Rogue		Basic	1			Deal 3 damage to the enemy hero.
-316	Betrayal	Ability	Rogue		Common	2			Force an enemy minion to deal its damage to the minions next to it.
-317	Blade Flurry	Ability	Rogue		Rare	2			Destroy your weapon and deal its damage to all enemies.
-318	Eviscerate	Ability	Rogue		Common	2			Deal 2 damage. Combo: Deal 4 damage instead.
-319	Sap	Ability	Rogue		Basic	2			Return an enemy minion to your opponent's hand.
-320	Shiv	Ability	Rogue		Basic	2			Deal 1 damage. Draw a card.
-321	Fan of Knives	Ability	Rogue		Basic	3			Deal 1 damage to all enemy minions. Draw a card.
-322	Headcrack	Ability	Rogue		Rare	3			Deal 2 damage to the enemy hero. Combo: Return this to your hand next turn.
-323	Assassinate	Ability	Rogue		Basic	5			Destroy an enemy minion.
-324	Vanish	Ability	Rogue		Basic	6			Return all minions to their owner's hand.
-325	Sprint	Ability	Rogue		Basic	7			Draw 4 cards.
-326	Ancestral Healing	Ability	Shaman		Basic	0			Restore a minion to full Health and give it Taunt.
-327	Totemic Might	Ability	Shaman		Basic	0			Give your Totems +2 Health.
-328	Earth Shock	Ability	Shaman		Common	1			"Silence a minion, then deal 1 damage to it."
-329	Forked Lightning	Ability	Shaman		Common	1			Deal 2 damage to 2 random enemy minions. Overload: (2)
-330	Frost Shock	Ability	Shaman		Basic	1			Deal 1 damage to an enemy character and Freeze it.
-331	Lightning Bolt	Ability	Shaman		Common	1			Deal 3 damage. Overload: (1)
-332	Rockbiter Weapon	Ability	Shaman		Basic	1			Give a friendly character +3 Attack this turn.
-333	Ancestral Spirit	Ability	Shaman		Rare	2			"Choose a minion. When that minion is destroyed, return it to the battlefield."
-334	Windfury	Ability	Shaman		Basic	2			Give a minion Windfury.
-335	Far Sight	Ability	Shaman		Epic	3			Draw a card. That card costs (3) less.
-336	Feral Spirit	Ability	Shaman		Rare	3			Summon two 2/3 Spirit Wolves with Taunt. Overload: (2)
-337	Hex	Ability	Shaman		Basic	3			Transform a minion into a 0/1 Frog with Taunt.
-338	Lava Burst	Ability	Shaman		Rare	3			Deal 5 damage. Overload: (2)
-339	Lightning Storm	Ability	Shaman		Rare	3			Deal 2-3 damage to all enemy minions. Overload: (2)
-340	Bloodlust	Ability	Shaman		Basic	5			Give your minions +3 Attack this turn.
-341	Sacrificial Pact	Ability	Warlock		Basic	0			Destroy a Demon. Restore 5 Health to your hero.
-342	Soulfire	Ability	Warlock		Basic	0			Deal 4 damage. Discard a random card.
-343	Corruption	Ability	Warlock		Basic	1			"Choose an enemy minion. At the start of your turn, destroy it."
-344	Mortal Coil	Ability	Warlock		Basic	1			"Deal 1 damage to a minion. If that kills it, draw a card."
-345	Power Overwhelming	Ability	Warlock		Common	1			"Give a friendly minion +4/+4 until end of turn. Then, it dies. Horribly."
-346	Demonfire	Ability	Warlock		Common	2			"Deal 2 damage to a minion. If it's a friendly Demon, give it +2/+2 instead."
-347	Drain Life	Ability	Warlock		Basic	3			Deal 2 damage. Restore 2 Health to your hero.
-348	Sense Demons	Ability	Warlock		Common	3			Put 2 random Demons from your deck into your hand.
-349	Shadow Bolt	Ability	Warlock		Basic	3			Deal 4 damage to a minion.
-350	Hellfire	Ability	Warlock		Basic	4			Deal 3 damage to ALL characters.
-351	Shadowflame	Ability	Warlock		Rare	4			Destroy a friendly minion and deal its Attack damage to all enemy minions.
-352	Bane of Doom	Ability	Warlock		Epic	5			"Deal 2 damage to a character. If that kills it, summon a random Demon."
-353	Siphon Soul	Ability	Warlock		Rare	6			Destroy a minion. Restore 3 Health to your hero.
-354	Twisting Nether	Ability	Warlock		Epic	8			Destroy all minions.
-355	Inner Rage	Ability	Warrior		Common	0			Deal 1 damage to a minion and give it +2 Attack.
-356	Execute	Ability	Warrior		Basic	1			Destroy a damaged enemy minion.
-357	Shield Slam	Ability	Warrior		Epic	1			Deal 1 damage to a minion for each Armor you have.
-358	Upgrade!	Ability	Warrior		Rare	1			"If you have a weapon, give it +1/+1. Otherwise equip a 1/3 weapon."
-359	Whirlwind	Ability	Warrior		Basic	1			Deal 1 damage to ALL minions.
-360	Battle Rage	Ability	Warrior		Common	2			Draw a card for each damaged friendly character.
-361	Cleave	Ability	Warrior		Basic	2			Deal 2 damage to two random enemy minions.
-362	Commanding Shout	Ability	Warrior		Rare	2			Your minions can't be reduced below 1 Health this turn. Draw a card.
-363	Heroic Strike	Ability	Warrior		Basic	2			Give your hero +4 Attack this turn.
-364	Rampage	Ability	Warrior		Common	2			Give a damaged minion +3/+3.
-365	Slam	Ability	Warrior		Common	2			"Deal 2 damage to a minion. If it survives, draw a card."
-366	Charge	Ability	Warrior		Basic	3			Give a friendly minion +2 Attack and Charge.
-367	Shield Block	Ability	Warrior		Basic	3			Gain 5 Armor. Draw a card.
-368	Mortal Strike	Ability	Warrior		Rare	4			"Deal 4 damage. If you have 12 or less Health, deal 6 instead."
-369	Brawl	Ability	Warrior		Epic	5			Destroy all minions except one. (chosen randomly)
-370	Eaglehorn Bow	Weapon	Hunter		Rare	3	3	2	"Whenever a friendly Secret is revealed, gain +1 Durability."
-371	Gladiator's Longbow	Weapon	Hunter		Epic	7	5	2	Your hero is Immune while attacking.
-372	Light's Justice	Weapon	Paladin		Basic	1	1	4	
-373	Sword of Justice	Weapon	Paladin		Epic	3	1	5	"Whenever you summon a minion, give it +1/+1 and this loses 1 Durability."
-374	Truesilver Champion	Weapon	Paladin		Basic	4	4	2	"Whenever your hero attacks, restore 2 Health to it."
-375	Perdition's Blade	Weapon	Rogue		Rare	3	2	2	Battlecry: Deal 1 damage. Combo: Deal 2 instead.
-376	Assassin's Blade	Weapon	Rogue		Basic	5	3	4	
-377	Stormforged Axe	Weapon	Shaman		Common	2	2	3	Overload: (1)
-378	Doomhammer	Weapon	Shaman		Epic	5	2	8	"Windfury, Overload: (2)"
-379	Fiery War Axe	Weapon	Warrior		Basic	2	3	2	
-380	Arcanite Reaper	Weapon	Warrior		Basic	5	5	2	
-381	Gorehowl	Weapon	Warrior		Epic	7	7	1	Attacking a minion costs 1 Attack instead of 1 Durability.
-382	Adrenaline Rush	Ability	Discard		Epic	1			Draw a card. Combo: Draw 2 cards instead.
-383	Legacy of the Emperor	Ability	Tutorial		Basic	3			(Lorewalker Cho) Give your minions +2/+2.
-384	Metamorphosis	Ability	Tutorial		Basic	6			(Illidan Stormrage)
-385	Huffer	Minion	Special	Beast	Basic	3	4	2	(Animal Companion) Charge
-386	Leokk	Minion	Special	Beast	Basic	3	2	4	(Animal Companion) Other friendly minions have +1 Attack.
-387	Misha	Minion	Special	Beast	Basic	3	4	4	(Animal Companion) Taunt
-388	Devilsaur	Minion	Special	Beast	Common	5	5	5	(Tinkmaster Overspark)
-389	Transcendence	Ability	Tutorial		Basic	1			"(Lorewalker Cho) Until you kill Cho's minions, he can't be attacked."
-390	The Coin	Ability	Special		Basic	0			(Go second) Gain 1 Mana Crystal this turn only.
-391	Flame Burst	Ability	Tutorial		Basic	3			(Illidan Stormrage) Shoot 5 missiles at random enemies for 1 damage each.
-392	Ashbringer	Weapon	Special		Legendary	5	5	3	(Tirion Fordring)
-393	Mukla's Big Brother	Minion	Tutorial		Basic	6	10	10	(King Mukla)
-394	Healing Totem	Minion	Special	Totem	Basic	1	0	2	"(Totemic Call) At the end of your turn, restore 1 Health to all friendly minions."
-395	Emboldener 3000	Minion	Special		Common	1	0	4	"(Gelbin Mekkatorque) At the end of your turn, give a random minion +1/+1."
-396	Stomp	Ability	Tutorial		Basic	2			(King Mukla) Deal 2 damage to all enemies.
-397	Demigod's Favor	Ability	Special		Common	0			(Cenarius) Give your other minions +2/+2.
-398	Leader of the Pack	Ability	Special		Common	0			(Power of the Wild) Give your minions +1/+1.
-399	Shan'do's Lesson	Ability	Special		Common	0			(Cenarius) Summon two 2/2 Treants with Taunt.
-400	Summon a Panther	Ability	Special		Common	0			(Power of the Wild) Summon a 3/2 Panther.
-401	Battle Axe	Weapon	Special		Common	1	2	2	(Arathi Weaponsmith)
-402	Repair Bot	Minion	Special		Common	1	0	3	"(Gelbin Mekkatorque) At the end of your turn, restore 6 Health to a damaged character."
-403	Searing Totem	Minion	Special	Totem	Basic	1	1	1	(Totemic Call)
-404	Stoneclaw Totem	Minion	Special	Totem	Basic	1	0	2	(Totemic Call) Taunt
-405	Chicken	Minion	Special	Beast	Common	0	1	1	(Poultryizer)
-406	Murloc Scout	Minion	Special	Murloc	Basic	0	1	1	(Murloc Tidehunter)
-407	Sheep	Minion	Special	Beast	Basic	0	1	1	(Polymorph)
-408	Snake	Minion	Special	Beast	Common	0	1	1	(Snake Trap)
-409	Violet Apprentice	Minion	Special		Common	0	1	1	(Violet Teacher)
-410	Barrel	Minion	Tutorial		Basic	0	0	2	(King Mukla)
-411	Frog	Minion	Special	Beast	Basic	0	0	1	(Hex) Taunt
-412	Shadow of Nothing	Minion	Special		Epic	0	0	1	(Mindgames)
-413	Squire	Minion	Special		Common	1	2	2	(Silver Hand Knight)
-414	Treant	Minion	Special		Common	1	2	2	"(Force of Nature) Charge. At the end of the turn, destroy this minion."
-415	Damaged Golem	Minion	Special		Common	1	2	1	(Harvest Golem)
-416	Defender	Minion	Special		Common	1	2	1	(Noble Sacrifice)
-417	Defias Bandit	Minion	Special		Common	1	2	1	(Defias Ringleader)
-418	Flame of Azzinoth	Minion	Special		Common	1	2	1	(Illidan Stormrage)
-419	Mechanical Dragonling	Minion	Special		Basic	1	2	1	(Dragonling Mechanic)
-420	Riverpaw Gnoll	Minion	Tutorial		Basic	1	2	1	(Hogger)
-421	Crazy Monkey	Minion	Tutorial		Basic	1	1	2	(King Mukla) Battlecry: Throw Bananas.
-422	Boar	Minion	Special	Beast	Basic	1	1	1	(Razorfen Hunter)
-423	Crazed Hunter	Minion	Tutorial		Basic	1	1	1	(Hemet Nesingwary)
-424	Gnoll	Minion	Special		Common	2	2	2	(Hogger) Taunt
-425	Hound	Minion	Special	Beast	Common	1	1	1	(Unleash the Hounds) Charge
-426	Imp	Minion	Special	Demon	Rare	1	1	1	(Imp Master)
-427	Murloc	Minion	Special	Murloc	Common	1	1	1	(I Am Murloc)
-428	Naga Myrmidon	Minion	Tutorial		Basic	1	1	1	(Illidan Stormrage)
-429	Pandaren Scout	Minion	Tutorial		Basic	1	1	1	(Lorewalker Cho)
-430	Silver Hand Recruit	Minion	Special		Basic	1	1	1	(Reinforce)
-431	Squirrel	Minion	Special	Beast	Common	1	1	1	(Tinkmaster Overspark)
-432	Whelp	Minion	Special	Dragon	Common	1	1	1	(Leeroy Jenkins); (Onyxia)
-433	Worthless Imp	Minion	Special	Demon	Common	1	1	1	(Sense Demons)
-434	Homing Chicken	Minion	Special		Common	1	0	1	"(Gelbin Mekkatorque) At the start of your turn, destroy this minion and draw 3 cards."
-435	Poultryizer	Minion	Special		Common	1	0	3	"(Gelbin Mekkatorque) At the start of your turn, transform a random minion into a 1/1 Chicken."
-436	Wrath of Air Totem	Minion	Special	Totem	Basic	1	0	2	(Totemic Call) Spell Damage +1
-437	Finkle Einhorn	Minion	Special		Legendary	2	3	3	(The Beast)
-438	Panther	Minion	Special	Beast	Common	2	3	2	(Summon a Panther)
-439	Spirit Wolf	Minion	Special		Rare	2	2	3	(Feral Spirit) Taunt
-440	Hyena	Minion	Special	Beast	Rare	2	2	2	(Savannah Highmane)
-441	Shado-Pan Monk	Minion	Tutorial		Basic	2	2	2	(Lorewalker Cho)
-442	Hidden Gnome	Minion	Tutorial		Basic	2	1	3	(King Mukla)
-443	Laughing Sister	Minion	Special		Common	3	3	5	(Ysera) Can't be targeted by Spells or Hero Powers.
-444	Emerald Drake	Minion	Special	Dragon	Common	4	7	6	(Ysera)
-445	Baine Bloodhoof	Minion	Special		Legendary	4	4	5	(Cairne Bloodhoof)
-446	Brewmaster	Minion	Tutorial		Basic	4	4	4	(Lorewalker Cho)
-447	Massive Gnoll	Minion	Tutorial		Basic	4	5	2	(Hogger)
-448	Infernal	Minion	Special	Demon	Common	6	6	6	(INFERNO!)
-449	Ancient Secrets	Ability	Special		Common	0			(Ancient of Lore) Restore 5 Health.
-450	Ancient Teachings	Ability	Special		Common	0			(Ancient of Lore) Draw 2 cards.
-451	Bear Form	Ability	Special		Common	0			(Druid of the Claw) +2 Health and Taunt.
-452	Cat Form	Ability	Special		Common	0			(Druid of the Claw) Charge
-453	Dispel	Ability	Special		Common	0			(Keeper of the Grove) Silence a minion.
-454	Dream	Ability	Special		Common	0			(Ysera) Return a minion to its owner's hand.
-455	Excess Mana	Ability	Special		Basic	0			(Wild Growth) Draw a card.
-456	Nightmare	Ability	Special		Common	0			"(Ysera) Give a minion +5/+5. At the start of your next turn, destroy it."
-457	Rooted	Ability	Special		Common	0			(Ancient of War) +5 Health and Taunt.
-458	Uproot	Ability	Special		Common	0			(Ancient of War) +5 Attack.
-459	Bananas	Ability	Special		Common	1			(King Mukla) Give a minion +1/+1.
-460	Ysera Awakens	Ability	Special		Common	2			(Ysera) Deal 5 damage to all characters except Ysera.
-461	I Am Murloc	Ability	Special		Common	4			"(Elite Tauren Chieftain) Summon three, four, or five 1/1 Murlocs."
-462	Power of the Horde	Ability	Special		Common	4			(Elite Tauren Chieftain) Summon a random Horde Warrior.
-463	Rogues Do It¡­	Ability	Special		Common	4			(Elite Tauren Chieftain) Deal 4 damage. Draw a card.
-464	Barrel Toss	Ability	Tutorial		Basic	1			(King Mukla) Deal 2 damage.
-465	Hogger SMASH!	Ability	Tutorial		Basic	3			(Hogger) Deal 4 damage.
-466	Will of Mukla	Ability	Tutorial		Basic	3			(King Mukla) Restore 8 Health.
-467	Heavy Axe	Weapon	Special		Common	1	1	3	(Upgrade!)
-468	Wicked Knife	Weapon	Special		Basic	1	1	2	(Dagger Mastery)
-469	Blood Fury	Weapon	Special		Common	3	3	8	(Lord Jaraxxus)
-470	Warglaive of Azzinoth	Weapon	Tutorial		Basic	2	2	2	(Illidan Stormrage)
-471	Dual Warglaives	Weapon	Tutorial		Basic	6	4	2	(Illidan Stormrage)
-472	Skeleton	Minion	Discard		Common	3	3	3	
-473	Druid of the Claw	Minion	Special		Common	5	4	6	(Bear Form) Taunt
-474	Druid of the Claw	Minion	Special		Common	5	4	4	(Cat Form) Charge
-475	Moonfire	Ability	Special		Common	0			(Keeper of the Grove) Deal 2 damage.
-476	Mirror Image	Minion	Special		Basic	0	0	2	(Mirror Image) Taunt
-477	Spellbender	Minion	Special		Epic	0	1	3	(Spellbender)
-478	Treant	Minion	Special		Common	1	2	2	(Shan'do's Lesson) Taunt
-479	Treant	Minion	Special		Common	1	2	2	(Soul of the Forest)
-480	Gnoll	Minion	Tutorial		Basic	1	1	1	(Hogger)
+id	name	type	class	set	rarity	race	cost	attack	health	power
+0	Wisp	Minion	Neutral	Expert	Common		0	1	1	
+1	Flame Imp	Minion	Warlock	Expert	Common	Demon	1	3	2	Battlecry: Deal 3 damage to your hero.
+2	Dust Devil	Minion	Shaman	Expert	Common		1	3	1	Windfury. Overload: (2)
+3	Mana Wyrm	Minion	Mage	Expert	Common		1	1	3	"Whenever you cast a spell, gain +1 Attack."
+4	Northshire Cleric	Minion	Priest	Basic	Free		1	1	3	"Whenever a minion is healed, draw a card."
+5	Voidwalker	Minion	Warlock	Basic	Free	Demon	1	1	3	Taunt
+6	Abusive Sergeant	Minion	Neutral	Expert	Common		1	2	1	Battlecry: Give a minion +2 Attack this turn.
+7	Leper Gnome	Minion	Neutral	Expert	Common		1	2	1	Deathrattle: Deal 2 damage to the enemy hero.
+8	Murloc Raider	Minion	Neutral	Basic	Free	Murloc	1	2	1	
+9	Southsea Deckhand	Minion	Neutral	Expert	Common	Pirate	1	2	1	Has Charge while you have a weapon equipped.
+10	Voodoo Doctor	Minion	Neutral	Basic	Free		1	2	1	Battlecry: Restore 2 Health.
+11	Worgen Infiltrator	Minion	Neutral	Expert	Common		1	2	1	Stealth
+12	Young Priestess	Minion	Neutral	Expert	Rare		1	2	1	"At the end of your turn, give another random friendly minion +1 Health."
+13	Bloodsail Corsair	Minion	Neutral	Expert	Rare	Pirate	1	1	2	Battlecry: Remove 1 Durability from your opponent's weapon.
+14	Goldshire Footman	Minion	Neutral	Basic	Free		1	1	2	Taunt
+15	Hungry Crab	Minion	Neutral	Expert	Epic	Beast	1	1	2	Battlecry: Destroy a Murloc and gain +2/+2.
+16	Lightwarden	Minion	Neutral	Expert	Rare		1	1	2	"Whenever a character is healed, gain +2 Attack."
+17	Murloc Tidecaller	Minion	Neutral	Expert	Rare	Murloc	1	1	2	"Whenever a Murloc is summoned, gain +1 Attack."
+18	Secretkeeper	Minion	Neutral	Expert	Rare		1	1	2	"Whenever a Secret is played, gain +1/+1."
+19	Angry Chicken	Minion	Neutral	Expert	Rare	Beast	1	1	1	Enrage: +5 Attack.
+20	Argent Squire	Minion	Neutral	Expert	Common		1	1	1	Divine Shield
+21	Elven Archer	Minion	Neutral	Basic	Free		1	1	1	Battlecry: Deal 1 damage.
+22	Grimscale Oracle	Minion	Neutral	Basic	Free	Murloc	1	1	1	ALL other Murlocs have +1 Attack.
+23	Stonetusk Boar	Minion	Neutral	Basic	Free	Beast	1	1	1	Charge
+24	Timber Wolf	Minion	Hunter	Basic	Free	Beast	1	1	1	Your other Beasts have +1 Attack.
+25	Young Dragonhawk	Minion	Neutral	Expert	Common	Beast	1	1	1	Windfury
+26	Blood Imp	Minion	Warlock	Expert	Common	Demon	1	0	1	"Stealth. At the end of your turn, give another random friendly minion +1 Health."
+27	Shieldbearer	Minion	Neutral	Expert	Common		1	0	4	Taunt
+28	Ancient Watcher	Minion	Neutral	Expert	Rare		2	4	5	Can't Attack.
+29	Millhouse Manastorm	Minion	Neutral	Expert	Legendary		2	4	4	Battlecry: Enemy spells cost (0) next turn.
+30	Succubus	Minion	Warlock	Basic	Free	Demon	2	4	3	Battlecry: Discard a random card.
+31	Acidic Swamp Ooze	Minion	Neutral	Basic	Free		2	3	2	Battlecry: Destroy your opponent's weapon.
+32	Bloodfen Raptor	Minion	Neutral	Basic	Free	Beast	2	3	2	
+33	Faerie Dragon	Minion	Neutral	Expert	Common	Dragon	2	3	2	Can't be targeted by Spells or Hero Powers.
+34	Knife Juggler	Minion	Neutral	Expert	Rare		2	3	2	"After you summon a minion, deal 1 damage to a random enemy."
+35	Mad Bomber	Minion	Neutral	Expert	Common		2	3	2	Battlecry: Deal 3 damage randomly split between all other characters.
+36	Sorcerer's Apprentice	Minion	Mage	Expert	Common		2	3	2	Your spells cost (1) less.
+37	Wild Pyromancer	Minion	Neutral	Expert	Rare		2	3	2	"After you cast a spell, deal 1 damage to ALL minions."
+38	Youthful Brewmaster	Minion	Neutral	Expert	Common		2	3	2	Battlecry: Return a friendly minion from the battlefield to your hand.
+39	Amani Berserker	Minion	Neutral	Expert	Common		2	2	3	Enrage: +3 Attack
+40	Bloodsail Raider	Minion	Neutral	Expert	Common	Pirate	2	2	3	Battlecry: Gain Attack equal to the Attack of your weapon.
+41	River Crocolisk	Minion	Neutral	Basic	Free	Beast	2	2	3	
+42	Sunfury Protector	Minion	Neutral	Expert	Rare		2	2	3	Battlecry: Give adjacent minions Taunt.
+43	Argent Protector	Minion	Paladin	Expert	Common		2	2	2	Battlecry: Give a friendly minion Divine Shield.
+44	Crazed Alchemist	Minion	Neutral	Expert	Rare		2	2	2	Battlecry: Swap the Attack and Health of a minion.
+45	Cruel Taskmaster	Minion	Warrior	Expert	Common		2	2	2	Battlecry: Deal 1 damage to a minion and give it +2 Attack.
+46	Defias Ringleader	Minion	Rogue	Expert	Common		2	2	2	Combo: Summon a 2/1 Defias Bandit.
+47	Dire Wolf Alpha	Minion	Neutral	Expert	Common	Beast	2	2	2	Adjacent minions have +1 Attack.
+48	Frostwolf Grunt	Minion	Neutral	Basic	Free		2	2	2	Taunt
+49	Kobold Geomancer	Minion	Neutral	Basic	Free		2	2	2	Spell Damage +1
+50	Mana Wraith	Minion	Neutral	Expert	Rare		2	2	2	ALL minions cost (1) more.
+51	Pint-Sized Summoner	Minion	Neutral	Expert	Rare		2	2	2	The first minion you play each turn costs (1) less.
+52	Scavenging Hyena	Minion	Hunter	Expert	Common	Beast	2	2	2	"Whenever a friendly Beast dies, gain +2/+1."
+53	Armorsmith	Minion	Warrior	Expert	Rare		2	1	4	"Whenever a friendly minion takes damage, gain 1 Armor."
+54	Mana Addict	Minion	Neutral	Expert	Rare		2	1	3	"Whenever you cast a spell, gain +2 Attack this turn."
+55	Master Swordsmith	Minion	Neutral	Expert	Rare		2	1	3	"At the end of your turn, give another random friendly minion +1 Attack."
+56	Bluegill Warrior	Minion	Neutral	Basic	Free	Murloc	2	2	1	Charge
+57	Ironbeak Owl	Minion	Neutral	Expert	Common	Beast	2	2	1	Battlecry: Silence a minion.
+58	Loot Hoarder	Minion	Neutral	Expert	Common		2	2	1	Deathrattle: Draw a card.
+59	Murloc Tidehunter	Minion	Neutral	Basic	Free	Murloc	2	2	1	Battlecry: Summon a 1/1 Murloc Scout.
+60	Starving Buzzard	Minion	Hunter	Basic	Free	Beast	2	2	1	"Whenever you summon a Beast, draw a card."
+61	Bloodmage Thalnos	Minion	Neutral	Expert	Legendary		2	1	1	Spell Damage +1. Deathrattle: Draw a card.
+62	Captain's Parrot	Minion	Neutral	Reward	Epic	Beast	2	1	1	Battlecry: Put a random Pirate from your deck into your hand.
+63	Novice Engineer	Minion	Neutral	Basic	Free		2	1	1	Battlecry: Draw a card.
+64	Patient Assassin	Minion	Rogue	Expert	Epic		2	1	1	Stealth. Destroy any minion damaged by this minion.
+65	Doomsayer	Minion	Neutral	Expert	Epic		2	0	7	"At the start of your turn, destroy ALL minions."
+66	Flametongue Totem	Minion	Shaman	Basic	Free	Totem	2	0	3	Adjacent minions have +2 Attack.
+67	Lightwell	Minion	Priest	Expert	Rare		2	0	5	"At the start of your turn, restore 3 Health to a damaged friendly character."
+68	Lorewalker Cho	Minion	Neutral	Expert	Legendary		2	0	4	"Whenever a player casts a spell, put a copy into the other player's hand."
+69	Nat Pagle	Minion	Neutral	Expert	Legendary		2	0	4	"At the start of your turn, you have a 50% chance to draw an extra card."
+70	Injured Blademaster	Minion	Neutral	Expert	Rare		3	4	7	Battlecry: Deal 4 damage to HIMSELF.
+71	King Mukla	Minion	Neutral	Expert	Legendary	Beast	3	5	5	Battlecry: Give your opponent 2 Bananas.
+72	Felguard	Minion	Warlock	Expert	Rare	Demon	3	3	5	Taunt. Battlecry: Destroy one of your Mana Crystals.
+73	Kirin Tor Mage	Minion	Mage	Expert	Rare		3	4	3	Battlecry: The next Secret you play this turn costs (0).
+74	Aldor Peacekeeper	Minion	Paladin	Expert	Rare		3	3	3	Battlecry: Change an enemy minion's Attack to 1.
+75	Blood Knight	Minion	Neutral	Expert	Epic		3	3	3	Battlecry: All minions lose Divine Shield. Gain +3/+3 for each Shield lost.
+76	Earthen Ring Farseer	Minion	Neutral	Expert	Common		3	3	3	Battlecry: Restore 3 Health.
+77	Ironfur Grizzly	Minion	Neutral	Basic	Free	Beast	3	3	3	Taunt
+78	Mind Control Tech	Minion	Neutral	Expert	Rare		3	3	3	"Battlecry: If your opponent has 4 or more minions, take control of one at random."
+79	Murloc Warleader	Minion	Neutral	Expert	Epic	Murloc	3	3	3	ALL other Murlocs have +2/+1.
+80	Raging Worgen	Minion	Neutral	Expert	Common		3	3	3	Enrage: Windfury and +1 Attack
+81	SI:7 Agent	Minion	Rogue	Expert	Rare		3	3	3	Combo: Deal 2 damage.
+82	Southsea Captain	Minion	Neutral	Expert	Epic	Pirate	3	3	3	Your other Pirates have +1/+1.
+83	Tinkmaster Overspark	Minion	Neutral	Expert	Legendary		3	3	3	Battlecry: Transform another random minion into a 5/5 Devilsaur or a 1/1 Squirrel.
+84	Void Terror	Minion	Warlock	Expert	Rare	Demon	3	3	3	Battlecry: Destroy the minions on either side of this minion and gain their Attack and Health.
+85	Arcane Golem	Minion	Neutral	Expert	Rare		3	4	2	Charge. Battlecry: Give your opponent a Mana Crystal.
+86	Big Game Hunter	Minion	Neutral	Expert	Epic		3	4	2	Battlecry: Destroy a minion with an Attack of 7 or more.
+87	Jungle Panther	Minion	Neutral	Expert	Common	Beast	3	4	2	Stealth
+88	Frothing Berserker	Minion	Warrior	Expert	Rare		3	2	4	"Whenever a minion takes damage, gain +1 Attack."
+89	Unbound Elemental	Minion	Shaman	Expert	Common		3	2	4	"Whenever you play a card with Overload, gain +1/+1."
+90	Shattered Sun Cleric	Minion	Neutral	Basic	Free		3	3	2	Battlecry: Give a friendly minion +1/+1.
+91	Coldlight Seer	Minion	Neutral	Expert	Rare	Murloc	3	2	3	Battlecry: Give ALL other Murlocs +2 Health.
+92	Emperor Cobra	Minion	Neutral	Expert	Rare	Beast	3	2	3	Destroy any minion damaged by this minion.
+93	Flesheating Ghoul	Minion	Neutral	Expert	Common		3	2	3	"Whenever a minion dies, gain +1 Attack."
+94	Harvest Golem	Minion	Neutral	Expert	Common		3	2	3	Deathrattle: Summon a 2/1 Damaged Golem.
+95	Razorfen Hunter	Minion	Neutral	Basic	Free		3	2	3	Battlecry: Summon a 1/1 Boar.
+96	Tauren Warrior	Minion	Neutral	Expert	Common		3	2	3	Taunt. Enrage: +3 Attack
+97	Thrallmar Farseer	Minion	Neutral	Expert	Common		3	2	3	Windfury
+98	Warsong Commander	Minion	Warrior	Basic	Free		3	2	3	"Whenever you summon a minion with 3 or less Attack, give it Charge."
+99	Magma Rager	Minion	Neutral	Basic	Free		3	5	1	
+100	Imp Master	Minion	Neutral	Expert	Rare		3	1	5	"At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp."
+101	Coldlight Oracle	Minion	Neutral	Expert	Rare	Murloc	3	2	2	Battlecry: Each player draws 2 cards.
+102	Edwin VanCleef	Minion	Rogue	Expert	Legendary		3	2	2	Combo: Gain +2/+2 for each card played earlier this turn.
+103	Ironforge Rifleman	Minion	Neutral	Basic	Free		3	2	2	Battlecry: Deal 1 damage.
+104	Questing Adventurer	Minion	Neutral	Expert	Rare		3	2	2	"Whenever you play a card, gain +1/+1."
+105	Raid Leader	Minion	Neutral	Basic	Free		3	2	2	Your other minions have +1 Attack.
+106	Dalaran Mage	Minion	Neutral	Basic	Free		3	1	4	Spell Damage +1
+107	Demolisher	Minion	Neutral	Expert	Rare		3	1	4	"At the start of your turn, deal 2 damage to a random enemy."
+108	Silverback Patriarch	Minion	Neutral	Basic	Free	Beast	3	1	4	Taunt
+109	Scarlet Crusader	Minion	Neutral	Expert	Common		3	3	1	Divine Shield
+110	Wolfrider	Minion	Neutral	Basic	Free		3	3	1	Charge
+111	Acolyte of Pain	Minion	Neutral	Expert	Common		3	1	3	"Whenever this minion takes damage, draw a card."
+112	Alarm-o-Bot	Minion	Neutral	Expert	Rare		3	0	3	"At the start of your turn, swap this minion with a random one in your hand."
+113	Mana Tide Totem	Minion	Shaman	Expert	Rare	Totem	3	0	3	"At the end of your turn, draw a card."
+114	Pit Lord	Minion	Warlock	Expert	Epic	Demon	4	5	6	Battlecry: Deal 5 damage to your hero.
+115	Ancient Brewmaster	Minion	Neutral	Expert	Common		4	5	4	Battlecry: Return a friendly minion from the battlefield to your hand.
+116	Chillwind Yeti	Minion	Neutral	Basic	Free		4	4	5	
+117	Water Elemental	Minion	Mage	Basic	Free		4	3	6	Freeze any character damaged by this minion.
+118	Dark Iron Dwarf	Minion	Neutral	Expert	Common		4	4	4	Battlecry: Give a minion +2 Attack this turn.
+119	Master of Disguise	Minion	Rogue	Expert	Rare		4	4	4	Battlecry: Give a friendly minion Stealth.
+120	Ogre Magi	Minion	Neutral	Basic	Free		4	4	4	Spell Damage +1
+121	Auchenai Soulpriest	Minion	Priest	Expert	Rare		4	3	5	Your cards and powers that restore Health now deal damage instead.
+122	Sen'jin Shieldmasta	Minion	Neutral	Basic	Free		4	3	5	Taunt
+123	Violet Teacher	Minion	Neutral	Expert	Rare		4	3	5	"Whenever you cast a spell, summon a 1/1 Violet Apprentice."
+124	Oasis Snapjaw	Minion	Neutral	Basic	Free	Beast	4	2	7	
+125	Leeroy Jenkins	Minion	Neutral	Expert	Legendary		4	6	2	Charge. Battlecry: Summon two 1/1 Whelps for your opponent.
+126	Houndmaster	Minion	Hunter	Basic	Free		4	4	3	Battlecry: Give a friendly Beast +2/+2 and Taunt.
+127	Kor'kron Elite	Minion	Warrior	Basic	Free		4	4	3	Charge
+128	Spellbreaker	Minion	Neutral	Expert	Common		4	4	3	Battlecry: Silence a minion.
+129	Ancient Mage	Minion	Neutral	Expert	Rare		4	2	5	Battlecry: Give adjacent minions Spell Damage +1.
+130	Stormwind Knight	Minion	Neutral	Basic	Free		4	2	5	Charge
+131	Arathi Weaponsmith	Minion	Warrior	Expert	Common		4	3	3	Battlecry: Equip a 2/2 weapon.
+132	Dread Corsair	Minion	Neutral	Expert	Common	Pirate	4	3	3	Taunt. Costs (1) less per Attack of your weapon.
+133	Ethereal Arcanist	Minion	Mage	Expert	Rare		4	3	3	"If you control a Secret at the end of your turn, gain +2/+2."
+134	Silvermoon Guardian	Minion	Neutral	Expert	Common		4	3	3	Divine Shield
+135	Windspeaker	Minion	Shaman	Basic	Free		4	3	3	Battlecry: Give a friendly minion Windfury.
+136	Cult Master	Minion	Neutral	Expert	Common		4	4	2	"Whenever one of your other minions dies, draw a card."
+137	Dragonling Mechanic	Minion	Neutral	Basic	Free		4	2	4	Battlecry: Summon a 2/1 Mechanical Dragonling.
+138	Gnomish Inventor	Minion	Neutral	Basic	Free		4	2	4	Battlecry: Draw a card.
+139	Keeper of the Grove	Minion	Druid	Expert	Rare		4	2	4	Choose One - Deal 2 damage; or Silence a minion.
+140	Old Murk-Eye	Minion	Neutral	Reward	Legendary	Murloc	4	2	4	Charge. Has +1 Attack for each other Murloc on the battlefield.
+141	Mogu'shan Warden	Minion	Neutral	Expert	Common		4	1	7	Taunt
+142	Defender of Argus	Minion	Neutral	Expert	Rare		4	2	3	Battlecry: Give adjacent minions +1/+1 and Taunt.
+143	Twilight Drake	Minion	Neutral	Expert	Rare	Dragon	4	4	1	Battlecry: Gain +1 Health for each card in your hand.
+144	Lightspawn	Minion	Priest	Expert	Common		4	0	5	This minion's Attack is always equal to its Health.
+145	Summoning Portal	Minion	Warlock	Expert	Common		4	0	4	"Your minions cost (2) less, but not less than (1)."
+146	Earth Elemental	Minion	Shaman	Expert	Epic		5	7	8	Taunt. Overload: (3)
+147	Venture Co. Mercenary	Minion	Neutral	Expert	Common		5	7	6	Your minions cost (3) more.
+148	Doomguard	Minion	Warlock	Expert	Rare	Demon	5	5	7	Charge. Battlecry: Discard two random cards.
+149	Elite Tauren Chieftain	Minion	Neutral	Promotion	Legendary		5	5	5	Battlecry: Give both players the power to ROCK! (with a Power Chord card)
+150	Stranglethorn Tiger	Minion	Neutral	Expert	Common	Beast	5	5	5	Stealth
+151	Spiteful Smith	Minion	Neutral	Expert	Common		5	4	6	Enrage: Your weapon has +2 Attack.
+152	Booty Bay Bodyguard	Minion	Neutral	Basic	Free		5	5	4	Taunt
+153	Captain Greenskin	Minion	Neutral	Expert	Legendary	Pirate	5	5	4	Battlecry: Give your weapon +1/+1.
+154	Harrison Jones	Minion	Neutral	Expert	Legendary		5	5	4	Battlecry: Destroy your opponent's weapon and draw cards equal to its Durability.
+155	Darkscale Healer	Minion	Neutral	Basic	Free		5	4	5	Battlecry: Restore 2 Health to all friendly characters.
+156	Fen Creeper	Minion	Neutral	Expert	Common		5	3	6	Taunt
+157	Abomination	Minion	Neutral	Expert	Rare		5	4	4	Taunt. Deathrattle: Deal 2 damage to ALL characters.
+158	Azure Drake	Minion	Neutral	Expert	Rare	Dragon	5	4	4	Spell Damage +1. Battlecry: Draw a card.
+159	Druid of the Claw	Minion	Druid	Expert	Common		5	4	4	Choose One - Charge; or +2 Health and Taunt.
+160	Frostwolf Warlord	Minion	Neutral	Basic	Free		5	4	4	Battlecry: Gain +1/+1 for each other friendly minion on the battlefield.
+161	Gadgetzan Auctioneer	Minion	Neutral	Expert	Rare		5	4	4	"Whenever you cast a spell, draw a card."
+162	Nightblade	Minion	Neutral	Basic	Free		5	4	4	Battlecry: Deal 3 damage to the enemy hero.
+163	Silver Hand Knight	Minion	Neutral	Expert	Common		5	4	4	Battlecry: Summon a 2/2 Squire.
+164	Stampeding Kodo	Minion	Neutral	Expert	Rare	Beast	5	3	5	Battlecry: Destroy a random enemy minion with 2 or less Attack.
+165	Gurubashi Berserker	Minion	Neutral	Basic	Free		5	2	7	"Whenever this minion takes damage, gain +3 Attack."
+166	Tundra Rhino	Minion	Hunter	Basic	Free	Beast	5	2	5	Your Beasts have Charge.
+167	Faceless Manipulator	Minion	Neutral	Expert	Epic		5	3	3	Battlecry: Choose a minion and become a copy of it.
+168	Stormpike Commando	Minion	Neutral	Basic	Free		5	4	2	Battlecry: Deal 2 damage.
+169	The Beast	Minion	Neutral	Expert	Legendary	Beast	6	9	7	Deathrattle: Summon a 3/3 Finkle Einhorn for your opponent.
+170	Boulderfist Ogre	Minion	Neutral	Basic	Free		6	6	7	
+171	Dread Infernal	Minion	Warlock	Basic	Free	Demon	6	6	6	Battlecry: Deal 1 damage to ALL other characters.
+172	Gelbin Mekkatorque	Minion	Neutral	Promotion	Legendary		6	6	6	Battlecry: Summon an AWESOME invention.
+173	Temple Enforcer	Minion	Priest	Expert	Common		6	6	6	Battlecry: Give a friendly minion +3 Health.
+174	Illidan Stormrage	Minion	Neutral	Expert	Legendary	Demon	6	7	5	"Whenever you play a card, summon a 2/1 Flame of Azzinoth."
+175	Fire Elemental	Minion	Shaman	Basic	Free		6	6	5	Battlecry: Deal 3 damage.
+176	Lord of the Arena	Minion	Neutral	Basic	Free		6	6	5	Taunt
+177	Savannah Highmane	Minion	Hunter	Expert	Rare	Beast	6	6	5	Deathrattle: Summon two 2/2 Hyenas.
+178	Archmage	Minion	Neutral	Basic	Free		6	4	7	Spell Damage +1
+179	Frost Elemental	Minion	Neutral	Expert	Common		6	5	5	Battlecry: Freeze a character.
+180	Sylvanas Windrunner	Minion	Neutral	Expert	Legendary		6	5	5	Deathrattle: Take control of a random enemy minion.
+181	Priestess of Elune	Minion	Neutral	Expert	Common		6	5	4	Battlecry: Restore 4 Health to your hero.
+182	Cabal Shadow Priest	Minion	Priest	Expert	Epic		6	4	5	Battlecry: Take control of an enemy minion that has 2 or less Attack.
+183	Cairne Bloodhoof	Minion	Neutral	Expert	Legendary		6	4	5	Deathrattle: Summon a 4/5 Baine Bloodhoof.
+184	Sunwalker	Minion	Neutral	Expert	Rare		6	4	5	Taunt. Divine Shield
+185	The Black Knight	Minion	Neutral	Expert	Legendary		6	4	5	Battlecry: Destroy an enemy minion with Taunt.
+186	Windfury Harpy	Minion	Neutral	Expert	Common		6	4	5	Windfury
+187	Hogger	Minion	Neutral	Expert	Legendary		6	4	4	"At the end of your turn, summon a 2/2 Gnoll with Taunt."
+188	Kidnapper	Minion	Rogue	Expert	Epic		6	5	3	Combo: Return a minion to its owner's hand.
+189	Reckless Rocketeer	Minion	Neutral	Basic	Free		6	5	2	Charge
+190	Argent Commander	Minion	Neutral	Expert	Rare		6	4	2	"Charge, Divine Shield"
+191	Prophet Velen	Minion	Priest	Expert	Legendary		7	7	7	Double the damage and healing of your spells and Hero Power.
+192	War Golem	Minion	Neutral	Basic	Free		7	7	7	
+193	Core Hound	Minion	Neutral	Basic	Free	Beast	7	9	5	
+194	Stormwind Champion	Minion	Neutral	Basic	Free		7	6	6	Your other minions have +1/+1.
+195	Baron Geddon	Minion	Neutral	Expert	Legendary		7	7	5	"At the end of your turn, deal 2 damage to ALL other characters."
+196	Ravenholdt Assassin	Minion	Neutral	Expert	Rare		7	7	5	Stealth
+197	Archmage Antonidas	Minion	Mage	Expert	Legendary		7	5	7	"Whenever you cast a spell, put a 'Fireball' spell into your hand."
+198	Guardian of Kings	Minion	Paladin	Basic	Free		7	5	6	Battlecry: Restore 6 Health to your hero.
+199	Ancient of Lore	Minion	Druid	Expert	Epic		7	5	5	Choose One - Draw 2 cards; or Restore 5 Health.
+200	Ancient of War	Minion	Druid	Expert	Epic		7	5	5	Choose One - +5 Attack; or +5 Health and Taunt.
+201	Ironbark Protector	Minion	Druid	Basic	Free		8	8	8	Taunt
+202	Ragnaros the Firelord	Minion	Neutral	Expert	Legendary		8	8	8	"Can't Attack. At the end of your turn, deal 8 damage to a random enemy."
+203	Gruul	Minion	Neutral	Expert	Legendary		8	7	7	"At the end of each turn, gain +1/+1."
+204	Tirion Fordring	Minion	Paladin	Expert	Legendary		8	6	6	Divine Shield. Taunt. Deathrattle: Equip a 5/3 Ashbringer.
+205	Grommash Hellscream	Minion	Warrior	Expert	Legendary		8	4	9	Charge. Enrage: +6 Attack
+206	Al'Akir the Windlord	Minion	Shaman	Expert	Legendary		8	3	5	"Windfury, Charge, Divine Shield, Taunt"
+207	Alexstrasza	Minion	Neutral	Expert	Legendary	Dragon	9	8	8	Battlecry: Set a hero's remaining Health to 15.
+208	King Krush	Minion	Hunter	Expert	Legendary	Beast	9	8	8	Charge
+209	Nozdormu	Minion	Neutral	Expert	Legendary	Dragon	9	8	8	Players only have 15 seconds to take their turns.
+210	Onyxia	Minion	Neutral	Expert	Legendary	Dragon	9	8	8	Battlecry: Summon 1/1 Whelps until your side of the battlefield is full.
+211	Malygos	Minion	Neutral	Expert	Legendary	Dragon	9	4	12	Spell Damage +5
+212	Ysera	Minion	Neutral	Expert	Legendary	Dragon	9	4	12	"At the end of your turn, draw a Dream Card."
+213	Lord Jaraxxus	Minion	Warlock	Expert	Legendary	Demon	9	3	15	Battlecry: Destroy your hero and replace him with Lord Jaraxxus.
+214	Cenarius	Minion	Druid	Expert	Legendary		9	5	8	Choose One - Give your other minions +2/+2; or Summon two 2/2 Treants with Taunt.
+215	Deathwing	Minion	Neutral	Expert	Legendary	Dragon	10	12	12	Battlecry: Destroy all other minions and discard your hand.
+216	Sea Giant	Minion	Neutral	Expert	Epic		10	8	8	Costs (1) less for each other minion on the battlefield.
+217	Mountain Giant	Minion	Neutral	Expert	Epic		12	8	8	Costs (1) less for each other card in your hand.
+218	Molten Giant	Minion	Neutral	Expert	Epic		20	8	8	Costs (1) less for each damage your hero has taken.
+219	Innervate	Spell	Druid	Basic	Free		0			Gain 2 Mana Crystals this turn only.
+220	Moonfire	Spell	Druid	Basic	Free		0			Deal 1 damage.
+221	Claw	Spell	Druid	Basic	Free		1			Give your hero +2 Attack this turn and 2 Armor.
+222	Naturalize	Spell	Druid	Expert	Common		1			Destroy a minion. Your opponent draws 2 cards.
+223	Savagery	Spell	Druid	Expert	Rare		1			Deal damage equal to your hero's Attack to a minion.
+224	Mark of the Wild	Spell	Druid	Basic	Free		2			Give a minion Taunt and +2/+2.
+225	Power of the Wild	Spell	Druid	Expert	Common		2			Choose One - Give your minions +1/+1; or Summon a 3/2 Panther.
+226	Wild Growth	Spell	Druid	Basic	Free		2			Gain an empty Mana Crystal.
+227	Wrath	Spell	Druid	Expert	Common		2			Choose One - Deal 3 damage to a minion; or 1 damage and draw a card.
+228	Healing Touch	Spell	Druid	Basic	Free		3			Restore 8 Health.
+229	Mark of Nature	Spell	Druid	Expert	Common		3			Choose One - Give a minion +4 Attack; or +4 Health and Taunt.
+230	Savage Roar	Spell	Druid	Basic	Free		3			Give your characters +2 Attack this turn.
+231	Bite	Spell	Druid	Expert	Rare		4			Give your hero +4 Attack this turn and 4 Armor.
+232	Soul of the Forest	Spell	Druid	Expert	Common		4			"Give your minions ""Deathrattle: Summon a 2/2 Treant."""
+233	Swipe	Spell	Druid	Basic	Free		4			Deal 4 damage to an enemy and 1 damage to all other enemies.
+234	Nourish	Spell	Druid	Expert	Rare		5			Choose One: Gain 2 Mana Crystals; or Draw 3 cards.
+235	Starfall	Spell	Druid	Expert	Rare		5			Choose One: Deal 5 damage to a minion; or 2 damage to all enemy minions.
+236	Force of Nature	Spell	Druid	Expert	Epic		6			Summon three 2/2 Treants with Charge that die at the end of the turn.
+237	Starfire	Spell	Druid	Basic	Free		6			Deal 5 damage. Draw a card.
+238	Hunter's Mark	Spell	Hunter	Basic	Free		0			Change a minion's Health to 1.
+239	Arcane Shot	Spell	Hunter	Basic	Free		1			Deal 2 damage.
+240	Bestial Wrath	Spell	Hunter	Expert	Epic		1			Give a Beast +2 Attack and Immune this turn.
+241	Flare	Spell	Hunter	Expert	Rare		1			All minions lose Stealth. Destroy all enemy Secrets. Draw a card.
+242	Tracking	Spell	Hunter	Basic	Free		1			Look at the top three cards of your deck. Draw one and discard the others.
+243	Explosive Trap	Spell	Hunter	Expert	Common		2			"Secret: When your hero is attacked, deal 2 damage to all enemies."
+244	Freezing Trap	Spell	Hunter	Expert	Common		2			"Secret: When an enemy minion attacks, return it to its owner's hand and it costs (2) more."
+245	Misdirection	Spell	Hunter	Expert	Rare		2			"Secret: When a character attacks your hero, instead he attacks another random character."
+246	Snake Trap	Spell	Hunter	Expert	Epic		2			"Secret: When one of your minions is attacked, summon three 1/1 Snakes."
+247	Snipe	Spell	Hunter	Expert	Common		2			"Secret: When your opponent plays a minion, deal 4 damage to it."
+248	Animal Companion	Spell	Hunter	Basic	Free		3			Summon a random Beast Companion.
+249	Deadly Shot	Spell	Hunter	Expert	Common		3			Destroy a random enemy minion.
+250	Kill Command	Spell	Hunter	Basic	Free		3			"Deal 3 damage. If you have a Beast, deal 5 damage instead."
+251	Unleash the Hounds	Spell	Hunter	Expert	Common		3			"For each enemy minion, summon a 1/1 Hound with Charge."
+252	Multi-Shot	Spell	Hunter	Basic	Free		4			Deal 3 damage to two random enemy minions.
+253	Explosive Shot	Spell	Hunter	Expert	Rare		5			Deal 5 damage to a minion and 2 damage to adjacent ones.
+254	Arcane Missiles	Spell	Mage	Basic	Free		1			Deal 3 damage randomly split among enemy characters.
+255	Ice Lance	Spell	Mage	Expert	Common		1			"Freeze a character. If it was already Frozen, deal 4 damage instead."
+256	Mirror Image	Spell	Mage	Basic	Free		1			Summon two 0/2 minions with Taunt.
+257	Arcane Explosion	Spell	Mage	Basic	Free		2			Deal 1 damage to all enemy minions.
+258	Frostbolt	Spell	Mage	Basic	Free		2			Deal 3 damage to a character and Freeze it.
+259	Arcane Intellect	Spell	Mage	Basic	Free		3			Draw 2 cards.
+260	Counterspell	Spell	Mage	Expert	Rare		3			"Secret: When your opponent casts a spell, Counter it."
+261	Frost Nova	Spell	Mage	Basic	Free		3			Freeze all enemy minions.
+262	Ice Barrier	Spell	Mage	Expert	Common		3			"Secret: As soon as your hero is attacked, gain 8 Armor."
+263	Ice Block	Spell	Mage	Expert	Epic		3			"Secret: When your hero takes fatal damage, prevent it and become Immune this turn."
+264	Mirror Entity	Spell	Mage	Expert	Common		3			"Secret: When your opponent plays a minion, summon a copy of it."
+265	Spellbender	Spell	Mage	Expert	Epic		3			"Secret: When an enemy casts a spell on a minion, summon a 1/3 as the new target."
+266	Vaporize	Spell	Mage	Expert	Rare		3			"Secret: When a minion attacks your hero, destroy it."
+267	Cone of Cold	Spell	Mage	Expert	Common		4			"Freeze a minion and the minions next to it, and deal 1 damage to them."
+268	Fireball	Spell	Mage	Basic	Free		4			Deal 6 damage.
+269	Polymorph	Spell	Mage	Basic	Free		4			Transform a minion into a 1/1 Sheep.
+270	Blizzard	Spell	Mage	Expert	Rare		6			Deal 2 damage to all enemy minions and Freeze them.
+271	Flamestrike	Spell	Mage	Basic	Free		7			Deal 4 damage to all enemy minions.
+272	Pyroblast	Spell	Mage	Expert	Epic		10			Deal 10 damage.
+273	Blessing of Might	Spell	Paladin	Basic	Free		1			Give a minion +3 Attack.
+274	Blessing of Wisdom	Spell	Paladin	Expert	Common		1			"Choose a minion. Whenever it attacks, draw a card."
+275	Eye for an Eye	Spell	Paladin	Expert	Common		1			"Secret: When your hero takes damage, deal that much damage to the enemy hero."
+276	Hand of Protection	Spell	Paladin	Basic	Free		1			Give a minion Divine Shield.
+277	Humility	Spell	Paladin	Basic	Free		1			Change a minion's Attack to 1.
+278	Noble Sacrifice	Spell	Paladin	Expert	Common		1			"Secret: When an enemy attacks, summon a 2/1 Defender as the new target."
+279	Redemption	Spell	Paladin	Expert	Common		1			"Secret: When one of your minions dies, return it to life with 1 Health."
+280	Repentance	Spell	Paladin	Expert	Common		1			"Secret: When your opponent plays a minion, reduce its Health to 1."
+281	Equality	Spell	Paladin	Expert	Rare		2			Change the Health of ALL minions to 1.
+282	Holy Light	Spell	Paladin	Basic	Free		2			Restore 6 Health.
+283	Divine Favor	Spell	Paladin	Expert	Rare		3			Draw cards until you have as many in hand as your opponent.
+284	Blessing of Kings	Spell	Paladin	Basic	Free		4			Give a minion +4/+4.
+285	Consecration	Spell	Paladin	Basic	Free		4			Deal 2 damage to all enemies.
+286	Hammer of Wrath	Spell	Paladin	Basic	Free		4			Deal 3 damage. Draw a card.
+287	Blessed Champion	Spell	Paladin	Expert	Rare		5			Double a minion's Attack.
+288	Holy Wrath	Spell	Paladin	Expert	Rare		5			Draw a card and deal damage equal to its cost.
+289	Avenging Wrath	Spell	Paladin	Expert	Epic		6			Deal 8 damage randomly split among enemy characters.
+290	Lay on Hands	Spell	Paladin	Expert	Epic		8			Restore 8 Health. Draw 3 cards.
+291	Circle of Healing	Spell	Priest	Expert	Common		0			Restore 4 Health to ALL minions.
+292	Silence	Spell	Priest	Expert	Common		0			Silence a minion.
+293	Holy Smite	Spell	Priest	Basic	Free		1			Deal 2 damage.
+294	Inner Fire	Spell	Priest	Expert	Common		1			Change a minion's Attack to be equal to its Health.
+295	Mind Vision	Spell	Priest	Basic	Free		1			Put a copy of a random card in your opponent's hand into your hand.
+296	Power Word: Shield	Spell	Priest	Basic	Free		1			Give a minion +2 Health. Draw a card.
+297	Divine Spirit	Spell	Priest	Basic	Free		2			Double a minion's Health.
+298	Mind Blast	Spell	Priest	Basic	Free		2			Deal 5 damage to the enemy hero.
+299	Shadow Word: Pain	Spell	Priest	Basic	Free		2			Destroy a minion with 3 or less Attack.
+300	Shadow Word: Death	Spell	Priest	Basic	Free		3			Destroy a minion with an Attack of 5 or more.
+301	Shadowform	Spell	Priest	Expert	Epic		3			Your Hero Power becomes 'Deal 2 damage'. If already in Shadowform: 3 damage.
+302	Thoughtsteal	Spell	Priest	Expert	Common		3			Copy 2 cards from your opponent's deck and put them into your hand.
+303	Mass Dispel	Spell	Priest	Expert	Rare		4			Silence all enemy minions. Draw a card.
+304	Mindgames	Spell	Priest	Expert	Epic		4			Put a copy of a random minion from your opponent's deck into the battlefield.
+305	Shadow Madness	Spell	Priest	Expert	Rare		4			Gain control of an enemy minion with 3 or less Attack until end of turn.
+306	Holy Nova	Spell	Priest	Basic	Free		5			Deal 2 damage to all enemies. Restore 2 Health to all friendly characters.
+307	Holy Fire	Spell	Priest	Expert	Rare		6			Deal 5 damage. Restore 5 Health to your hero.
+308	Mind Control	Spell	Priest	Basic	Free		10			Take control of an enemy minion.
+309	Backstab	Spell	Rogue	Basic	Free		0			Deal 2 damage to an undamaged minion.
+310	Preparation	Spell	Rogue	Expert	Epic		0			The next spell you cast this turn costs (3) less.
+311	Shadowstep	Spell	Rogue	Expert	Common		0			Return a friendly minion to your hand. It costs (2) less.
+312	Cold Blood	Spell	Rogue	Expert	Common		1			Give a minion +2 Attack. Combo: +4 Attack instead.
+313	Conceal	Spell	Rogue	Expert	Common		1			Give your minions Stealth until your next turn.
+314	Deadly Poison	Spell	Rogue	Basic	Free		1			Give your weapon +2 Attack.
+315	Sinister Strike	Spell	Rogue	Basic	Free		1			Deal 3 damage to the enemy hero.
+316	Betrayal	Spell	Rogue	Expert	Common		2			Force an enemy minion to deal its damage to the minions next to it.
+317	Blade Flurry	Spell	Rogue	Expert	Rare		2			Destroy your weapon and deal its damage to all enemies.
+318	Eviscerate	Spell	Rogue	Expert	Common		2			Deal 2 damage. Combo: Deal 4 damage instead.
+319	Sap	Spell	Rogue	Basic	Free		2			Return an enemy minion to your opponent's hand.
+320	Shiv	Spell	Rogue	Basic	Free		2			Deal 1 damage. Draw a card.
+321	Fan of Knives	Spell	Rogue	Basic	Free		3			Deal 1 damage to all enemy minions. Draw a card.
+322	Headcrack	Spell	Rogue	Expert	Rare		3			Deal 2 damage to the enemy hero. Combo: Return this to your hand next turn.
+323	Assassinate	Spell	Rogue	Basic	Free		5			Destroy an enemy minion.
+324	Vanish	Spell	Rogue	Basic	Free		6			Return all minions to their owner's hand.
+325	Sprint	Spell	Rogue	Basic	Free		7			Draw 4 cards.
+326	Ancestral Healing	Spell	Shaman	Basic	Free		0			Restore a minion to full Health and give it Taunt.
+327	Totemic Might	Spell	Shaman	Basic	Free		0			Give your Totems +2 Health.
+328	Earth Shock	Spell	Shaman	Expert	Common		1			"Silence a minion, then deal 1 damage to it."
+329	Forked Lightning	Spell	Shaman	Expert	Common		1			Deal 2 damage to 2 random enemy minions. Overload: (2)
+330	Frost Shock	Spell	Shaman	Basic	Free		1			Deal 1 damage to an enemy character and Freeze it.
+331	Lightning Bolt	Spell	Shaman	Expert	Common		1			Deal 3 damage. Overload: (1)
+332	Rockbiter Weapon	Spell	Shaman	Basic	Free		1			Give a friendly character +3 Attack this turn.
+333	Ancestral Spirit	Spell	Shaman	Expert	Rare		2			"Choose a minion. When that minion is destroyed, return it to the battlefield."
+334	Windfury	Spell	Shaman	Basic	Free		2			Give a minion Windfury.
+335	Far Sight	Spell	Shaman	Expert	Epic		3			Draw a card. That card costs (3) less.
+336	Feral Spirit	Spell	Shaman	Expert	Rare		3			Summon two 2/3 Spirit Wolves with Taunt. Overload: (2)
+337	Hex	Spell	Shaman	Basic	Free		3			Transform a minion into a 0/1 Frog with Taunt.
+338	Lava Burst	Spell	Shaman	Expert	Rare		3			Deal 5 damage. Overload: (2)
+339	Lightning Storm	Spell	Shaman	Expert	Rare		3			Deal 2-3 damage to all enemy minions. Overload: (2)
+340	Bloodlust	Spell	Shaman	Basic	Free		5			Give your minions +3 Attack this turn.
+341	Sacrificial Pact	Spell	Warlock	Basic	Free		0			Destroy a Demon. Restore 5 Health to your hero.
+342	Soulfire	Spell	Warlock	Basic	Free		0			Deal 4 damage. Discard a random card.
+343	Corruption	Spell	Warlock	Basic	Free		1			"Choose an enemy minion. At the start of your turn, destroy it."
+344	Mortal Coil	Spell	Warlock	Basic	Free		1			"Deal 1 damage to a minion. If that kills it, draw a card."
+345	Power Overwhelming	Spell	Warlock	Expert	Common		1			"Give a friendly minion +4/+4 until end of turn. Then, it dies. Horribly."
+346	Demonfire	Spell	Warlock	Expert	Common		2			"Deal 2 damage to a minion. If it's a friendly Demon, give it +2/+2 instead."
+347	Drain Life	Spell	Warlock	Basic	Free		3			Deal 2 damage. Restore 2 Health to your hero.
+348	Sense Demons	Spell	Warlock	Expert	Common		3			Put 2 random Demons from your deck into your hand.
+349	Shadow Bolt	Spell	Warlock	Basic	Free		3			Deal 4 damage to a minion.
+350	Hellfire	Spell	Warlock	Basic	Free		4			Deal 3 damage to ALL characters.
+351	Shadowflame	Spell	Warlock	Expert	Rare		4			Destroy a friendly minion and deal its Attack damage to all enemy minions.
+352	Bane of Doom	Spell	Warlock	Expert	Epic		5			"Deal 2 damage to a character. If that kills it, summon a random Demon."
+353	Siphon Soul	Spell	Warlock	Expert	Rare		6			Destroy a minion. Restore 3 Health to your hero.
+354	Twisting Nether	Spell	Warlock	Expert	Epic		8			Destroy all minions.
+355	Inner Rage	Spell	Warrior	Expert	Common		0			Deal 1 damage to a minion and give it +2 Attack.
+356	Execute	Spell	Warrior	Basic	Free		1			Destroy a damaged enemy minion.
+357	Shield Slam	Spell	Warrior	Expert	Epic		1			Deal 1 damage to a minion for each Armor you have.
+358	Upgrade!	Spell	Warrior	Expert	Rare		1			"If you have a weapon, give it +1/+1. Otherwise equip a 1/3 weapon."
+359	Whirlwind	Spell	Warrior	Basic	Free		1			Deal 1 damage to ALL minions.
+360	Battle Rage	Spell	Warrior	Expert	Common		2			Draw a card for each damaged friendly character.
+361	Cleave	Spell	Warrior	Basic	Free		2			Deal 2 damage to two random enemy minions.
+362	Commanding Shout	Spell	Warrior	Expert	Rare		2			Your minions can't be reduced below 1 Health this turn. Draw a card.
+363	Heroic Strike	Spell	Warrior	Basic	Free		2			Give your hero +4 Attack this turn.
+364	Rampage	Spell	Warrior	Expert	Common		2			Give a damaged minion +3/+3.
+365	Slam	Spell	Warrior	Expert	Common		2			"Deal 2 damage to a minion. If it survives, draw a card."
+366	Charge	Spell	Warrior	Basic	Free		3			Give a friendly minion +2 Attack and Charge.
+367	Shield Block	Spell	Warrior	Basic	Free		3			Gain 5 Armor. Draw a card.
+368	Mortal Strike	Spell	Warrior	Expert	Rare		4			"Deal 4 damage. If you have 12 or less Health, deal 6 instead."
+369	Brawl	Spell	Warrior	Expert	Epic		5			Destroy all minions except one. (chosen randomly)
+370	Eaglehorn Bow	Weapon	Hunter	Expert	Rare		3	3	2	"Whenever a friendly Secret is revealed, gain +1 Durability."
+371	Gladiator's Longbow	Weapon	Hunter	Expert	Epic		7	5	2	Your hero is Immune while attacking.
+372	Light's Justice	Weapon	Paladin	Basic	Free		1	1	4	
+373	Sword of Justice	Weapon	Paladin	Expert	Epic		3	1	5	"Whenever you summon a minion, give it +1/+1 and this loses 1 Durability."
+374	Truesilver Champion	Weapon	Paladin	Basic	Free		4	4	2	"Whenever your hero attacks, restore 2 Health to it."
+375	Perdition's Blade	Weapon	Rogue	Expert	Rare		3	2	2	Battlecry: Deal 1 damage. Combo: Deal 2 instead.
+376	Assassin's Blade	Weapon	Rogue	Basic	Free		5	3	4	
+377	Stormforged Axe	Weapon	Shaman	Expert	Common		2	2	3	Overload: (1)
+378	Doomhammer	Weapon	Shaman	Expert	Epic		5	2	8	"Windfury, Overload: (2)"
+379	Fiery War Axe	Weapon	Warrior	Basic	Free		2	3	2	
+380	Arcanite Reaper	Weapon	Warrior	Basic	Free		5	5	2	
+381	Gorehowl	Weapon	Warrior	Expert	Epic		7	7	1	Attacking a minion costs 1 Attack instead of 1 Durability.
+382	Adrenaline Rush	Spell	Rogue	Discarded	Epic		1			Draw a card. Combo: Draw 2 cards instead.
+383	Legacy of the Emperor	Spell		Tutorial	Free		3			Give your minions +2/+2.
+384	Metamorphosis	Spell		Tutorial	Free		6			Do something crazy.
+385	Huffer	Minion		Basic	Free	Beast	3	4	2	Charge
+386	Leokk	Minion		Basic	Free	Beast	3	2	4	Other friendly minions have +1 Attack.
+387	Misha	Minion		Basic	Free	Beast	3	4	4	Taunt
+388	Devilsaur	Minion		Expert	Common	Beast	5	5	5	
+389	Transcendence	Spell		Tutorial	Free		1			"Until you kill Cho's minions, he can't be attacked."
+390	The Coin	Spell		Basic	Free		0			Gain 1 Mana Crystal this turn only.
+391	Flame Burst	Spell		Tutorial	Free		3			Shoot 5 missiles at random enemies for 1 damage each.
+392	Ashbringer	Weapon		Expert	Legendary		5	5	3	
+393	Mukla's Big Brother	Minion		Tutorial	Free		6	10	10	
+394	Healing Totem	Minion		Basic	Free	Totem	1	0	2	"At the end of your turn, restore 1 Health to all friendly minions."
+395	Emboldener 3000	Minion		Promotion	Common		1	0	4	"At the end of your turn, give a random minion +1/+1."
+396	Stomp	Spell		Tutorial	Free		2			Deal 2 damage to all enemies.
+397	Demigod's Favor	Spell		Expert	Common		0			Give your other minions +2/+2.
+398	Leader of the Pack	Spell		Expert	Common		0			Give your minions +1/+1.
+399	Shan'do's Lesson	Spell		Expert	Common		0			Summon two 2/2 Treants with Taunt.
+400	Summon a Panther	Spell		Expert	Common		0			Summon a 3/2 Panther.
+401	Battle Axe	Weapon		Expert	Common		1	2	2	
+402	Repair Bot	Minion		Promotion	Common		1	0	3	"At the end of your turn, restore 6 Health to a damaged character."
+403	Searing Totem	Minion		Basic	Free	Totem	1	1	1	
+404	Stoneclaw Totem	Minion		Basic	Free	Totem	1	0	2	Taunt
+405	Chicken	Minion		Expert	Common	Beast	0	1	1	
+406	Murloc Scout	Minion		Basic	Free	Murloc	0	1	1	
+407	Sheep	Minion		Basic	Free	Beast	0	1	1	
+408	Snake	Minion		Expert	Common	Beast	0	1	1	
+409	Violet Apprentice	Minion		Expert	Common		0	1	1	
+410	Barrel	Minion		Tutorial	Free		0	0	2	
+411	Frog	Minion		Basic	Free	Beast	0	0	1	Taunt
+412	Shadow of Nothing	Minion		Expert	Epic		0	0	1	
+413	Squire	Minion		Expert	Common		1	2	2	
+414	Treant	Minion		Expert	Common		1	2	2	"Charge. At the end of the turn, destroy this minion."
+415	Damaged Golem	Minion		Expert	Common		1	2	1	
+416	Defender	Minion		Expert	Common		1	2	1	
+417	Defias Bandit	Minion		Expert	Common		1	2	1	
+418	Flame of Azzinoth	Minion		Expert	Common		1	2	1	
+419	Mechanical Dragonling	Minion		Basic	Free		1	2	1	
+420	Riverpaw Gnoll	Minion		Tutorial	Free		1	2	1	
+421	Crazy Monkey	Minion		Tutorial	Free		1	1	2	Battlecry: Throw Bananas.
+422	Boar	Minion		Basic	Free	Beast	1	1	1	
+423	Crazed Hunter	Minion		Tutorial	Free		1	1	1	
+424	Gnoll	Minion		Expert	Common		2	2	2	Taunt
+425	Hound	Minion		Expert	Common	Beast	1	1	1	Charge
+426	Imp	Minion		Expert	Rare	Demon	1	1	1	
+427	Murloc	Minion		Expert	Common	Murloc	1	1	1	
+428	Naga Myrmidon	Minion		Tutorial	Free		1	1	1	
+429	Pandaren Scout	Minion		Tutorial	Free		1	1	1	
+430	Silver Hand Recruit	Minion		Basic	Free		1	1	1	
+431	Squirrel	Minion		Expert	Common	Beast	1	1	1	
+432	Whelp	Minion		Expert	Common	Dragon	1	1	1	
+433	Worthless Imp	Minion		Expert	Common	Demon	1	1	1	
+434	Homing Chicken	Minion		Promotion	Common		1	0	1	"At the start of your turn, destroy this minion and draw 3 cards."
+435	Poultryizer	Minion		Promotion	Common		1	0	3	"At the start of your turn, transform a random minion into a 1/1 Chicken."
+436	Wrath of Air Totem	Minion		Basic	Free	Totem	1	0	2	Spell Damage +1
+437	Finkle Einhorn	Minion		Expert	Legendary		2	3	3	
+438	Panther	Minion		Expert	Common	Beast	2	3	2	
+439	Spirit Wolf	Minion		Expert	Rare		2	2	3	Taunt
+440	Hyena	Minion		Expert	Rare	Beast	2	2	2	
+441	Shado-Pan Monk	Minion		Tutorial	Free		2	2	2	
+442	Hidden Gnome	Minion		Tutorial	Free		2	1	3	
+443	Laughing Sister	Minion		Expert	Common		3	3	5	Can't be targeted by Spells or Hero Powers.
+444	Emerald Drake	Minion		Expert	Common	Dragon	4	7	6	
+445	Baine Bloodhoof	Minion		Expert	Legendary		4	4	5	
+446	Brewmaster	Minion		Tutorial	Free		4	4	4	
+447	Massive Gnoll	Minion		Tutorial	Free		4	5	2	
+448	Infernal	Minion		Expert	Common	Demon	6	6	6	
+449	Ancient Secrets	Spell		Expert	Common		0			Restore 5 Health.
+450	Ancient Teachings	Spell		Expert	Common		0			Draw 2 cards.
+451	Bear Form	Spell		Expert	Common		0			+2 Health and Taunt.
+452	Cat Form	Spell		Expert	Common		0			Charge
+453	Dispel	Spell		Expert	Common		0			Silence a minion.
+454	Dream	Spell		Expert	Common		0			Return a minion to its owner's hand.
+455	Excess Mana	Spell		Basic	Free		0			Draw a card.
+456	Nightmare	Spell		Expert	Common		0			"Give a minion +5/+5. At the start of your next turn, destroy it."
+457	Rooted	Spell		Expert	Common		0			+5 Health and Taunt.
+458	Uproot	Spell		Expert	Common		0			+5 Attack.
+459	Bananas	Spell		Expert	Common		1			Give a minion +1/+1.
+460	Ysera Awakens	Spell		Expert	Common		2			Deal 5 damage to all characters except Ysera.
+461	I Am Murloc	Spell		Promotion	Common		4			"Summon three, four, or five 1/1 Murlocs."
+462	Power of the Horde	Spell		Promotion	Common		4			Summon a random Horde Warrior.
+463	Rogues Do It¡­	Spell		Promotion	Common		4			Deal 4 damage. Draw a card.
+464	Barrel Toss	Spell		Tutorial	Free		1			Deal 2 damage.
+465	Hogger SMASH!	Spell		Tutorial	Free		3			Deal 4 damage.
+466	Will of Mukla	Spell		Tutorial	Free		3			Restore 8 Health.
+467	Heavy Axe	Weapon		Expert	Common		1	1	3	
+468	Wicked Knife	Weapon		Basic	Free		1	1	2	
+469	Blood Fury	Weapon		Expert	Common		3	3	8	
+470	Warglaive of Azzinoth	Weapon		Tutorial	Free		2	2	2	
+471	Dual Warglaives	Weapon		Tutorial	Free		6	4	2	
+472	Skeleton	Minion	Neutral	Discarded	Free		3	3	3	
+473	Druid of the Claw	Minion		Expert	Common		5	4	6	Taunt
+474	Druid of the Claw	Minion		Expert	Common		5	4	4	Charge
+475	Moonfire	Spell		Expert	Common		0			Deal 2 damage.
+476	Mirror Image	Minion		Basic	Free		0	0	2	Taunt
+477	Spellbender	Minion		Expert	Epic		0	1	3	
+478	Treant	Minion		Expert	Common		1	2	2	Taunt
+479	Treant	Minion		Expert	Common		1	2	2	
+480	Gnoll	Minion		Tutorial	Free		1	1	1	
+481	Skeleton	Minion		Naxxramas	Free		1	1	1	
+482	Skeleton	Minion		Naxxramas	Free		5	5	5	
+483	Nerub'ar Weblord	Minion	Neutral	Naxxramas	Common		2	1	4	Minions with Battlecry cost (2) more.
+484	Deathcharger	Minion		Naxxramas	Free		1	2	3	Charge. Deathrattle: Deal 3 damage to your hero.
+485	Deathlord	Minion	Neutral	Naxxramas	Rare		3	2	8	Taunt. Deathrattle: Your opponent puts a minion from their deck into the battlefield.
+486	Stoneskin Gargoyle	Minion	Neutral	Naxxramas	Common		3	1	4	"At the start of your turn, restore this minion to full Health."
+487	Nerubian	Minion		Naxxramas	Free		2	3	1	
+488	Nerubian	Minion		Naxxramas	Free		2	4	4	
+489	Anub'ar Ambusher	Minion	Rogue	Naxxramas	Common		4	5	5	Deathrattle: Return a random friendly minion to your hand.
+490	Haunted Creeper	Minion	Neutral	Naxxramas	Common	Beast	2	1	2	Deathrattle: Summon two 1/1 Spectral Spiders.
+491	Spectral Spider	Minion		Naxxramas	Free		1	1	1	
+492	Nerubian Egg	Minion	Neutral	Naxxramas	Rare		2	0	2	Deathrattle: Summon a 4/4 Nerubian.
+493	Nerubian	Minion		Naxxramas	Rare		3	4	4	
+494	Shade of Naxxramas	Minion	Neutral	Naxxramas	Epic		3	2	2	"Stealth. At the start of your turn, gain +1/+1."
+495	Dancing Swords	Minion	Neutral	Naxxramas	Common		3	4	4	Deathrattle: Your opponent draws a card.
+496	Dark Cultist	Minion	Priest	Naxxramas	Common		3	3	4	Deathrattle: Give a random friendly minion +3 Health.
+497	Necroknight	Minion		Naxxramas	Free		4	5	6	Deathrattle: Destroy the minions next to this one as well.
+498	Worshipper	Minion		Naxxramas	Free		3	1	4	Your hero has +1 Attack on your turn.
+499	Worshipper	Minion		Naxxramas	Free		3	2	4	Your hero has +3 Attack on your turn.
+500	Undertaker	Minion	Neutral	Naxxramas	Common		1	1	2	"Whenever you summon a minion with Deathrattle, gain +1/+1."
+501	Webspinner	Minion	Hunter	Naxxramas	Common	Beast	1	1	1	Deathrattle: Add a random Beast card to your hand.
+502	Sludge Belcher	Minion	Neutral	Naxxramas	Rare		5	3	5	Taunt. Deathrattle: Summon a 1/2 Slime with Taunt.
+503	Slime	Minion		Naxxramas	Free		1	1	2	Taunt
+504	Maexxna	Minion	Neutral	Naxxramas	Legendary	Beast	6	2	8	Destroy any minion damaged by this minion.
+505	Echoing Ooze	Minion	Neutral	Naxxramas	Epic		2	1	2	Battlecry: Summon an exact copy of this minion at the end of the turn.
+506	Spectral Knight	Minion	Neutral	Naxxramas	Common		5	4	6	Can't be targeted by Spells or Hero Powers.
+507	Avatar of the Coin	Minion		Discarded	Free		0	1	1	
+508	Fallout Slime	Minion		Naxxramas	Free		1	2	2	
+509	Feugen	Minion	Neutral	Naxxramas	Legendary		5	4	7	"Deathrattle: If Stalagg also died this game, summon Thaddius."
+510	Frozen Champion	Minion		Naxxramas	Free		5	2	10	Permanently Frozen. Adjacent minions are Immune to Frost Breath.
+511	Guardian of Icecrown	Minion		Naxxramas	Free		4	3	3	Taunt
+512	Guardian of Icecrown	Minion		Naxxramas	Free		4	5	5	Taunt
+513	Lady Blaumeux	Minion		Naxxramas	Free		3	1	7	Your hero is Immune.
+514	Lady Blaumeux	Minion		Naxxramas	Free		3	2	7	Your hero is Immune.
+515	Mr. Bigglesworth	Minion		Naxxramas	Legendary	Beast	0	1	1	
+516	Sir Zeliek	Minion		Naxxramas	Free		3	1	7	Your hero is Immune.
+517	Sir Zeliek	Minion		Naxxramas	Free		3	2	7	Your hero is Immune.
+518	Skeletal Smith	Minion		Naxxramas	Free		3	4	3	Deathrattle: Destroy your opponent's weapon.
+519	Spectral Rider	Minion		Naxxramas	Free		5	0	6	"At the start of your turn, deal 1 damage to your hero."
+520	Spectral Trainee	Minion		Naxxramas	Free		1	0	2	"At the start of your turn, deal 1 damage to your hero."
+521	Spectral Warrior	Minion		Naxxramas	Free		3	0	4	"At the start of your turn, deal 1 damage to your hero."
+522	Spore	Minion		Naxxramas	Free		0	0	1	Deathrattle: Give all enemy minions +8 Attack.
+523	Stalagg	Minion	Neutral	Naxxramas	Legendary		5	7	4	"Deathrattle: If Feugen also died this game, summon Thaddius."
+524	Thane Korth'azz	Minion		Naxxramas	Free		3	1	7	Your hero is Immune.
+525	Thane Korth'azz	Minion		Naxxramas	Free		3	2	7	Your hero is Immune.
+526	Understudy	Minion		Naxxramas	Free		2	0	7	Taunt
+527	Unrelenting Rider	Minion		Naxxramas	Free		6	5	6	Deathrattle: Summon a Spectral Rider for your opponent.
+528	Unrelenting Trainee	Minion		Naxxramas	Free		1	2	2	Deathrattle: Summon a Spectral Trainee for your opponent.
+529	Unrelenting Warrior	Minion		Naxxramas	Free		3	3	4	Deathrattle: Summon a Spectral Warrior for your opponent.
+530	Mad Scientist	Minion	Neutral	Naxxramas	Common		2	2	2	Deathrattle: Put a Secret from your deck into the battlefield.
+531	Unstable Ghoul	Minion	Neutral	Naxxramas	Common		2	1	3	Taunt. Deathrattle: Deal 1 damage to all minions.
+532	Zombie Chow	Minion	Neutral	Naxxramas	Common		1	2	3	Deathrattle: Restore 5 Health to the enemy hero.
+533	Wailing Soul	Minion	Neutral	Naxxramas	Rare		4	3	5	Battlecry: Silence your other minions.
+534	Baron Rivendare	Minion	Neutral	Naxxramas	Legendary		4	1	7	Your minions trigger their Deathrattles twice.
+535	Kel'Thuzad	Minion	Neutral	Naxxramas	Legendary		8	6	8	"At the end of each turn, summon all friendly minions that died this turn."
+536	Loatheb	Minion	Neutral	Naxxramas	Legendary		5	5	5	Battlecry: Enemy spells cost (5) more next turn.
+537	Thaddius	Minion		Naxxramas	Legendary		10	11	11	
+538	Voidcaller	Minion	Warlock	Naxxramas	Common	Demon	4	3	4	Deathrattle: Put a random Demon from your hand into the battlefield.
+539	Locust Swarm	Spell		Naxxramas	Free		7			Deal 3 damage to all enemy minions. Restore 3 Health to you hero.
+540	Reincarnate	Spell	Shaman	Naxxramas	Common		2			"Destroy a minion, then return it to life with full Health."
+541	Poison Seeds	Spell	Druid	Naxxramas	Common		4			Destroy all minions and summon 2/2 Treants to replace them.
+542	Necrotic Poison	Spell		Naxxramas	Free		2			Destroy a minion.
+543	Deathbloom	Spell		Naxxramas	Free		4			Deal 5 damage to a minion. Summon a Spore.
+544	Enrage	Spell		Naxxramas	Free		3			Give your hero +6 Attack this turn.
+545	Mark of the Horsemen	Spell		Naxxramas	Free		5			Give your minions and your weapon +1/+1.
+546	Mind Control Crystal	Spell		Naxxramas	Free		1			Activate the Crystal to control the Understudies!
+547	Mindpocalypse	Spell		Naxxramas	Free		2			Both players draw 2 cards and gain a Mana Crystal.
+548	Mutating Injection	Spell		Naxxramas	Free		3			Give a minion +4/+4 and Taunt
+549	NOOOOOOOOOOOO	Spell		Basic	Free		2			"Somehow, the card you USED to have has been deleted. Here, have this one instead!"
+550	Plague	Spell		Naxxramas	Free		6			Destroy all non-Skeleton minions.
+551	Pure Cold	Spell		Naxxramas	Free		5			"Deal 8 damage to the enemy hero, and Freeze it."
+552	Sporeburst	Spell		Naxxramas	Free		1			Deal 1 damage to all enemy minions. Summon a Spore.
+553	Supercharge	Spell		Naxxramas	Free		2			Give your minions +2 Health.
+554	Duplicate	Spell	Mage	Naxxramas	Common		3			"Secret: When a friendly minion dies, put 2 copies of it into your hand."
+555	Avenge	Spell	Paladin	Naxxramas	Common		1			"Secret: When one of your minions dies, give a random friendly minion +3/+2."
+556	Hook	Weapon		Naxxramas	Free		3	5	8	Deathrattle: Put this weapon into your hand.
+557	Hook	Weapon		Naxxramas	Free		3	4	8	"Windfury, Deathrattle: Put this weapon into your hand."
+558	Jaws	Weapon		Naxxramas	Free		1	1	5	"Whenever a minion with Deathrattle dies, gain +2 Attack."
+559	Jaws	Weapon		Naxxramas	Free		1	3	5	"Whenever a minion with Deathrattle dies, gain +2 Attack."
+560	Massive Runeblade	Weapon		Naxxramas	Free		3	5	2	Deals double damage to heroes.
+561	Massive Runeblade	Weapon		Naxxramas	Free		3	10	2	Deals double damage to heroes.
+562	Runeblade	Weapon		Naxxramas	Free		3	1	3	Has +3 Attack if the other Horsemen are dead.
+563	Runeblade	Weapon		Naxxramas	Free		3	2	3	Has +6 Attack if the other Horsemen are dead.
+564	Death's Bite	Weapon	Warrior	Naxxramas	Common		4	4	2	Deathrattle: Deal 1 damage to all minions.
