@@ -19,29 +19,37 @@ def load_card_collection (filename):
     COLLECTION[card_by_name(name).id] = count
   fin.close()
 
-def find_craft_card (deck):
-  cost_total = 0
+def split_card (deck):
   card_hand = []
-  card_craft = []
+  card_forge = []
+  card_soul = []
+  cost_total = 0
   for (id, needed) in deck.cards:
     card = card_by_id(id)
     available = COLLECTION[id] if id in COLLECTION else 0
     if available > 0:
       card_hand.append((card, min(needed, available)))
     if needed > available:
-      cost_total += card.forge_cost() * (needed - available)
-      card_craft.append((card, needed - available))
-  return (cost_total, card_hand, card_craft)
+      if card.can_be_forged():
+        card_forge.append((card, needed - available))
+        cost_total += card.forge_cost() * (needed - available)
+      else:
+        card_soul.append((card, needed - available))
+  return (card_hand, card_forge, card_soul, cost_total)
 
-def show_deck (deck, cost_total, card_hand, card_craft):
+def show_deck (deck, cost_total, card_hand, card_forge, card_soul):
   print '%s (by %s)' % (deck.name, deck.author)
-  print 'Rating: %d, Type: %s' % (deck.rating, deck.type)
-  print 'Cards already in your hand:'
-  print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_hand])
-  if card_craft:
-    print 'Cards need crafting:'
-    print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_craft])
+  print 'Rating: %d, Type: %s, Updated: %s' % (deck.rating, deck.type, deck.time_update)
+  if card_hand:
+    print 'Cards already in your collection:'
+    print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_hand])
+  if card_forge:
+    print 'Cards can be forged:'
+    print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_forge])
     print '  Total Arcane Dust: %d' % cost_total
+  if card_soul:
+    print 'Cards can not be forged (Soulbound):'
+    print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_soul])
   print
 
 if __name__ == '__main__':
@@ -53,9 +61,9 @@ if __name__ == '__main__':
   for row in deck_select_by_class(hero_class):
     deck = Deck.from_database(row)
     if deck.is_valid():
-      (cost_total, card_hand, card_craft) = find_craft_card(deck)
-      if cost_total <= dust_amount or dust_amount == -1:
-        show_deck(deck, cost_total, card_hand, card_craft)
+      (card_hand, card_forge, card_soul, cost_total) = split_card(deck)
+      if not card_soul and cost_total <= dust_amount or dust_amount == -1:
+        show_deck(deck, cost_total, card_hand, card_forge, card_soul)
         if raw_input('Press Enter to continue. Input (X) and enter to exit.\n').upper() == 'X':
           break
   database_close()

@@ -30,7 +30,7 @@ class Deck ():
     for (id, count) in self.cards:
       total += count
       card = card_by_id(id)
-      if card.hero_class in ['Special', 'Tutorial', 'Discard']:
+      if card.hero_class == '' or card.set == 'Discarded':
         return False
     return total == 30
 

@@ -2,8 +2,8 @@ from termcolor import colored
 
 class Card ():
 
-  FORGE_COST = {'Legendary': 1600, 'Epic': 400, 'Rare': 100, 'Common': 40, 'Basic': 1000000}
-  COLOR = {'Legendary': 'yellow', 'Epic': 'magenta', 'Rare': 'blue', 'Common': 'green', 'Basic': 'white'}
+  FORGE_COST = {'Legendary': 1600, 'Epic': 400, 'Rare': 100, 'Common': 40, 'Free': 0}
+  COLOR = {'Legendary': 'red', 'Epic': 'magenta', 'Rare': 'blue', 'Common': 'green', 'Free': 'white'}
 
   @classmethod
   def from_csv (cls, row):
@@ -12,8 +12,9 @@ class Card ():
     card.name = row['name']
     card.type = row['type']
     card.hero_class = row['class']
-    card.race = row['race']
+    card.set = row['set']
     card.rarity = row['rarity']
+    card.race = row['race']
     card.cost = int(row['cost'])
     if card.type in ['Minion', 'Weapon']:
       card.attack = int(row['attack'])
@@ -24,21 +25,24 @@ class Card ():
     card.power = row['power']
     return card
 
+  def can_be_forged (self):
+    return self.set in ['Expert', 'Promotion']
+
   def forge_cost (self):
     if self.rarity not in Card.FORGE_COST:
-      raise Exception('Incorrect rarity for card: %s' % self.name)
+      raise Exception('Incorrect rarity for card: %s [%s]' % (self.name, self.rarity))
     else:
       return Card.FORGE_COST[self.rarity]
 
   def colored_name (self):
     if self.rarity not in Card.COLOR:
-      raise Exception('Incorrect rarity for card: %s' % self.name)
+      raise Exception('Incorrect rarity for card: %s [%s]' % (self.name, self.rarity))
     return colored(self.name, Card.COLOR[self.rarity], attrs=['bold'])
 
   def __str__ (self):
     ss = StringIO()
     ss.write('%s (%d)\n' % (self.name, self.id))
-    ss.write('Type: %s, Class: %s, Rarity: %s' % (self.type, self.hero_class, self.rarity))
+    ss.write('Type: %s, Class: %s, Set: %s, Rarity: %s' % (self.type, self.hero_class, self.set, self.rarity))
     if self.race:
       ss.write(', Race: %s' % self.race)
     ss.write('\n')
