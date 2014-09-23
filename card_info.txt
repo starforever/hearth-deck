@@ -59,7 +59,7 @@ id	name	type	class	set	rarity	race	cost	attack	health	power
 57	Ironbeak Owl	Minion	Neutral	Expert	Common	Beast	2	2	1	Battlecry: Silence a minion.
 58	Loot Hoarder	Minion	Neutral	Expert	Common		2	2	1	Deathrattle: Draw a card.
 59	Murloc Tidehunter	Minion	Neutral	Basic	Free	Murloc	2	2	1	Battlecry: Summon a 1/1 Murloc Scout.
-60	Starving Buzzard	Minion	Hunter	Basic	Free	Beast	2	2	1	"Whenever you summon a Beast, draw a card."
+60	Starving Buzzard	Minion	Hunter	Basic	Free	Beast	5	3	2	"Whenever you summon a Beast, draw a card."
 61	Bloodmage Thalnos	Minion	Neutral	Expert	Legendary		2	1	1	Spell Damage +1. Deathrattle: Draw a card.
 62	Captain's Parrot	Minion	Neutral	Reward	Epic	Beast	2	1	1	Battlecry: Put a random Pirate from your deck into your hand.
 63	Novice Engineer	Minion	Neutral	Basic	Free		2	1	1	Battlecry: Draw a card.
@@ -124,7 +124,7 @@ id	name	type	class	set	rarity	race	cost	attack	health	power
 122	Sen'jin Shieldmasta	Minion	Neutral	Basic	Free		4	3	5	Taunt
 123	Violet Teacher	Minion	Neutral	Expert	Rare		4	3	5	"Whenever you cast a spell, summon a 1/1 Violet Apprentice."
 124	Oasis Snapjaw	Minion	Neutral	Basic	Free	Beast	4	2	7	
-125	Leeroy Jenkins	Minion	Neutral	Expert	Legendary		4	6	2	Charge. Battlecry: Summon two 1/1 Whelps for your opponent.
+125	Leeroy Jenkins	Minion	Neutral	Expert	Legendary		5	6	2	Charge. Battlecry: Summon two 1/1 Whelps for your opponent.
 126	Houndmaster	Minion	Hunter	Basic	Free		4	4	3	Battlecry: Give a friendly Beast +2/+2 and Taunt.
 127	Kor'kron Elite	Minion	Warrior	Basic	Free		4	4	3	Charge
 128	Spellbreaker	Minion	Neutral	Expert	Common		4	4	3	Battlecry: Silence a minion.
