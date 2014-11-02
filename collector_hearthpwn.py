@@ -29,7 +29,7 @@ def get_page_root (url):
 def parse_deck (deck):
   url = DOMAIN + deck.url
   info = get_page_root(url).find_class('infobox')[0]
-  deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-dust-cost')[0].text_content()).groups()[0])
+  deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-type')[0].xpath('ul/li')[1].text_content()).groups()[0])
   rows = []
   for sec in info.find_class('t-deck-details-card-list'):
     rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
