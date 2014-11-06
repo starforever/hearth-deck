@@ -11,9 +11,9 @@ from key_store import save as save_key, load as load_key
 REST_INTERVAL = 3
 DOMAIN = 'http://www.hearthpwn.com'
 
-DUST_COST_MATCHER = re.compile('.*Crafting Cost: (\d+).*', re.DOTALL)
+DUST_COST_MATCHER = re.compile('.*Crafting Cost: -?(\d+).*', re.DOTALL)
 DECK_ID_MATCHER = re.compile('/decks/(\d+).*')
-CARD_COUNT_MATCHER = re.compile(u'.*\xd7 (\d+).*', re.DOTALL)
+CARD_COUNT_MATCHER = re.compile(u'.*\xd7 -?(\d+).*', re.DOTALL)
 
 def get_page_root (url):
   root = None
