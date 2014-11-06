@@ -28,16 +28,23 @@ def get_page_root (url):
 
 def parse_deck (deck):
   url = DOMAIN + deck.url
-  info = get_page_root(url).find_class('infobox')[0]
-  deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-type')[0].xpath('ul/li')[1].text_content()).groups()[0])
-  rows = []
-  for sec in info.find_class('t-deck-details-card-list'):
-    rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
-  deck.cards = []
-  for row in rows:
-    name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
-    count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
-    deck.cards.append((card_by_name(name).id, count))
+  while True:
+      try:
+        info = get_page_root(url).find_class('infobox')[0]
+        deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-type')[0].xpath('ul/li')[1].text_content()).groups()[0])
+        rows = []
+        for sec in info.find_class('t-deck-details-card-list'):
+          rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
+        deck.cards = []
+        for row in rows:
+          name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
+          count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
+          deck.cards.append((card_by_name(name).id, count))
+        return;
+      except IndexError as e:
+        print e
+        print 'Retry after %d seconds.' % REST_INTERVAL
+        time.sleep(REST_INTERVAL)
 
 def parse_row (row):
   deck = Deck()
@@ -71,17 +78,23 @@ def process_deck (deck):
 def parse_page (pagenum):
   print '(%s) Parsing page %d...' % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pagenum)
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
-  root = get_page_root(url)
-  rows = root.get_element_by_id('decks').xpath('tbody/tr')
-  rownum = load_key('CURRENT_ROW', 0)
-  while rownum < len(rows):
-    deck = parse_row(rows[rownum])
-    status = process_deck(deck)
-    rownum += 1
-    save_key('CURRENT_ROW', rownum)
-    print '  [%d] (%s) %s' % (deck.id, status, deck.name)
-  has_next = 'Next' in [e.text_content() for e in root.find_class('paging-list')[0].xpath('li/a')]
-  return has_next
+  while True:
+    try:
+      root = get_page_root(url)
+      rows = root.get_element_by_id('decks').xpath('tbody/tr')
+      rownum = load_key('CURRENT_ROW', 0)
+      while rownum < len(rows):
+        deck = parse_row(rows[rownum])
+        status = process_deck(deck)
+        rownum += 1
+        save_key('CURRENT_ROW', rownum)
+        print '  [%d] (%s) %s' % (deck.id, status, deck.name)
+      has_next = 'Next' in [e.text_content() for e in root.find_class('paging-list')[0].xpath('li/a')]
+      return has_next
+    except IndexError as e:
+      print e
+      print 'Retry after %d seconds.' % REST_INTERVAL
+      time.sleep(REST_INTERVAL)
 
 def parse ():
   global SCAN_COUNT
