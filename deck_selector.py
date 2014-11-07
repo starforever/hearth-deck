@@ -1,4 +1,5 @@
 from cStringIO import StringIO
+import time
 import re
 from util import parse_arg
 from deck import Deck
@@ -39,7 +40,7 @@ def split_card (deck):
 
 def show_deck (deck, cost_total, card_hand, card_forge, card_soul):
   print '%s (by %s)' % (deck.name, deck.author)
-  print 'Rating: %d, Type: %s, Updated: %s' % (deck.rating, deck.type, deck.time_update)
+  print 'Rating: %d, Type: %s, Updated: %s' % (deck.rating, deck.type, time.strftime('%Y-%m-%d %H:%M:%S', deck.time_update))
   if card_hand:
     print 'Cards already in your collection:'
     print '\n'.join(['  %s x %d' % (card.colored_name(), count) for (card, count) in card_hand])

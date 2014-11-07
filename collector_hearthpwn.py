@@ -1,5 +1,4 @@
 import time
-from datetime import datetime
 import re
 import lxml.html
 from util import parse_arg
@@ -40,7 +39,7 @@ def parse_deck (deck):
           name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
           count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
           deck.cards.append((card_by_name(name).id, count))
-        return;
+        return
       except (IndexError, KeyError) as e:
         print e
         print 'Retry after %d seconds.' % REST_INTERVAL
@@ -57,7 +56,7 @@ def parse_row (row):
   deck.rating = int(row.find_class('col-ratings')[0].xpath('div')[0].text_content())
   deck.num_view = int(row.find_class('col-views')[0].text_content())
   deck.num_comment = int(row.find_class('col-comments')[0].text_content())
-  deck.time_update = datetime.fromtimestamp(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
+  deck.time_update = time.localtime(int(row.find_class('col-updated')[0].xpath('abbr')[0].attrib['data-epoch']))
   deck.scan_count = SCAN_COUNT
   return deck
 
@@ -76,7 +75,7 @@ def process_deck (deck):
   return status
 
 def parse_page (pagenum):
-  print '(%s) Parsing page %d...' % (datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pagenum)
+  print '(%s) Parsing page %d...' % (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()), pagenum)
   url = DOMAIN + '/decks?filter-is-forge=2&sort=-datemodified&page=%d' % pagenum
   while True:
     try:

@@ -1,3 +1,4 @@
+import time
 import sqlite3
 from cPickle import dumps as pickle_dumps
 
@@ -22,14 +23,14 @@ def deck_create ():
     rating INTEGER,
     num_view INTEGER,
     num_comment INTEGER,
-    time_update TEXT,
+    time_update INTEGER,
     cards BLOB,
     scan_count INTEGER
   )""")
   CONN.commit()
 
 def deck_insert (deck):
-  CONN.execute("""INSERT OR REPLACE INTO decks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hero_class, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, deck.time_update.strftime('%Y-%m-%d %H:%M:%S.000'), buffer(pickle_dumps(deck.cards, -1)), deck.scan_count))
+  CONN.execute("""INSERT OR REPLACE INTO decks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""", (deck.id, deck.name, deck.author, deck.url, deck.type, deck.hero_class, deck.dust_cost, deck.rating, deck.num_view, deck.num_comment, int(time.mktime(deck.time_update)), buffer(pickle_dumps(deck.cards, -1)), deck.scan_count))
   CONN.commit()
 
 def deck_find_by_id (id):
