@@ -41,7 +41,7 @@ def parse_deck (deck):
           count = int(CARD_COUNT_MATCHER.match(row.find_class('col-name')[0].text_content()).groups()[0])
           deck.cards.append((card_by_name(name).id, count))
         return;
-      except IndexError as e:
+      except (IndexError, KeyError) as e:
         print e
         print 'Retry after %d seconds.' % REST_INTERVAL
         time.sleep(REST_INTERVAL)
@@ -91,7 +91,7 @@ def parse_page (pagenum):
         print '  [%d] (%s) %s' % (deck.id, status, deck.name)
       has_next = 'Next' in [e.text_content() for e in root.find_class('paging-list')[0].xpath('li/a')]
       return has_next
-    except IndexError as e:
+    except (IndexError, KeyError) as e:
       print e
       print 'Retry after %d seconds.' % REST_INTERVAL
       time.sleep(REST_INTERVAL)
