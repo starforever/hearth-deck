@@ -26,7 +26,7 @@ class Card ():
     return card
 
   def can_be_forged (self):
-    return self.set in ['Expert', 'Promotion']
+    return self.set in ['Classic', 'Promotion', 'Goblins vs Gnomes']
 
   def forge_cost (self):
     if self.rarity not in Card.FORGE_COST:
