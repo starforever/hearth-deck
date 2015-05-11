@@ -738,3 +738,51 @@ id	name	type	class	set	rarity	race	cost	attack	health	power
 736	Lava Shock	Spell	Shaman	Blackrock Mountain	Rare		2			Deal 2 damage. Unlock your Overloaded Mana Crystals.
 737	Demonwrath	Spell	Warlock	Blackrock Mountain	Rare		3			Deal 2 damage to all non-Demon minions.
 738	Revenge	Spell	Warrior	Blackrock Mountain	Rare		2			"Deal 1 damage to all minions. If you have 12 or less Health, deal 3 damage instead."
+739	Dark Iron Bouncer	Minion		Blackrock Mountain	Free		6	4	8	Always wins Brawls.
+740	Dark Iron Spectator	Minion		Blackrock Mountain	Free		1	1	1	Taunt.
+741	Moira Bronzebeard	Minion		Blackrock Mountain	Free		2	1	3	Thaurissan's Hero Power can't be used. Never attacks minions unless they have Taunt.
+742	Guzzler	Minion		Blackrock Mountain	Free		1	1	1	Taunt.
+743	Firesworn	Minion		Blackrock Mountain	Free		0	0	5	Deathrattle: Deal 1 damage to the enemy hero for each Firesworn that died this turn.
+744	Flamewaker Acolyte	Minion		Blackrock Mountain	Free		2	1	3	
+745	Son of the Flame	Minion		Blackrock Mountain	Free		0	6	3	Battlecry: Deal 6 damage.
+746	Old Horde Orc	Minion		Blackrock Mountain	Free		1	1	1	Taunt
+747	Whelp	Minion		Blackrock Mountain	Free	Dragon	1	1	1	
+748	Black Whelp	Minion		Blackrock Mountain	Free	Dragon	1	2	1	
+749	Gyth	Minion		Blackrock Mountain	Legendary	Dragon	3	8	4	
+750	Dragonkin	Minion		Blackrock Mountain	Free	Dragon	1	3	1	
+751	Corrupted Egg	Minion		Blackrock Mountain	Free		1	0	1	"When this minion has 4 or more Health, it hatches."
+752	Chromatic Drake	Minion		Blackrock Mountain	Free		4	7	3	
+753	Chromatic Dragonkin	Minion		Blackrock Mountain	Free	Dragon	2	2	3	
+754	Living Lava	Minion		Blackrock Mountain	Free		0	6	6	Taunt
+755	Whirling Ash	Minion		Blackrock Mountain	Free		0	4	5	Windfury
+756	Arcanotron	Minion		Blackrock Mountain	Legendary	Mech	0	2	2	Both players have Spell Damage +2.
+757	Toxitron	Minion		Blackrock Mountain	Legendary	Mech	1	3	3	"At the start of your turn, deal 1 damage to all other minions."
+758	Electron	Minion		Blackrock Mountain	Legendary	Mech	3	5	5	All spells cost (3) less.
+759	Magmatron	Minion		Blackrock Mountain	Legendary	Mech	5	7	7	"Whenever a player plays a card, Magmatron deals 2 damage to them."
+760	Magmaw	Minion		Blackrock Mountain	Legendary		5	10	2	Taunt
+761	Aberration	Minion		Blackrock Mountain	Free		1	1	1	Charge
+762	Bone Construct	Minion		Blackrock Mountain	Free		1	2	1	
+763	Chromatic Prototype	Minion		Blackrock Mountain	Free		2	1	4	Taunt
+764	Get 'em!	Spell		Blackrock Mountain	Free		3			Summon four 1/1 Dwarves with Taunt.
+765	Flameheart	Spell		Blackrock Mountain	Free		3			Draw 2 cards. Gain 4 Armor.
+766	Rock Out	Spell		Blackrock Mountain	Free		3			Summon 3 Firesworn. Overload: (2).
+767	Living Bomb	Spell		Blackrock Mountain	Free		4			"Choose an enemy minion. If it lives until your next turn, deal 5 damage to all enemies."
+768	TIME FOR SMASH	Spell		Blackrock Mountain	Free		4			Deal 5 damage to a random enemy. Gain 5 Armor.
+769	Drakkisath's Command	Spell		Blackrock Mountain	Free		1			Destroy a minion. Gain 10 Armor.
+770	The True Warchief	Spell		Blackrock Mountain	Free		1			Destroy a Legendary minion.
+771	Burning Adrenaline	Spell		Blackrock Mountain	Free		0			Deal 2 damage to the enemy hero.
+772	Brood Affliction: Green	Spell		Blackrock Mountain	Free		1			"While this is in your hand, restore 2 health to your opponent at the start of your turn."
+773	Brood Affliction: Red	Spell		Blackrock Mountain	Free		1			"While this is in your hand, take 1 damage at the start of your turn."
+774	Brood Affliction: Blue	Spell		Blackrock Mountain	Free		1			"While this is in your hand, Chromaggus' spells cost (1) less."
+775	Brood Affliction: Bronze	Spell		Blackrock Mountain	Free		1			"While this is in your hand, Chromaggus' minions cost (1) less."
+776	Brood Affliction: Black	Spell		Blackrock Mountain	Free		1			"While this is in your hand, whenever Chromaggus draws a card, he gets another copy of it."
+777	Chromatic Mutation	Spell		Blackrock Mountain	Free		2			Transform a minion into a 2/2 Chromatic Dragonkin.
+778	Tail Swipe	Spell		Blackrock Mountain	Free		4			Deal 4 damage.
+779	"DIE, INSECT!"	Spell		Blackrock Mountain	Free		0			Deal 8 damage to a random enemy.
+780	Recharge	Spell		Blackrock Mountain	Free		0			Fill all empty Mana Crystals.
+781	Release the Aberrations!	Spell		Blackrock Mountain	Free		2			Summon 3 Aberrations.
+782	Reverberating Gong	Spell		Blackrock Mountain	Free		1			Destroy your opponent's weapon.
+783	Sonic Breath	Spell		Blackrock Mountain	Free		4			Deal 3 damage to a minion. Give your weapon +3 Attack.
+784	LAVA!	Spell		Blackrock Mountain	Free		2			Deal 2 damage to all minions.
+785	Dragonteeth	Weapon		Blackrock Mountain	Free		1	0	6	"Whenever your opponent plays a card, gain +1 Attack."
+786	Onyxiclaw	Weapon		Blackrock Mountain	Free		2	2	6	
