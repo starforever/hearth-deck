@@ -32,6 +32,8 @@ class Deck ():
       card = card_by_id(id)
       if card.hero_class == '' or card.set == 'Discarded':
         return False
+      if count > (2 if card.rarity != 'Legendary' else 1):
+        return False
     return total == 30
 
   def __str__ (self):
