@@ -46,11 +46,13 @@ def parse_deck (deck):
   url = DOMAIN + deck.url
   while True:
       try:
-        info = get_page_root(url).find_class('infobox')[0]
-        deck.dust_cost = int(DUST_COST_MATCHER.match(info.find_class('t-deck-type')[0].xpath('ul/li')[1].text_content()).groups()[0])
+        root = get_page_root(url)
+        deck.dust_cost = int(root.find_class('craft-cost')[0].text_content())
+        info = root.find_class('infobox')[0]
         rows = []
         for sec in info.find_class('t-deck-details-card-list'):
-          rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
+          if sec.find_class('listing'):
+            rows.extend(sec.find_class('listing')[0].xpath('tbody/tr'))
         deck.cards = []
         for row in rows:
           name = row.find_class('col-name')[0].xpath('b/a')[0].text_content()
