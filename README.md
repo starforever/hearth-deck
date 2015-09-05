@@ -23,5 +23,5 @@ Dependence
 --------
 
 The following Python packages are required to run HearthDeck:
-lxml
+lxml (requires libxml2 and libxslt packages in the system)
 termcolor
