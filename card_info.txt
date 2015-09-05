@@ -786,3 +786,170 @@ id	name	type	class	set	rarity	race	cost	attack	health	power
 784	LAVA!	Spell		Blackrock Mountain	Free		2			Deal 2 damage to all minions.
 785	Dragonteeth	Weapon		Blackrock Mountain	Free		1	0	6	"Whenever your opponent plays a card, gain +1 Attack."
 786	Onyxiclaw	Weapon		Blackrock Mountain	Free		2	2	6	
+787	Gadgetzan Jouster	Minion	Neutral	The Grand Tournament	Common		1	1	2	"Battlecry: Reveal a minion in each deck. If yours costs more, gain +1/+1."
+788	Lowly Squire	Minion	Neutral	The Grand Tournament	Common		1	1	2	Inspire: Gain +1 Attack.
+789	Tournament Attendee	Minion	Neutral	The Grand Tournament	Common		1	2	1	Taunt
+790	Boneguard Lieutenant	Minion	Neutral	The Grand Tournament	Common		2	3	2	Inspire: Gain +1 Health.
+791	Flame Juggler	Minion	Neutral	The Grand Tournament	Common		2	2	3	Battlecry: Deal 1 damage to a random enemy.
+792	Lance Carrier	Minion	Neutral	The Grand Tournament	Common		2	1	2	Battlecry: Give a friendly minion +2 Attack.
+793	Argent Horserider	Minion	Neutral	The Grand Tournament	Common		3	2	1	Divine Shield. Charge.
+794	Dragonhawk Rider	Minion	Neutral	The Grand Tournament	Common		3	3	3	Inspire: Gain Windfury this turn.
+795	Ice Rager	Minion	Neutral	The Grand Tournament	Common		3	5	2	
+796	Silent Knight	Minion	Neutral	The Grand Tournament	Common		3	2	2	Stealth. Divine Shield.
+797	Silver Hand Regent	Minion	Neutral	The Grand Tournament	Common		3	3	3	Inspire: Summon a 1/1 Silver Hand Recruit.
+798	Evil Heckler	Minion	Neutral	The Grand Tournament	Common		4	5	4	Taunt
+799	Frigid Snobold	Minion	Neutral	The Grand Tournament	Common		4	2	6	Spell Damage +1
+800	Maiden of the Lake	Minion	Neutral	The Grand Tournament	Common		4	2	6	Your Hero Power costs (1).
+801	Refreshment Vendor	Minion	Neutral	The Grand Tournament	Common		4	3	5	Battlecry: Restore 4 Health to each hero.
+802	Tournament Medic	Minion	Neutral	The Grand Tournament	Common		4	1	8	Inspire: Restore 2 Health to your Hero.
+803	Clockwork Knight	Minion	Neutral	The Grand Tournament	Common	Mech	5	5	5	Battlecry: Give a friendly Mech +1/+1.
+804	Kvaldir Raider	Minion	Neutral	The Grand Tournament	Common		5	4	4	Inspire: Gain +2/+2.
+805	Mukla's Champion	Minion	Neutral	The Grand Tournament	Common	Beast	5	4	3	Inspire: Give your other minions +1/+1.
+806	Pit Fighter	Minion	Neutral	The Grand Tournament	Common		5	5	6	
+807	Captured Jormungar	Minion	Neutral	The Grand Tournament	Common	Beast	7	5	9	
+808	North Sea Kraken	Minion	Neutral	The Grand Tournament	Common		9	9	7	Battlecry: Deal 4 damage.
+809	Injured Kvaldir	Minion	Neutral	The Grand Tournament	Rare		1	2	4	Battlecry: Deal 3 damage to this minion.
+810	Argent Watchman	Minion	Neutral	The Grand Tournament	Rare		2	2	4	Can't attack. Inspire: Can attack as normal this turn.
+811	Coliseum Manager	Minion	Neutral	The Grand Tournament	Rare		3	2	5	Inspire: Return this minion to your hand.
+812	Fencing Coach	Minion	Neutral	The Grand Tournament	Rare		3	2	2	"Battlecry: The next time you use your Hero Power, it costs (2) less."
+813	Light's Champion	Minion	Neutral	The Grand Tournament	Rare		3	4	3	Battlecry: Silence a Demon.
+814	Saboteur	Minion	Neutral	The Grand Tournament	Rare		3	4	3	Battlecry: Your opponent's Hero Power costs (5) more next turn.
+815	Armored Warhorse	Minion	Neutral	The Grand Tournament	Rare	Beast	4	5	3	"Battlecry: Reveal a minion in each deck. If yours costs more, gain Charge."
+816	Master Jouster	Minion	Neutral	The Grand Tournament	Rare		6	5	6	"Battlecry: Reveal a minion in each deck. If yours costs more, gain Taunt and Divine Shield."
+817	Mogor's Champion	Minion	Neutral	The Grand Tournament	Rare		6	8	5	50% chance to attack the wrong enemy.
+818	Garrison Commander	Minion	Neutral	The Grand Tournament	Epic		2	2	3	You can use your Hero Power twice a turn.
+819	Master of Ceremonies	Minion	Neutral	The Grand Tournament	Epic		3	4	2	"Battlecry: If you have a minion with Spell Damage, gain +2/+2."
+820	Crowd Favorite	Minion	Neutral	The Grand Tournament	Epic		4	4	4	"Whenever you play a card with Battlecry, gain +1/+1."
+821	Twilight Guardian	Minion	Neutral	The Grand Tournament	Epic	Dragon	4	2	6	"Battlecry: If you're holding a Dragon, gain +1 Attack and Taunt."
+822	Recruiter	Minion	Neutral	The Grand Tournament	Epic		5	5	4	Inspire: Add a 2/2 Squire to your hand.
+823	Grand Crusader	Minion	Neutral	The Grand Tournament	Epic		6	5	5	Battlecry: Add a random Paladin card to your hand.
+824	Kodorider	Minion	Neutral	The Grand Tournament	Epic		6	3	5	Inspire: Summon a 3/5 War Kodo.
+825	Sideshow Spelleater	Minion	Neutral	The Grand Tournament	Epic		6	6	5	Battlecry: Copy your opponent's Hero Power.
+826	Frost Giant	Minion	Neutral	The Grand Tournament	Epic		10	8	8	Costs (1) less for each time you used your Hero Power this game.
+827	Eydis Darkbane	Minion	Neutral	The Grand Tournament	Legendary		3	3	4	"Whenever you target this minion with a spell, deal 3 damage to a random enemy."
+828	Fjola Lightbane	Minion	Neutral	The Grand Tournament	Legendary		3	3	4	"Whenever you target this minion with a spell, gain Divine Shield."
+829	Gormok the Impaler	Minion	Neutral	The Grand Tournament	Legendary		4	4	4	"Battlecry: If you have at least 4 other minions, deal 4 damage."
+830	Nexus-Champion Saraad	Minion	Neutral	The Grand Tournament	Legendary		5	4	5	Inspire: Add a random spell to your hand.
+831	Bolf Ramshield	Minion	Neutral	The Grand Tournament	Legendary		6	3	9	"Whenever your hero takes damage, this minion takes it instead."
+832	Justicar Trueheart	Minion	Neutral	The Grand Tournament	Legendary		6	6	3	Battlecry: Replace your starting Hero Power with a better one.
+833	The Skeleton Knight	Minion	Neutral	The Grand Tournament	Legendary		6	7	4	"Battlecry: Reveal a minion in each deck. If yours costs more, return this to your hand."
+834	Chillmaw	Minion	Neutral	The Grand Tournament	Legendary	Dragon	7	6	6	"Taunt. Deathrattle: If you're holding a Dragon, deal 3 damage to all minions."
+835	Skycap'n Kragg	Minion	Neutral	The Grand Tournament	Legendary	Pirate	7	4	6	Charrrrrge. Costs (1) less for each friendly Pirate.
+836	Icehowl	Minion	Neutral	The Grand Tournament	Legendary		9	10	10	Charge. Can't attack heroes.
+837	Druid of the Saber	Minion	Druid	The Grand Tournament	Common		2	2	1	Choose One: Charge or +1/+1 and Stealth.
+838	Wildwalker	Minion	Druid	The Grand Tournament	Common		4	4	4	Battlecry: Give a friendly Beast +3 Health.
+839	Darnassus Aspirant	Minion	Druid	The Grand Tournament	Rare		2	2	3	Battlecry: Gain an empty mana crystal. Dealthrattle: Destroy a mana crystal.
+840	Savage Combatant	Minion	Druid	The Grand Tournament	Rare	Beast	4	5	4	Inspire: Give your hero +2 Attack this turn.
+841	Knight of the Wild	Minion	Druid	The Grand Tournament	Rare		7	6	6	"Whenever you summon a Beast, reduce the cost of this card by (1)."
+842	Aviana	Minion	Druid	The Grand Tournament	Legendary		9	5	5	Your minions cost (1).
+843	Brave Archer	Minion	Hunter	The Grand Tournament	Common		1	2	1	"Inspire: If your hand is empty, deal 2 damage to the enemy hero."
+844	King's Elekk	Minion	Hunter	The Grand Tournament	Common	Beast	2	3	2	"Battlecry: Reveal a minion in each deck. If yours costs more, draw it."
+845	Ram Wrangler	Minion	Hunter	The Grand Tournament	Rare		5	3	3	"Battlecry: If you have a Beast, summon a random Beast."
+846	Stablemaster	Minion	Hunter	The Grand Tournament	Epic		3	4	2	Battlecry: Give a friendly Beast Immune this turn.
+847	Dreadscale	Minion	Hunter	The Grand Tournament	Legendary	Beast	3	4	2	"At the end of your turn, deal 1 damage to all other minions."
+848	Acidmaw	Minion	Hunter	The Grand Tournament	Legendary	Beast	7	4	2	"Whenever another minion takes damage, destroy it."
+849	Spellslinger	Minion	Mage	The Grand Tournament	Common		3	3	4	Battlecry: Add a random spell card to each player's hand.
+850	Dalaran Aspirant	Minion	Mage	The Grand Tournament	Common		4	3	5	Inspire: Gain Spell Damage +1.
+851	Fallen Hero	Minion	Mage	The Grand Tournament	Rare		2	3	2	Your Hero Power deals 1 extra damage.
+852	Coldarra Drake	Minion	Mage	The Grand Tournament	Epic	Dragon	6	6	6	You can use your Hero Power any number of times.
+853	Rhonin	Minion	Mage	The Grand Tournament	Legendary		8	7	7	Deathrattle: Add 3 copies of Arcane Missiles to your hand.
+854	Warhorse Trainer	Minion	Paladin	The Grand Tournament	Common		3	2	4	Your Silver Hand Recruits have +1 Attack.
+855	Murloc Knight	Minion	Paladin	The Grand Tournament	Common	Murloc	4	3	4	Inspire: Summon a random Murloc.
+856	Tuskarr Jouster	Minion	Paladin	The Grand Tournament	Rare		5	5	5	"Battlecry: Reveal a minion in each deck, if yours costs more, restore 7 Health to your hero."
+857	Mysterious Challenger	Minion	Paladin	The Grand Tournament	Epic		6	6	6	Battlecry: Put one of each Secret from your deck into the battlefield.
+858	Eadric the Pure	Minion	Paladin	The Grand Tournament	Legendary		7	3	7	Battlecry: Change all enemy minions' Attack to 1.
+859	Holy Champion	Minion	Priest	The Grand Tournament	Common		4	3	5	"Whenever a character is healed, gain +2 attack."
+860	Wyrmrest Agent	Minion	Priest	The Grand Tournament	Rare		2	1	4	"Battlecry: If you're holding a Dragon, gain +1 Attack and Taunt."
+861	Spawn of Shadows	Minion	Priest	The Grand Tournament	Rare		4	5	4	Inspire: Deal 4 damage to each hero.
+862	Shadowfiend	Minion	Priest	The Grand Tournament	Epic		3	3	3	"Whenever you draw a card, reduce its costs by (1)."
+863	Confessor Paletress	Minion	Priest	The Grand Tournament	Legendary		7	5	4	Inspire: Summon a random Legendary Minion.
+864	Buccaneer	Minion	Rogue	The Grand Tournament	Common	Pirate	1	2	1	"Whenever you equip a weapon, give it +1 Attack."
+865	Undercity Valiant	Minion	Rogue	The Grand Tournament	Common		2	3	2	Combo: Deal 1 damage.
+866	Shado-Pan Rider	Minion	Rogue	The Grand Tournament	Common		5	3	7	Combo: +3 Attack.
+867	Cutpurse	Minion	Rogue	The Grand Tournament	Rare		2	2	2	"When this minion attacks the enemy hero, put a Coin into your hand."
+868	Shady Dealer	Minion	Rogue	The Grand Tournament	Rare		3	4	3	"Battlecry: If you have a Pirate, gain +1/+1."
+869	Anub'arak	Minion	Rogue	The Grand Tournament	Legendary		9	8	4	Deathrattle: Return this to your hand and summon a 4/4 Nerubian.
+870	Totem Golem	Minion	Shaman	The Grand Tournament	Common	Totem	2	3	4	Overload: (1)
+871	Tuskarr Totemic	Minion	Shaman	The Grand Tournament	Common		3	3	2	Battlecry: Summon ANY random Totem.
+872	Draenei Totemcarver	Minion	Shaman	The Grand Tournament	Rare		4	4	4	Battlecry: Gain +1/+1 for each friendly Totem.
+873	Thunder Bluff Valiant	Minion	Shaman	The Grand Tournament	Rare		5	3	6	Inspire: Give your Totems +2 Attack.
+874	The Mistcaller	Minion	Shaman	The Grand Tournament	Legendary		6	4	4	Battlecry: Give all minions in your hand and deck +1/+1.
+875	Wrathguard	Minion	Warlock	The Grand Tournament	Common	Demon	2	4	3	"Whenever this minion takes damage, also deal that amount to your hero."
+876	Fearsome Doomguard	Minion	Warlock	The Grand Tournament	Common	Demon	7	6	8	
+877	Tiny Knight of Evil	Minion	Warlock	The Grand Tournament	Rare	Demon	2	3	2	"Whenever you discard a card, gain +1/+1."
+878	Void Crusher	Minion	Warlock	The Grand Tournament	Rare	Demon	6	5	4	Inspire: Destroy a random minion for each player.
+879	Dreadsteed	Minion	Warlock	The Grand Tournament	Epic	Demon	4	1	1	Deathrattle: Summon a Dreadsteed.
+880	Wilfred Fizzlebang	Minion	Warlock	The Grand Tournament	Legendary		6	4	4	Cards you draw from your Hero Power cost (0).
+881	Orgrimmar Aspirant	Minion	Warrior	The Grand Tournament	Common		3	3	3	Inspire: Give your weapon +1 Attack.
+882	Alexstrasza's Champion	Minion	Warrior	The Grand Tournament	Rare		2	2	3	"Battlecry: If you're holding a Dragon, gain +1 Attack and Charge."
+883	Sparring Partner	Minion	Warrior	The Grand Tournament	Rare		2	3	2	Taunt. Battlecry: Give a minion Taunt.
+884	Magnataur Alpha	Minion	Warrior	The Grand Tournament	Epic		4	5	3	Also damages the minions next to whoever he attacks.
+885	Sea Reaver	Minion	Warrior	The Grand Tournament	Epic		6	6	7	"When you Draw this card, deal 1 damage to all YOUR minions."
+886	Varian Wrynn	Minion	Warrior	The Grand Tournament	Legendary		10	7	7	Battlecry: Draw 3 cards. Put any minions you drew directly into the battlefield.
+887	Atramedes	Minion		Tavern Brawl	Legendary	Dragon	4	2	8	"Whenever your opponent plays a card, gain +2 Attack."
+888	Core Hound Pup	Minion		Tavern Brawl	Free	Beast	3	2	4	"At the end of each turn, summon all Core Hound Pups that died this turn."
+889	Coren Direbrew	Minion		Tavern Brawl	Legendary		4	4	8	Always wins Brawls. Battlecry: Add a Brawl to your hand.
+890	Dragonkin Hatcher	Minion		Tavern Brawl	Free	Dragon	5	4	6	Battlecry: Summon two 2/2 Whelps.
+891	Drakonid Slayer	Minion		Tavern Brawl	Free	Dragon	6	6	6	Also damages the minions next to whomever he attacks.
+892	Garr	Minion		Tavern Brawl	Legendary		5	4	8	"Whenever this minion takes damage, summon a 2/3 Elemental with Taunt."
+893	Rock Elemental	Minion		Tavern Brawl	Free		2	2	3	Taunt
+894	Golemagg	Minion		Tavern Brawl	Legendary		50	20	20	Costs (1) less for each damage your hero has taken.
+895	High Justice Grimstone	Minion		Tavern Brawl	Legendary		3	4	5	"At the start of your turn, summon a Legendary minion."
+896	Living Lava	Minion		Tavern Brawl	Free		2	6	6	Taunt
+897	Lucifron	Minion		Tavern Brawl	Legendary		4	4	7	Battlecry: Cast Corruption on all other minions.
+898	Moira Bronzebeard	Minion		Tavern Brawl	Legendary		3	4	3	Deathrattle: Summon Emperor Thaurissan.
+899	Razorgore	Minion		Tavern Brawl	Legendary	Dragon	6	4	12	"At the start of your turn, give your minions +3 Attack."
+900	Son of the Flame	Minion		Tavern Brawl	Free		3	6	3	Battlecry: Deal 6 damage.
+901	Vaelastrasz	Minion		Tavern Brawl	Legendary	Dragon	6	7	7	Your cards cost (3) less.
+902	Whirling Ash	Minion		Tavern Brawl	Free		2	4	5	Windfury
+903	Living Roots	Spell	Druid	The Grand Tournament	Common		1			Choose One - Deal 2 damage; or Summon two 1/1 Saplings.
+904	Mulch	Spell	Druid	The Grand Tournament	Epic		3			Destroy a minion. Add a random minion to your opponent's hand.
+905	Astral Communion	Spell	Druid	The Grand Tournament	Epic		4			Discard your hand. Gain 10 Mana Crystals.
+906	Bear Trap	Spell	Hunter	The Grand Tournament	Common		2			"Secret: After your hero is attacked, summon a 3/3 Bear with Taunt."
+907	Powershot	Spell	Hunter	The Grand Tournament	Rare		3			Deal 2 damage to a minion and the minions next to it.
+908	Ball of Spiders	Spell	Hunter	The Grand Tournament	Rare		6			Summon three 1/1 Webspinners.
+909	Lock and Load	Spell	Hunter	The Grand Tournament	Epic		2			"Each time you cast a spell this turn, add a random Hunter card to your hand."
+910	Flame Lance	Spell	Mage	The Grand Tournament	Common		5			Deal 8 damage to a minion.
+911	Effigy	Spell	Mage	The Grand Tournament	Rare		3			"Secret: When a friendly minion dies, summon a random minion with the same Cost."
+912	Polymorph: Boar	Spell	Mage	The Grand Tournament	Rare		3			Transform a minion into a 4/2 Boar with Charge.
+913	Arcane Blast	Spell	Mage	The Grand Tournament	Epic		1			Deal 2 damage to a minion. This spell gets double bonus from Spell Damage.
+914	Seal of Champions	Spell	Paladin	The Grand Tournament	Common		3			Give a minion +3 Attack and Divine Shield.
+915	Competitive Spirit	Spell	Paladin	The Grand Tournament	Rare		1			"Secret: When your turn starts, give your minions +1/+1."
+916	Enter the Coliseum	Spell	Paladin	The Grand Tournament	Epic		6			Destroy all minions except each player's highest Attack minion.
+917	Flash Heal	Spell	Priest	The Grand Tournament	Common		1			Restore 5 Health.
+918	Power Word: Glory	Spell	Priest	The Grand Tournament	Common		1			"Choose a minion. Whenever it attacks, restore 4 Health to your hero."
+919	Convert	Spell	Priest	The Grand Tournament	Rare		2			Put a copy of an enemy minion into your hand.
+920	Confuse	Spell	Priest	The Grand Tournament	Epic		2			Swap the Attack and Health of all minions.
+921	Burgle	Spell	Rogue	The Grand Tournament	Rare		3			Add 2 random class cards to your hand (from your opponent's class).
+922	Beneath the Grounds	Spell	Rogue	The Grand Tournament	Epic		3			"Shuffle 3 Ambushes into your opponent's deck. When draw, you summon a 4/4 Nerubian."
+923	Ancestral Knowledge	Spell	Shaman	The Grand Tournament	Common		2			Draw 2 cards. Overload: (2).
+924	Healing Wave	Spell	Shaman	The Grand Tournament	Rare		3			"Restore 7 Health. Reveal a minion in each deck. If yours costs more, Restore 14 instead."
+925	Elemental Destruction	Spell	Shaman	The Grand Tournament	Epic		3			Deal 4-5 damage to all minions. Overload: (5)
+926	Demonfuse	Spell	Warlock	The Grand Tournament	Common		2			Give a Demon +3/+3. Give your opponent a Mana Crystal.
+927	Fist of Jaraxxus	Spell	Warlock	The Grand Tournament	Rare		4			"When you play or discard this, deal 4 damage to a random enemy."
+928	Dark Bargain	Spell	Warlock	The Grand Tournament	Epic		6			Destroy 2 random enemy minions. Discard 2 random cards.
+929	Bolster	Spell	Warrior	The Grand Tournament	Common		2			Give your Taunt minions +2/+2.
+930	Bash	Spell	Warrior	The Grand Tournament	Common		3			Deal 3 Damage. Gain 3 Armor.
+931	Core Hound Puppies	Spell		Tavern Brawl	Free		3			Summon two 2/4 Core Hound Pups.
+932	Living Bomb	Spell		Tavern Brawl	Free		3			"Choose an enemy minion. If it lives until your next turn, deal 5 damage to all enemies."
+933	Open the Gates	Spell		Tavern Brawl	Free		8			Fill your board with 2/2 Whelps.
+934	Omnotron Defense System	Spell		Discarded	Free		3			Summon a random Tron.
+935	Big Banana	Spell		Tavern Brawl	Free		1			Give a minion +2/+2.
+936	Deviate Banana	Spell		Tavern Brawl	Free		1			Swap a minion's Attack and Health.
+937	Rotten Banana	Spell		Tavern Brawl	Free		1			Deal 1 damage.
+938	Argent Lance	Weapon	Paladin	The Grand Tournament	Rare		2	2	2	"Battlecry: Reveal a minion in each deck, if yours costs more, +1 Durability."
+939	Poisoned Blade	Weapon	Rogue	The Grand Tournament	Epic		4	1	3	Your Hero Power gives this weapon +1 Attack instead of replacing it.
+940	Charged Hammer	Weapon	Shaman	The Grand Tournament	Epic		4	2	4	Deathrattle: your Hero Power becomes ' Deal 2 damage.'
+941	King's Defender	Weapon	Warrior	The Grand Tournament	Rare		3	3	2	"Battlecry: If you have a minion with Taunt, gain +1 Durability."
+942	Sulfuras	Weapon		Tavern Brawl	Free		2	2	6	Deathrattle: Your Hero Power becomes 'Deal 8 damage to a random enemy'.
+943	War Kodo	Minion		The Grand Tournament	Epic	Beast	5	3	5	
+944	Sapling	Minion		The Grand Tournament	Free		1	1	1	
+945	Sabertooth Lion	Minion		The Grand Tournament	Common	Beast	2	2	1	Charge
+946	Sabertooth Panther	Minion		The Grand Tournament	Common	Beast	2	3	2	Stealth
+947	Boar	Minion		The Grand Tournament		Beast	3	4	2	Charge
+948	Lion Form	Spell		The Grand Tournament	Common		0			Charge
+949	Panther Form	Spell		The Grand Tournament	Common		0			+1/+1 and Stealth
+950	Living Roots	Spell		The Grand Tournament	Free		0			Deal 2 damage.
+951	Living Roots	Spell		The Grand Tournament	Free		0			Summon two 1/1 Saplings.
+952	Ambush!	Spell		The Grand Tournament	Free		0			"When you draw this, summon a 4/4 Nerubian for your opponent. Draw a card."
+953	Poisoned Dagger	Weapon		The Grand Tournament	Free		1	2	2	
