@@ -97,7 +97,7 @@ id	name	type	class	set	rarity	race	cost	attack	health	power
 95	Razorfen Hunter	Minion	Neutral	Basic	Free		3	2	3	Battlecry: Summon a 1/1 Boar.
 96	Tauren Warrior	Minion	Neutral	Classic	Common		3	2	3	Taunt. Enrage: +3 Attack
 97	Thrallmar Farseer	Minion	Neutral	Classic	Common		3	2	3	Windfury
-98	Warsong Commander	Minion	Warrior	Basic	Free		3	2	3	"Whenever you summon a minion with 3 or less Attack, give it Charge."
+98	Warsong Commander	Minion	Warrior	Basic	Free		3	2	3	Your Charge minions have +1 Attack.
 99	Magma Rager	Minion	Neutral	Basic	Free		3	5	1	
 100	Imp Master	Minion	Neutral	Classic	Rare		3	1	5	"At the end of your turn, deal 1 damage to this minion and summon a 1/1 Imp."
 101	Coldlight Oracle	Minion	Neutral	Classic	Rare	Murloc	3	2	2	Battlecry: Each player draws 2 cards.
