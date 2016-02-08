@@ -3,7 +3,10 @@ from termcolor import colored
 class Card ():
 
   FORGE_COST = {'Legendary': 1600, 'Epic': 400, 'Rare': 100, 'Common': 40, 'Free': 0}
+  DUST_VALUE = {'Legendary': 400, 'Epic': 100, 'Rare': 20, 'Common': 5, 'Free': 0}
   COLOR = {'Legendary': 'red', 'Epic': 'magenta', 'Rare': 'blue', 'Common': 'green', 'Free': 'white'}
+  SET_FORGE = ['Classic', 'Promotion', 'Goblins vs Gnomes', 'The Grand Tournament']
+  SET_PURCHASE = ['Classic', 'Goblins vs Gnomes', 'The Grand Tournament']
 
   @classmethod
   def from_csv (cls, row):
@@ -25,14 +28,23 @@ class Card ():
     card.power = row['power']
     return card
 
+  def can_be_collected (self):
+    return self.hero_class != '' and self.set != 'Discarded'
+
   def can_be_forged (self):
-    return self.set in ['Classic', 'Promotion', 'Goblins vs Gnomes', 'The Grand Tournament']
+    return self.hero_class != '' and self.set in SET_FORGE
 
   def forge_cost (self):
     if self.rarity not in Card.FORGE_COST:
       raise Exception('Incorrect rarity for card: %s [%s]' % (self.name, self.rarity))
     else:
       return Card.FORGE_COST[self.rarity]
+
+  def dust_value (self):
+    if self.rarity not in Card.DUST_VALUE:
+      raise Exception('Incorrect rarity for card: %s [%s]' % (self.name, self.rarity))
+    else:
+      return Card.DUST_VALUE[self.rarity]
 
   def colored_name (self):
     if self.rarity not in Card.COLOR:

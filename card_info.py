@@ -25,4 +25,7 @@ def card_by_id (id):
     raise Exception('Card with ID %d not found' % id)
   return CARD_BY_ID[id]
 
+def all_cards ():
+  return CARD_BY_ID.values()
+
 load('card_info.txt')

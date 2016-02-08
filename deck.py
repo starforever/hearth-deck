@@ -30,7 +30,7 @@ class Deck ():
     for (id, count) in self.cards:
       total += count
       card = card_by_id(id)
-      if card.hero_class == '' or card.set == 'Discarded':
+      if not card.can_be_collected():
         return False
       if count > (2 if card.rarity != 'Legendary' else 1):
         return False
